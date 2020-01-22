@@ -1,0 +1,74 @@
+﻿2020-01-22 21:40:33 DEBUG SpringBootAsyncApplication:21 - Запуск приложения
+2020-01-22 21:40:34 DEBUG SpringBootAsyncApplication:21 - Запуск приложения
+2020-01-22 21:40:38 DEBUG MainController:47 - Получили запрос с следующими параметрами - RUB - 20.01.2020
+2020-01-22 21:40:38 DEBUG MainController:73 - Начинается цикл запросов к сервисам
+2020-01-22 21:40:38 DEBUG BankUkraineService:37 - -------- Сервис BankUkraine запустился
+2020-01-22 21:40:38 DEBUG MonoBankService:36 - -------- Сервис MonoBank запустился
+2020-01-22 21:40:38 DEBUG NationalBankService:44 - -------- Сервис NationalBank запустился
+2020-01-22 21:40:38 DEBUG BankUkraineParser:28 - Запустился парсер BankUkraineParser
+2020-01-22 21:40:38 DEBUG NationalBankParser:30 - Запустился парсер NationalBankParser
+2020-01-22 21:40:38 DEBUG PrivatBankService:40 - -------- Сервис PrivatBank запустился
+2020-01-22 21:40:38 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
+2020-01-22 21:40:38 INFO  MonoBankService:39 - -------- Сервис MonoBank отработал и возвращает данные
+2020-01-22 21:40:38 DEBUG MainController:95 - Запускается цикл поиска лучшего курса
+2020-01-22 21:40:38 DEBUG PrivatBankParser:27 - Запустился парсер NationalBankParser
+2020-01-22 21:40:38 DEBUG PrivatBankParser:61 - Запускается обращение к URL
+2020-01-22 21:40:38 DEBUG NationalBankParser:73 - Запускается обращение к URL
+2020-01-22 21:40:38 DEBUG BankUkraineParser:40 - Запускается обращение к URL
+2020-01-22 21:40:38 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - RUB
+2020-01-22 21:40:38 DEBUG BankUkraineParser:66 - Валюта нашлась, возвращение результата
+2020-01-22 21:40:38 INFO  BankUkraineService:39 - -------- Сервис BankUkraine отработал и возвращает данные
+2020-01-22 21:40:39 DEBUG NationalBankParser:88 - Запускается цикл поиска лучшего курса - RUB
+2020-01-22 21:40:39 DEBUG NationalBankParser:99 - Курс найден, добавление в список
+2020-01-22 21:40:39 DEBUG NationalBankParser:110 - Запускается цикл поиска лучшего курса из списка
+2020-01-22 21:40:39 INFO  NationalBankParser:118 - Курс найден, возвращение результата
+2020-01-22 21:40:39 INFO  NationalBankService:47 - -------- Сервис NationalBank отработал и возвращает данные
+2020-01-22 21:40:39 DEBUG PrivatBankParser:77 - Запускается цикл поиска лучшего курса - RUB
+2020-01-22 21:40:39 ERROR PrivatBankParser:89 - NullPointerException -> пропуск безымянной валюты
+2020-01-22 21:40:39 DEBUG PrivatBankParser:85 - Курс найден, добавление в список
+2020-01-22 21:40:39 DEBUG PrivatBankParser:95 - Запускается цикл поиска лучшего курса из списка
+2020-01-22 21:40:39 INFO  PrivatBankParser:102 - Курс найден, возвращение результата
+2020-01-22 21:40:39 INFO  PrivatBankService:44 - -------- Сервис PrivatBank отработал и возвращает данные
+2020-01-22 21:40:39 INFO  MainController:110 - Лучшая валюта найдена
+2020-01-22 21:40:39 DEBUG MainController:114 - Создается docx
+2020-01-22 21:40:39 DEBUG MainController:127 - Запускается процесс создания и заполнения docx файла
+2020-01-22 21:40:39 INFO  MainController:116 - Документ создан
+2020-01-22 21:40:39 DEBUG MainController:117 - Возвращается ответ
+2020-01-22 21:46:43 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-01-22 21:46:43 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-01-22 21:48:12 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-01-22 21:48:12 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-01-22 21:48:21 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 18.01.2020
+2020-01-22 21:48:21 DEBUG MainController:74 - Начинается цикл запросов к сервисам
+2020-01-22 21:48:21 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
+2020-01-22 21:48:21 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
+2020-01-22 21:48:21 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
+2020-01-22 21:48:21 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
+2020-01-22 21:48:21 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
+2020-01-22 21:48:21 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
+2020-01-22 21:48:21 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
+2020-01-22 21:48:21 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
+2020-01-22 21:48:21 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
+2020-01-22 21:48:21 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
+2020-01-22 21:48:21 DEBUG PrivatBankParser:60 - Запускается обращение к URL
+2020-01-22 21:48:21 DEBUG NationalBankParser:72 - Запускается обращение к URL
+2020-01-22 21:48:21 DEBUG BankUkraineParser:38 - Запускается обращение к URL
+2020-01-22 21:48:21 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
+2020-01-22 21:48:21 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
+2020-01-22 21:48:21 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
+2020-01-22 21:48:22 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
+2020-01-22 21:48:22 DEBUG NationalBankParser:98 - Курс найден, добавление в список
+2020-01-22 21:48:22 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
+2020-01-22 21:48:22 INFO  NationalBankParser:117 - Курс найден, возвращение результата
+2020-01-22 21:48:22 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
+2020-01-22 21:48:22 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
+2020-01-22 21:48:22 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
+2020-01-22 21:48:22 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
+2020-01-22 21:48:22 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
+2020-01-22 21:48:22 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
+2020-01-22 21:48:22 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
+2020-01-22 21:48:22 INFO  MainController:111 - Лучшая валюта найдена
+2020-01-22 21:48:22 DEBUG MainController:115 - Создается docx
+2020-01-22 21:48:22 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
+2020-01-22 21:48:22 INFO  MainController:117 - Документ создан
+2020-01-22 21:48:22 DEBUG MainController:118 - Возвращается ответ
