@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.async;
+package com.spring.restful;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

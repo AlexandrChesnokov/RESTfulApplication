@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.async.model;
+package com.spring.restful.model;
 
 public interface CurrencyInterface {
 

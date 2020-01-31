@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.async;
+package com.spring.restful;
 
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;

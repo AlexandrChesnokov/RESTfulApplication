@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.async.exception;
+package com.spring.restful.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

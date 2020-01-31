@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.async;
+package com.spring.restful;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;

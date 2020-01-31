@@ -1,8 +1,8 @@
-package com.howtodoinjava.example.async.service;
+package com.spring.restful.service;
 
 
-import com.howtodoinjava.example.async.model.BankingParser;
-import com.howtodoinjava.example.async.model.CurrencyInterface;
+import com.spring.restful.model.BankingParser;
+import com.spring.restful.model.CurrencyInterface;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

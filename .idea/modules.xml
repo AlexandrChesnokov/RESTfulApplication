@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/com.howtodoinjava.example.asynch.iml" filepath="$PROJECT_DIR$/com.howtodoinjava.example.asynch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.spring.restful.iml" filepath="$PROJECT_DIR$/com.spring.restful.iml" />
     </modules>
   </component>
 </project>

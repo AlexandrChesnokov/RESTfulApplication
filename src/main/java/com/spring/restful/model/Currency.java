@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.async.model;
+package com.spring.restful.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

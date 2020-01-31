@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.async.model;
+package com.spring.restful.model;
 
 import org.apache.log4j.Logger;
 import org.json.JSONArray;

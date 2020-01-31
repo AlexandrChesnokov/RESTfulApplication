@@ -1,7 +1,7 @@
-package com.howtodoinjava.example.async.service;
+package com.spring.restful.service;
 
 
-import com.howtodoinjava.example.async.model.CurrencyInterface;
+import com.spring.restful.model.CurrencyInterface;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.xml.sax.SAXException;

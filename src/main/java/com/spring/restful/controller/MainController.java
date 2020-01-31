@@ -1,10 +1,10 @@
-package com.howtodoinjava.example.async.controller;
+package com.spring.restful.controller;
 
 
-import com.howtodoinjava.example.async.model.CurrencyInterface;
-import com.howtodoinjava.example.async.service.BankingService;
-import com.howtodoinjava.example.async.exception.NotFoundException;
-import com.howtodoinjava.example.async.model.Currency;
+import com.spring.restful.model.CurrencyInterface;
+import com.spring.restful.service.BankingService;
+import com.spring.restful.exception.NotFoundException;
+import com.spring.restful.model.Currency;
 
 import org.apache.log4j.Logger;
 import org.apache.poi.xwpf.usermodel.ParagraphAlignment;

@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.async.model;
+package com.spring.restful.model;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
