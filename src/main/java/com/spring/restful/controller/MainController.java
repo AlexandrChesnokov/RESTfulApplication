@@ -122,12 +122,11 @@ public class MainController {
 
     public void createDocx(CurrencyInterface currencyInterface) {
 
-        FileOutputStream out = null;
+
         XWPFDocument document = new XWPFDocument();
         Currency currency = (Currency) currencyInterface;
         logger.debug("Запускается процесс создания и заполнения docx файла");
-        try {
-            out = new FileOutputStream(new File(System.getProperty("user.dir").concat("/currency.docx")));
+        try (FileOutputStream out = new FileOutputStream(new File(System.getProperty("user.dir").concat("/currency.docx")))) {
 
             XWPFParagraph bankParagraph = document.createParagraph();
             bankParagraph.setAlignment(ParagraphAlignment.CENTER);
@@ -161,12 +160,13 @@ public class MainController {
 
 
             document.write(out);
-            out.close();
+
         } catch (FileNotFoundException e) {
             logger.error("Файл не найден");
         } catch (IOException e) {
             logger.error("IOException");
         }
+
 
 
     }
