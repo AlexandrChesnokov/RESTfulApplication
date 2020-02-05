@@ -12,9 +12,11 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.*;
 import org.xml.sax.SAXException;
 import javax.xml.parsers.ParserConfigurationException;
@@ -35,9 +37,21 @@ import java.util.concurrent.ExecutionException;
 public class MainController {
 
     @Autowired
-    public List<BankingService> bankingServices;
+    private CacheManager cacheManager;
+
+    @Autowired
+    private List<BankingService> bankingServices;
 
     private static final Logger logger = Logger.getLogger(MainController.class);
+
+    @Scheduled(cron = "0 0 0 ? * 1-7")
+    public void evictAllcachesAtIntervals() {
+        evictAllCacheValues("currencies");
+    }
+
+    public void evictAllCacheValues(String cacheName) {
+        cacheManager.getCache(cacheName).clear();
+    }
 
 
     @RequestMapping(value = "/get-rate/{name}/{date}",  produces = { "application/json", "application/xml" }, method = RequestMethod.GET)
