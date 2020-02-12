@@ -73,14 +73,14 @@
 2020-01-31 13:02:41 INFO  PrivatBankService:35 - -------- РЎРµСЂРІРёСЃ PrivatBank РѕС‚СЂР°Р±РѕС‚Р°Р» Рё РІРѕР·РІСЂР°С‰Р°РµС‚ РґР°РЅРЅС‹Рµ
 2020-01-31 13:07:13 DEBUG SpringBootAsyncApplication:20 - Р—Р°РїСѓСЃРє РїСЂРёР»РѕР¶РµРЅРёСЏ
 2020-01-31 13:07:14 DEBUG SpringBootAsyncApplication:20 - Р—Р°РїСѓСЃРє РїСЂРёР»РѕР¶РµРЅРёСЏ
-2020-01-31 13:07:22 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:12:17 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:14:01 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:23:26 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:24:55 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:25:12 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:28:44 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:33:45 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-01-31 13:07:22 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2020-01-31 13:12:17 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2020-01-31 13:14:01 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2020-01-31 13:23:26 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2020-01-31 13:24:55 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2020-01-31 13:25:12 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2020-01-31 13:28:44 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+2020-01-31 13:33:45 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 2020-01-31 13:34:30 DEBUG SpringBootAsyncApplication:20 - Р—Р°РїСѓСЃРє РїСЂРёР»РѕР¶РµРЅРёСЏ
 2020-01-31 13:34:30 DEBUG SpringBootAsyncApplication:20 - Р—Р°РїСѓСЃРє РїСЂРёР»РѕР¶РµРЅРёСЏ
 2020-01-31 13:34:35 DEBUG MainController:48 - РџРѕР»СѓС‡РёР»Рё Р·Р°РїСЂРѕСЃ СЃ СЃР»РµРґСѓСЋС‰РёРјРё РїР°СЂР°РјРµС‚СЂР°РјРё - RUB - 22.01.2020
@@ -151,7 +151,7 @@
 2020-01-31 13:34:45 DEBUG MainController:128 - Р—Р°РїСѓСЃРєР°РµС‚СЃСЏ РїСЂРѕС†РµСЃСЃ СЃРѕР·РґР°РЅРёСЏ Рё Р·Р°РїРѕР»РЅРµРЅРёСЏ docx С„Р°Р№Р»Р°
 2020-01-31 13:34:45 INFO  MainController:117 - Р”РѕРєСѓРјРµРЅС‚ СЃРѕР·РґР°РЅ
 2020-01-31 13:34:45 DEBUG MainController:118 - Р’РѕР·РІСЂР°С‰Р°РµС‚СЃСЏ РѕС‚РІРµС‚
-2020-01-31 13:38:15 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-01-31 13:38:15 DEBUG SpringBootAsyncApplication:20 - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 2020-02-05 13:13:19 DEBUG SpringBootAsyncApplication:20 - Р—Р°РїСѓСЃРє РїСЂРёР»РѕР¶РµРЅРёСЏ
 2020-02-05 13:13:19 DEBUG SpringBootAsyncApplication:20 - Р—Р°РїСѓСЃРє РїСЂРёР»РѕР¶РµРЅРёСЏ
 2020-02-05 13:13:42 DEBUG MainController:48 - РџРѕР»СѓС‡РёР»Рё Р·Р°РїСЂРѕСЃ СЃ СЃР»РµРґСѓСЋС‰РёРјРё РїР°СЂР°РјРµС‚СЂР°РјРё - RUB - 21.01.2020
@@ -717,7 +717,7 @@ Caused by: javax.net.ssl.SSLException: Couldn't kickstart handshaking
 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
 	at java.base/java.net.URL.openStream(URL.java:1163)
-	at com.spring.restful.model.ReaderFromUrl.readContentFromUrl(ReaderFromUrl.java:12)
+	at com.spring.restful.model.jobs.ReaderFromUrl.readContentFromUrl(ReaderFromUrl.java:12)
 	at com.spring.restful.service.NationalBankService.getExchangeRate(NationalBankService.java:62)
 	at com.spring.restful.service.NationalBankService$$FastClassBySpringCGLIB$$78717ed5.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)

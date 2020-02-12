@@ -1,4 +1,4 @@
-package com.spring.restful.model;
+package com.spring.restful.model.jobs;
 
 import java.io.*;
 import java.net.URL;

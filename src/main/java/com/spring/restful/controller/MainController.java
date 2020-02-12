@@ -2,23 +2,19 @@ package com.spring.restful.controller;
 
 
 import com.spring.restful.model.Currency;
-import com.spring.restful.model.MainCurrency;
+
+import com.spring.restful.model.jobs.DocxCreator;
 import com.spring.restful.service.BankingService;
 import com.spring.restful.exception.NotFoundException;
 
 import org.apache.log4j.Logger;
-import org.apache.poi.xwpf.usermodel.ParagraphAlignment;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
-import org.apache.poi.xwpf.usermodel.XWPFParagraph;
-import org.apache.poi.xwpf.usermodel.XWPFRun;
+
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+
 import java.io.IOException;
 
 import java.text.ParseException;
@@ -110,62 +106,13 @@ public class MainController {
         logger.info("Лучшая валюта найдена");
 
         logger.debug("Создается docx");
-
+        DocxCreator.createDocx(minRate);
         logger.info("Документ создан");
         logger.debug("Возвращается ответ");
         return new ResponseEntity<>(minRate, HttpStatus.OK);
 
     }
 
-    public void createDocx(MainCurrency currencyInterface) {
 
-
-        XWPFDocument document = new XWPFDocument();
-        MainCurrency currency = (MainCurrency) currencyInterface;
-        logger.debug("Запускается процесс создания и заполнения docx файла");
-        try (FileOutputStream out = new FileOutputStream(new File(System.getProperty("user.dir").concat("/currency.docx")))) {
-
-            XWPFParagraph bankParagraph = document.createParagraph();
-            bankParagraph.setAlignment(ParagraphAlignment.CENTER);
-            XWPFRun runBank = bankParagraph.createRun();
-            runBank.setText("BANK NAME - " + currency.getBank());
-            runBank.setBold(true);
-
-            XWPFParagraph nameParagraph = document.createParagraph();
-            nameParagraph.setAlignment(ParagraphAlignment.CENTER);
-            XWPFRun runName = nameParagraph.createRun();
-            runName.setText("CURRENCY NAME - " + currency.getExchangeName());
-            runName.setBold(true);
-
-            XWPFParagraph dateParagraph = document.createParagraph();
-            dateParagraph.setAlignment(ParagraphAlignment.CENTER);
-            XWPFRun runDate = dateParagraph.createRun();
-            runDate.setText("DATE - " + currency.getDate());
-            runDate.setBold(true);
-
-            XWPFParagraph rateParagraph = document.createParagraph();
-            rateParagraph.setAlignment(ParagraphAlignment.CENTER);
-            XWPFRun runRate = rateParagraph.createRun();
-            runRate.setText("SALE RATE - " + currency.getSaleRate());
-            runRate.setBold(true);
-
-            XWPFParagraph rate2Paragraph = document.createParagraph();
-            rate2Paragraph.setAlignment(ParagraphAlignment.CENTER);
-            XWPFRun runRate2 = rate2Paragraph.createRun();
-            runRate2.setText("BUY RATE - " + currency.getPurchaseRate());
-            runRate2.setBold(true);
-
-
-            document.write(out);
-
-        } catch (FileNotFoundException e) {
-            logger.error("Файл не найден");
-        } catch (IOException e) {
-            logger.error("IOException");
-        }
-
-
-
-    }
 
 }

@@ -1,4 +1,4 @@
-package com.spring.restful.model;
+package com.spring.restful.model.jobs;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
