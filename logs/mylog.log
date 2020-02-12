@@ -625,3 +625,262 @@
 2020-02-05 13:21:57 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
 2020-02-05 13:21:57 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
 2020-02-05 13:21:57 DEBUG PrivatBankParser:60 - Запускается обращение к URL
+2020-02-13 00:21:45 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 00:21:45 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 00:21:52 DEBUG MainController:48 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 00:21:52 DEBUG MainController:72 - Начинается цикл запросов к сервисам
+2020-02-13 00:21:52 DEBUG BankUkraineService:36 - BankUkraineService start
+2020-02-13 00:21:52 DEBUG BankUkraineService:40 - Идет запрос к юрл
+2020-02-13 00:21:52 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 00:21:52 DEBUG PrivatBankService:53 - Идет запрос к юрл
+2020-02-13 00:21:52 DEBUG NationalBankService:61 - Идет запрос к юрл
+2020-02-13 00:21:52 DEBUG BankUkraineService:42 - Получили ответ юрл
+2020-02-13 00:21:52 DEBUG BankUkraineService:44 - Идет запрос к парсеру
+2020-02-13 00:21:52 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
+2020-02-13 00:21:52 DEBUG BankUkraineParser:41 - Запускается обращение к URL
+2020-02-13 00:21:52 DEBUG BankUkraineParser:51 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 00:21:52 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
+2020-02-13 00:21:52 DEBUG BankUkraineService:46 - Получили ответ парсера
+2020-02-13 00:21:52 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 00:21:52 INFO  MonoBankParser:58 - Курс найден, возвращение результата
+2020-02-13 00:21:52 DEBUG PrivatBankService:55 - Получили ответ юрл
+2020-02-13 00:21:55 DEBUG MainController:93 - Запускается цикл поиска лучшего курса
+2020-02-13 00:21:55 ERROR MainController:108 - ExecutionException
+java.util.concurrent.ExecutionException: javax.net.ssl.SSLException: Couldn't kickstart handshaking
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:99)
+	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$ba951df7.getExchangeRate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: javax.net.ssl.SSLException: Couldn't kickstart handshaking
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:440)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:567)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:171)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at java.base/java.net.URL.openStream(URL.java:1163)
+	at com.spring.restful.model.ReaderFromUrl.readContentFromUrl(ReaderFromUrl.java:12)
+	at com.spring.restful.service.NationalBankService.getExchangeRate(NationalBankService.java:62)
+	at com.spring.restful.service.NationalBankService$$FastClassBySpringCGLIB$$78717ed5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+	Suppressed: java.net.SocketException: Connection reset by peer
+		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
+		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
+		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
+		at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1007)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset by peer
+	at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
+	at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
+	at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
+	at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1007)
+	at java.base/sun.security.ssl.SSLSocketOutputRecord.flush(SSLSocketOutputRecord.java:268)
+	at java.base/sun.security.ssl.HandshakeOutStream.flush(HandshakeOutStream.java:89)
+	at java.base/sun.security.ssl.ClientHello$ClientHelloKickstartProducer.produce(ClientHello.java:657)
+	at java.base/sun.security.ssl.SSLHandshake.kickstart(SSLHandshake.java:519)
+	at java.base/sun.security.ssl.ClientHandshakeContext.kickstart(ClientHandshakeContext.java:107)
+	at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:231)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:430)
+	... 19 more
+2020-02-13 00:21:55 INFO  MainController:110 - Лучшая валюта найдена
+2020-02-13 00:21:55 DEBUG MainController:112 - Создается docx
+2020-02-13 00:21:55 INFO  MainController:114 - Документ создан
+2020-02-13 00:21:55 DEBUG MainController:115 - Возвращается ответ
+2020-02-13 00:27:46 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 00:27:47 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 00:27:51 DEBUG MainController:48 - Получили запрос с следующими параметрами - USD - 10.02.2020
+2020-02-13 00:27:51 DEBUG MainController:72 - Начинается цикл запросов к сервисам
+2020-02-13 00:27:51 DEBUG BankUkraineService:36 - BankUkraineService start
+2020-02-13 00:27:51 DEBUG BankUkraineService:40 - Идет запрос к юрл
+2020-02-13 00:27:51 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 00:27:51 DEBUG PrivatBankService:53 - Идет запрос к юрл
+2020-02-13 00:27:51 DEBUG NationalBankService:61 - Идет запрос к юрл
+2020-02-13 00:27:51 DEBUG BankUkraineService:42 - Получили ответ юрл
+2020-02-13 00:27:51 DEBUG BankUkraineService:44 - Идет запрос к парсеру
+2020-02-13 00:27:51 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
+2020-02-13 00:27:51 DEBUG BankUkraineParser:41 - Запускается обращение к URL
+2020-02-13 00:27:51 DEBUG BankUkraineParser:51 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 00:27:51 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
+2020-02-13 00:27:51 DEBUG BankUkraineService:46 - Получили ответ парсера
+2020-02-13 00:27:51 DEBUG NationalBankService:63 - Получили ответ юрл
+2020-02-13 00:27:51 DEBUG NationalBankParser:23 - Запустился парсер NationalBankParser
+2020-02-13 00:27:51 DEBUG NationalBankParser:29 - Запускается обращение к URL
+2020-02-13 00:27:51 DEBUG NationalBankParser:34 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 00:27:51 DEBUG NationalBankParser:44 - Курс найден, добавление в список
+2020-02-13 00:27:51 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 00:27:51 DEBUG PrivatBankService:55 - Получили ответ юрл
+2020-02-13 00:27:54 DEBUG MainController:93 - Запускается цикл поиска лучшего курса
+2020-02-13 00:27:54 INFO  MainController:110 - Лучшая валюта найдена
+2020-02-13 00:27:54 DEBUG MainController:112 - Создается docx
+2020-02-13 00:27:54 INFO  MainController:114 - Документ создан
+2020-02-13 00:27:54 DEBUG MainController:115 - Возвращается ответ
+2020-02-13 00:28:06 DEBUG MainController:48 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 00:28:06 DEBUG MainController:72 - Начинается цикл запросов к сервисам
+2020-02-13 00:28:06 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 00:28:06 DEBUG PrivatBankService:53 - Идет запрос к юрл
+2020-02-13 00:28:06 DEBUG NationalBankService:61 - Идет запрос к юрл
+2020-02-13 00:28:06 DEBUG BankUkraineService:36 - BankUkraineService start
+2020-02-13 00:28:06 DEBUG BankUkraineService:40 - Идет запрос к юрл
+2020-02-13 00:28:06 DEBUG BankUkraineService:42 - Получили ответ юрл
+2020-02-13 00:28:06 DEBUG BankUkraineService:44 - Идет запрос к парсеру
+2020-02-13 00:28:06 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
+2020-02-13 00:28:06 DEBUG BankUkraineParser:41 - Запускается обращение к URL
+2020-02-13 00:28:06 DEBUG BankUkraineParser:51 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 00:28:06 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
+2020-02-13 00:28:06 DEBUG BankUkraineService:46 - Получили ответ парсера
+2020-02-13 00:28:06 DEBUG NationalBankService:63 - Получили ответ юрл
+2020-02-13 00:28:06 DEBUG NationalBankParser:23 - Запустился парсер NationalBankParser
+2020-02-13 00:28:06 DEBUG NationalBankParser:29 - Запускается обращение к URL
+2020-02-13 00:28:06 DEBUG NationalBankParser:34 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 00:28:06 DEBUG NationalBankParser:44 - Курс найден, добавление в список
+2020-02-13 00:28:06 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 00:28:06 INFO  MonoBankParser:58 - Курс найден, возвращение результата
+2020-02-13 00:28:07 DEBUG PrivatBankService:55 - Получили ответ юрл
+2020-02-13 00:28:09 DEBUG MainController:93 - Запускается цикл поиска лучшего курса
+2020-02-13 00:28:09 ERROR MainController:108 - ExecutionException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:99)
+	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$7012db5f.getExchangeRate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.lang.NullPointerException
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:58)
+	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+2020-02-13 00:28:09 INFO  MainController:110 - Лучшая валюта найдена
+2020-02-13 00:28:09 DEBUG MainController:112 - Создается docx
+2020-02-13 00:28:09 INFO  MainController:114 - Документ создан
+2020-02-13 00:28:09 DEBUG MainController:115 - Возвращается ответ

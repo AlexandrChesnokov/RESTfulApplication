@@ -12,7 +12,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.net.URL;
+import java.io.StringBufferInputStream;
 
 
 @Component
@@ -21,31 +21,32 @@ public class BankUkraineParser implements BankingParser {
     private static final Logger logger = Logger.getLogger(BankUkraineParser.class);
 
     @Override
-    public Currency getParse(String name, String date) {
+    public BankUkraineCurrency getParse(String name, String period, String response) throws IOException {
 
         logger.debug("Запустился парсер BankUkraineParser");
 
-        String date1 = date;
+        String date1 = period;
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuiler = null;
+
         try {
             dBuiler = dbFactory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
             logger.error("ParserConfigurationException");
         }
 
+
+
         Document doc = null;
         logger.debug("Запускается обращение к URL");
         try {
-            doc = dBuiler.parse(new URL("http://bank-ua.com/export/currrate.xml").openStream());
+            doc = dBuiler.parse(new StringBufferInputStream(response));
         } catch (SAXException e) {
             logger.error("SAXException");
-        } catch (IOException e) {
-            logger.error("IOException");
         }
         doc.getDocumentElement().normalize();
 
-        Currency bankUkrainePOJO = new Currency();
+        BankUkraineCurrency bankUkrainePOJO = new BankUkraineCurrency();
         NodeList nList = doc.getElementsByTagName("item");
         logger.debug("Начинается цикл поиска лучшего курса - " + name );
         for (int i = 0; i < nList.getLength(); i++) {
@@ -56,11 +57,10 @@ public class BankUkraineParser implements BankingParser {
                 if (element.getElementsByTagName("char3").item(0).getTextContent().equals(name)) {
 
                     bankUkrainePOJO.setDate(element.getElementsByTagName("date").item(0).getTextContent());
-                    bankUkrainePOJO.setExchangeName(element.getElementsByTagName("char3").item(0).getTextContent());
+                    bankUkrainePOJO.setChar3(element.getElementsByTagName("char3").item(0).getTextContent());
                     String rate = String.valueOf(Double.parseDouble(element.getElementsByTagName("rate").item(0).getTextContent()) / 100);
-                    bankUkrainePOJO.setSaleRate(rate);
-                    bankUkrainePOJO.setBank("bank-ua");
-                    bankUkrainePOJO.setSaleRate("999999.999");    // заглушка
+                    bankUkrainePOJO.setRate(rate);
+                    bankUkrainePOJO.setRate("999999.999");    // заглушка
                     logger.debug("Валюта нашлась, возвращение результата");
                     return bankUkrainePOJO;
                 }

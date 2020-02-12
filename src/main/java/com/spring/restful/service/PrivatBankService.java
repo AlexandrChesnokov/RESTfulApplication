@@ -1,10 +1,9 @@
 package com.spring.restful.service;
 
 
-import com.spring.restful.model.BankingParser;
-import com.spring.restful.model.CurrencyInterface;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.spring.restful.model.*;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -12,27 +11,59 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.concurrent.CompletableFuture;
 
 
 @Service
-public class PrivatBankService implements BankingService {
+public class PrivatBankService extends BankingService {
+
+    private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd." + "MM." + "yyyy");
 
     private static final Logger logger = Logger.getLogger(PrivatBankService.class);
 
-    @Autowired
-    @Qualifier("privatBankParser")
-    public BankingParser parser;
+    public final BankingParser parser;
+
+    public PrivatBankService(@Qualifier("privatBankParser")BankingParser parser) {
+        this.parser = parser;
+    }
 
     @Override
     @Async
-    public CompletableFuture<CurrencyInterface> getExchangeRate(String name, String date) throws IOException, ParserConfigurationException, SAXException, InterruptedException {
+    public CompletableFuture<Currency> getExchangeRate(String name, String date) throws IOException {
 
-        logger.debug("-------- Сервис PrivatBank запустился");
-       CurrencyInterface currencyInterface = parser.getParse(name, date);
+        ArrayList<MainCurrency> list = new ArrayList<>();
+        LocalDate now = LocalDate.now();
+        int count = getCount(date);
 
+        for (int i = 0; i < count; i++) {
+            Date date1 = java.sql.Date.valueOf(now.minusDays(i));
+            String strDate = simpleDateFormat.format(date1);
 
-        logger.info("-------- Сервис PrivatBank отработал и возвращает данные");
-        return CompletableFuture.completedFuture(currencyInterface);
+            if (count == 100) {
+                strDate = date;
+                count = 1;
+            }
+
+            String url = "https://api.privatbank.ua/p24api/exchange_rates?json&date="+strDate;
+            logger.debug("Идет запрос к юрл");
+            String response = ReaderFromUrl.readContentFromUrl(url);
+            logger.debug("Получили ответ юрл");
+            PrivatBankCurrency currency = (PrivatBankCurrency) parser.getParse(name, date, response);
+
+            MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(),
+                    currency.getCurrency(), currency.getSaleRate(), currency.getPurchaseRate());
+
+            list.add(mainCurrency);
+        }
+
+        return CompletableFuture.completedFuture(getBest(list));
     }
+
+
+
 }

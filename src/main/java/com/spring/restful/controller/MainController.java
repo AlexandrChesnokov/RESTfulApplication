@@ -1,30 +1,26 @@
 package com.spring.restful.controller;
 
 
-import com.spring.restful.model.CurrencyInterface;
+import com.spring.restful.model.Currency;
+import com.spring.restful.model.MainCurrency;
 import com.spring.restful.service.BankingService;
 import com.spring.restful.exception.NotFoundException;
-import com.spring.restful.model.Currency;
 
 import org.apache.log4j.Logger;
 import org.apache.poi.xwpf.usermodel.ParagraphAlignment;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.*;
-import org.xml.sax.SAXException;
-import javax.xml.parsers.ParserConfigurationException;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -36,109 +32,96 @@ import java.util.concurrent.ExecutionException;
 @RestController
 public class MainController {
 
-    @Autowired
-    private CacheManager cacheManager;
-
-    @Autowired
-    private List<BankingService> bankingServices;
+    private final List<BankingService> bankingServices;
 
     private static final Logger logger = Logger.getLogger(MainController.class);
 
-    @Scheduled(cron = "0 0 0 ? * 1-7")
-    public void evictAllcachesAtIntervals() {
-        evictAllCacheValues("currencies");
-    }
-
-    public void evictAllCacheValues(String cacheName) {
-        cacheManager.getCache(cacheName).clear();
+    public MainController(List<BankingService> bankingServices) {
+        this.bankingServices = bankingServices;
     }
 
 
     @RequestMapping(value = "/get-rate/{name}/{date}",  produces = { "application/json", "application/xml" }, method = RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
     @Cacheable("currencies")
-    public @ResponseBody ResponseEntity<CurrencyInterface> getExchangeRate(@PathVariable String name, @PathVariable String date ) {
+    public  ResponseEntity<Currency> getExchangeRate(@PathVariable String name, @PathVariable String date ) {
 
         logger.debug("Получили запрос с следующими параметрами - " + name + " - " + date);
         boolean isDate = false;
         Date docDate = null;
         String formatData = "";
-         if (!date.equals("current") & !date.equals("week") & !date.equals("month")) {
-             SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
+        if (!date.equals("current") & !date.equals("week") & !date.equals("month")) {
+            SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
-             try {
-                 docDate = format.parse(date);
-                 isDate = true;
-                  formatData = format.format(docDate);
-             } catch (ParseException e) {
-                 logger.error("Ошибка парсинга, вероятно введен неверный формат даты");
-                 throw new NotFoundException();
-             }
-             if (docDate.after(new Date())) {
-                 logger.error("Ошибка даты, введена дата в будущем времени");
-                 throw new NotFoundException();
-             }
-         }
+            try {
+                docDate = format.parse(date);
+                isDate = true;
+                formatData = format.format(docDate);
+            } catch (ParseException e) {
+                logger.error("Ошибка парсинга, вероятно введен неверный формат даты");
+                throw new NotFoundException();
+            }
+            if (docDate.after(new Date())) {
+                logger.error("Ошибка даты, введена дата в будущем времени");
+                throw new NotFoundException();
+            }
+        }
 
+        List<CompletableFuture<Currency>> pojos = new ArrayList<>();
 
-
-         List<CompletableFuture<CurrencyInterface>> pojos = new ArrayList<>();
-
-         try {
-             logger.debug("Начинается цикл запросов к сервисам");
-             for (BankingService service : bankingServices) {
-                 if (isDate) {
-                     pojos.add(service.getExchangeRate(name, formatData));
-                 } else {
-                     pojos.add(service.getExchangeRate(name, date));
-                 }
-             }
-         } catch (InterruptedException e) {
-             logger.error("InterruptedException");
-         } catch (MalformedURLException e) {
-             logger.error("MalformedURLException");
-         } catch (ParserConfigurationException e) {
-             logger.error("ParserConfigurationException");
-         } catch (SAXException e) {
-             logger.error("SAXException");
-         } catch (IOException e) {
-             logger.error("IOException");
-         }
+        try {
+            logger.debug("Начинается цикл запросов к сервисам");
+            for (BankingService service : bankingServices) {
+                if (isDate) {
+                    pojos.add(service.getExchangeRate(name, formatData));
+                } else {
+                    pojos.add(service.getExchangeRate(name, date));
+                }
+            }
+        } catch (IOException e) {
+            logger.error("InterruptedException" + e);
+        }
 
 
-        CurrencyInterface minRate = null;
+        Currency minRate = null;
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         logger.debug("Запускается цикл поиска лучшего курса");
-         try {
-             minRate = pojos.get(0).get();
+        try {
 
-             for (CompletableFuture<CurrencyInterface> pojo : pojos) {
+            minRate = pojos.get(0).get();
 
-                 if (Double.parseDouble(pojo.get().getSale()) < Double.parseDouble(minRate.getSale())) {
-                        minRate = pojo.get();
-                    }
-             }
-         } catch (ExecutionException e) {
-             logger.error("ExecutionException");
-         } catch (InterruptedException e) {
-             logger.error("InterruptedException");
-         }
+            for (CompletableFuture<Currency> pojo : pojos) {
+                System.out.println(pojo.get());
+            }
+            for (CompletableFuture<Currency> pojo : pojos) {
+
+                if (Double.parseDouble(pojo.get().getSale()) < Double.parseDouble(minRate.getSale())) {
+                    minRate = pojo.get();
+                }
+            }
+        } catch (ExecutionException | InterruptedException e) {
+            logger.error("ExecutionException", e);
+        }
         logger.info("Лучшая валюта найдена");
 
-
-
         logger.debug("Создается docx");
-         createDocx(minRate);
+
         logger.info("Документ создан");
         logger.debug("Возвращается ответ");
-         return new ResponseEntity<>(minRate, HttpStatus.OK);
+        return new ResponseEntity<>(minRate, HttpStatus.OK);
 
     }
 
-    public void createDocx(CurrencyInterface currencyInterface) {
+    public void createDocx(MainCurrency currencyInterface) {
 
 
         XWPFDocument document = new XWPFDocument();
-        Currency currency = (Currency) currencyInterface;
+        MainCurrency currency = (MainCurrency) currencyInterface;
         logger.debug("Запускается процесс создания и заполнения docx файла");
         try (FileOutputStream out = new FileOutputStream(new File(System.getProperty("user.dir").concat("/currency.docx")))) {
 

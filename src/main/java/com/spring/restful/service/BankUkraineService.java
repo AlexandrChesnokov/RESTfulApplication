@@ -2,10 +2,8 @@ package com.spring.restful.service;
 
 
 
-import com.spring.restful.model.BankingParser;
-import com.spring.restful.model.CurrencyInterface;
+import com.spring.restful.model.*;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -19,22 +17,41 @@ import java.net.MalformedURLException;
 import java.util.concurrent.CompletableFuture;
 
 @Service
-public class BankUkraineService implements BankingService {
+public class BankUkraineService extends BankingService {
 
     private static final Logger logger = Logger.getLogger(BankUkraineService.class);
 
-    @Autowired
-    @Qualifier("bankUkraineParser")
-    public BankingParser parser;
+    public final BankingParser parser;
+
+    public BankUkraineService(@Qualifier("bankUkraineParser")BankingParser parser) {
+        this.parser = parser;
+    }
+
+
 
     @Override
     @Async
-    public CompletableFuture<CurrencyInterface> getExchangeRate(String name, String date) throws MalformedURLException, SAXException, IOException, ParserConfigurationException {
+    public CompletableFuture<Currency> getExchangeRate(String name, String date) throws  IOException {
 
-        logger.debug("-------- Сервис BankUkraine запустился");
-        CurrencyInterface currencyInterface = parser.getParse(name, date);
-        logger.info("-------- Сервис BankUkraine отработал и возвращает данные");
-                    return CompletableFuture.completedFuture(currencyInterface);
-                }
-            }
+        logger.debug("BankUkraineService start");
+
+        String url = "http://bank-ua.com/export/currrate.xml";
+
+        logger.debug("Идет запрос к юрл");
+        String response = ReaderFromUrl.readContentFromUrl(url);
+        logger.debug("Получили ответ юрл");
+
+        logger.debug("Идет запрос к парсеру");
+        BankUkraineCurrency currency = (BankUkraineCurrency) parser.getParse(name, date, response);
+        logger.debug("Получили ответ парсера");
+
+        MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(), currency.getChar3(),
+                currency.getRate(), currency.getPurchaseRate());
+
+
+        return CompletableFuture.completedFuture(mainCurrency);
+
+    }
+
+}
 

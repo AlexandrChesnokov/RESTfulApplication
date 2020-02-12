@@ -2,10 +2,8 @@ package com.spring.restful.service;
 
 
 
-import com.spring.restful.model.BankingParser;
-import com.spring.restful.model.CurrencyInterface;
+import com.spring.restful.model.*;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -16,24 +14,32 @@ import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 
 @Service
-public class MonoBankService implements BankingService {
+public class MonoBankService extends BankingService {
 
     private static final Logger logger = Logger.getLogger(MonoBankService.class);
-    @Autowired
-    @Qualifier("monoBankParser")
-    public BankingParser parser;
+    public final BankingParser parser;
+
+    public MonoBankService(@Qualifier("monoBankParser")BankingParser parser) {
+        this.parser = parser;
+    }
 
     @Override
     @Async
-    public CompletableFuture<CurrencyInterface> getExchangeRate(String name, String date) throws ParserConfigurationException, SAXException, IOException {
-        CurrencyInterface bankingPOJO = null;
-        logger.debug("-------- Сервис MonoBank запустился");
-        bankingPOJO = parser.getParse(name, date);
+    public CompletableFuture<Currency> getExchangeRate(String name, String date) throws  IOException {
 
-        logger.info("-------- Сервис MonoBank отработал и возвращает данные");
-                return CompletableFuture.completedFuture(bankingPOJO);
-            }
-        }
+        String url = "https://api.monobank.ua/bank/currency";
+        logger.debug("Идет запрос к юрл");
+        String response = ReaderFromUrl.readContentFromUrl(url);
+
+        logger.debug("Получили ответ юрл");
+        MonoBankCurrency currency = (MonoBankCurrency) parser.getParse(name, date, response);
+
+        MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(),
+                currency.getCurrencyCodeA(), currency.getRateSell(), currency.getRateBuy());
+
+        return CompletableFuture.completedFuture(mainCurrency);
+    }
+}
 
 
 
