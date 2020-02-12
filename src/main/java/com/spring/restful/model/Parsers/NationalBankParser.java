@@ -1,5 +1,7 @@
-package com.spring.restful.model;
+package com.spring.restful.model.Parsers;
 
+import com.spring.restful.model.MainCurrency;
+import com.spring.restful.model.NBCurrency;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;

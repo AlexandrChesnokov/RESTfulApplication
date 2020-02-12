@@ -1,4 +1,6 @@
-package com.spring.restful.model;
+package com.spring.restful.model.Parsers;
+
+import com.spring.restful.model.Currency;
 
 import java.io.IOException;
 

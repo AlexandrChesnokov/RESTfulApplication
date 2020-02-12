@@ -1,9 +1,10 @@
-package com.spring.restful.model;
+package com.spring.restful.model.Parsers;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.spring.restful.model.MonoBankCurrency;
 import org.apache.log4j.Logger;
 
 import org.springframework.stereotype.Component;

@@ -1,6 +1,7 @@
-package com.spring.restful.model;
+package com.spring.restful.model.Parsers;
 
 
+import com.spring.restful.model.BankUkraineCurrency;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;

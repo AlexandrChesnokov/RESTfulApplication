@@ -2,6 +2,7 @@ package com.spring.restful.service;
 
 
 import com.spring.restful.model.*;
+import com.spring.restful.model.Parsers.BankingParser;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Async;

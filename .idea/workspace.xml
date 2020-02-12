@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944e468e-b68c-48fa-8c5f-20e0d9fdf053" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/MainCurrency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.spring.restful.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com.spring.restful.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/AsyncConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/AsyncConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/BankUkraineParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/BankUkraineParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/BankingParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/BankingParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/CurrencyInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/MonoBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/MonoBankParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/NationalBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/NationalBankParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/PrivatBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/PrivatBankParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/BankUkraineParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/BankUkraineParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/BankingParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/BankingParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/MonoBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/MonoBankParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/NationalBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/NationalBankParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/PrivatBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/PrivatBankParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankUkraineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankUkraineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/MonoBankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/MonoBankService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/NationalBankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/NationalBankService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/PrivatBankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/PrivatBankService.java" afterDir="false" />
@@ -82,12 +74,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581539866754</updated>
-      <workItem from="1581539868077" duration="2914000" />
+      <workItem from="1581539868077" duration="5041000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed logic of services and parsers">
+      <created>1581543152375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581543152376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed logic of services and parsers" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed logic of services and parsers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1280" y="54" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581540212821">
@@ -98,37 +102,45 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="627" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542280767" />
-    <state width="1869" height="273" key="GridCell.Tab.0.bottom" timestamp="1581542866662">
+    <state x="359" y="54" key="CommitChangelistDialog2" timestamp="1581546512208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542866662" />
-    <state width="1869" height="273" key="GridCell.Tab.0.center" timestamp="1581542866662">
+    <state x="359" y="54" key="CommitChangelistDialog2/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581546512208" />
+    <state width="1869" height="273" key="GridCell.Tab.0.bottom" timestamp="1581544268073">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.center/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542866662" />
-    <state width="1869" height="273" key="GridCell.Tab.0.left" timestamp="1581542866662">
+    <state width="1869" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581544268073" />
+    <state width="1869" height="273" key="GridCell.Tab.0.center" timestamp="1581544268072">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.left/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542866662" />
-    <state width="1869" height="273" key="GridCell.Tab.0.right" timestamp="1581542866662">
+    <state width="1869" height="273" key="GridCell.Tab.0.center/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581544268072" />
+    <state width="1869" height="273" key="GridCell.Tab.0.left" timestamp="1581544268072">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.right/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542866662" />
-    <state width="1869" height="273" key="GridCell.Tab.1.bottom" timestamp="1581542866662">
+    <state width="1869" height="273" key="GridCell.Tab.0.left/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581544268072" />
+    <state width="1869" height="273" key="GridCell.Tab.0.right" timestamp="1581544268073">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542866662" />
-    <state width="1869" height="273" key="GridCell.Tab.1.center" timestamp="1581542866662">
+    <state width="1869" height="273" key="GridCell.Tab.0.right/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581544268073" />
+    <state width="1869" height="273" key="GridCell.Tab.1.bottom" timestamp="1581544268073">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.1.center/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542866662" />
-    <state width="1869" height="273" key="GridCell.Tab.1.left" timestamp="1581542866662">
+    <state width="1869" height="273" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581544268073" />
+    <state width="1869" height="273" key="GridCell.Tab.1.center" timestamp="1581544268073">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.1.left/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542866662" />
-    <state width="1869" height="273" key="GridCell.Tab.1.right" timestamp="1581542866662">
+    <state width="1869" height="273" key="GridCell.Tab.1.center/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581544268073" />
+    <state width="1869" height="273" key="GridCell.Tab.1.left" timestamp="1581544268073">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.1.right/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542866662" />
+    <state width="1869" height="273" key="GridCell.Tab.1.left/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581544268073" />
+    <state width="1869" height="273" key="GridCell.Tab.1.right" timestamp="1581544268073">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1869" height="273" key="GridCell.Tab.1.right/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581544268073" />
+    <state x="452" y="193" key="Vcs.Push.Dialog.v2" timestamp="1581543171124">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="452" y="193" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581543171124" />
   </component>
 </project>
