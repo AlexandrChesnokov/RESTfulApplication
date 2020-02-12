@@ -35,24 +35,24 @@ public class NationalBankService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String date) throws IOException {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period) throws IOException {
 
         ArrayList<MainCurrency> list = new ArrayList<>();
         LocalDate now = LocalDate.now();
-        int count = getCount(date);
+        int count = getCount(period);
 
         for(int i = 0; i < count; i++) {
             Date date1 = java.sql.Date.valueOf(now.minusDays(i));
             String strDate = simpleDateFormat.format(date1);
 
             if (count == 100) {
-                String strDate1 = date;
+                String dateStr = period;
                 SimpleDateFormat newDateFormat = new SimpleDateFormat("yyyy" + "MM" +"dd");
                 SimpleDateFormat oldDateFormat = new SimpleDateFormat("dd.MM.yyyy");
-                Date date2 = null;
+                Date dateCheck = null;
                 try {
-                    date2 = oldDateFormat.parse(strDate1);
-                    strDate = newDateFormat.format(date2);
+                    dateCheck = oldDateFormat.parse(dateStr);
+                    strDate = newDateFormat.format(dateCheck);
                     count = 1;
                 } catch (ParseException e) {
 
@@ -63,7 +63,7 @@ public class NationalBankService extends BankingService {
             logger.debug("Идет запрос к юрл");
             String response = ReaderFromUrl.readContentFromUrl(url);
             logger.debug("Получили ответ юрл");
-            NBCurrency currency = (NBCurrency) parser.getParse(name, date, response);
+            NBCurrency currency = (NBCurrency) parser.getParse(name, period, response);
 
             MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getExchangedate(),
                     currency.getCc(), currency.getRate(), currency.getPurchaseRate());

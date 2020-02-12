@@ -20,17 +20,14 @@ public class NationalBankParser implements BankingParser {
 
 
     @Override
-    public NBCurrency getParse(String name, String date, String response) {
+    public NBCurrency getParse(String name, String period, String response) {
 
         logger.debug("Запустился парсер NationalBankParser");
         NBCurrency nationalBankPOJO = new NBCurrency();
 
-        List<MainCurrency> list = new ArrayList<>();
-        LocalDate localDateTime = LocalDate.now();
+
 
         logger.debug("Запускается обращение к URL");
-
-
 
         JSONArray array = new JSONArray(response);
         logger.debug("Запускается цикл поиска лучшего курса - " + name);

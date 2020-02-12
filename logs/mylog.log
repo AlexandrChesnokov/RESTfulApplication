@@ -1,816 +1,33 @@
-﻿2020-01-23 20:14:28 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-23 20:14:28 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-23 20:14:33 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 22.01.2020
-2020-01-23 20:14:33 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-01-23 20:14:33 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-01-23 20:14:33 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-01-23 20:14:33 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-01-23 20:14:33 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-01-23 20:14:33 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-01-23 20:14:33 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-01-23 20:14:33 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-01-23 20:14:33 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-01-23 20:14:33 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-01-23 20:14:33 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-01-23 20:14:33 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-01-23 20:14:33 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-01-23 20:14:33 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-01-23 20:14:33 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-01-23 20:14:33 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-01-23 20:14:33 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-01-23 20:14:33 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-01-23 20:14:33 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-01-23 20:14:33 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-01-23 20:14:33 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-01-23 20:14:33 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-01-23 20:14:34 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-01-23 20:14:34 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-01-23 20:14:34 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-01-23 20:14:34 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-01-23 20:14:34 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-01-23 20:14:34 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-01-23 20:14:34 INFO  MainController:111 - Лучшая валюта найдена
-2020-01-23 20:14:34 DEBUG MainController:115 - Создается docx
-2020-01-23 20:14:34 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-01-23 20:14:34 INFO  MainController:117 - Документ создан
-2020-01-23 20:14:34 DEBUG MainController:118 - Возвращается ответ
-2020-01-31 12:55:06 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 12:55:07 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:00:22 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:00:22 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:02:16 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:02:17 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:02:40 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 22.01.2020
-2020-01-31 13:02:40 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-01-31 13:02:40 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-01-31 13:02:40 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-01-31 13:02:40 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-01-31 13:02:40 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-01-31 13:02:40 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-01-31 13:02:40 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-01-31 13:02:40 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-01-31 13:02:40 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-01-31 13:02:40 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-01-31 13:02:40 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-01-31 13:02:40 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-01-31 13:02:40 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-01-31 13:02:40 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-01-31 13:02:40 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-01-31 13:02:40 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-01-31 13:02:40 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-01-31 13:02:40 ERROR NationalBankParser:104 - IOException
-2020-01-31 13:02:40 ERROR MainController:107 - ExecutionException
-2020-01-31 13:02:40 INFO  MainController:111 - Лучшая валюта найдена
-2020-01-31 13:02:40 DEBUG MainController:115 - Создается docx
-2020-01-31 13:02:40 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-01-31 13:02:41 INFO  MainController:117 - Документ создан
-2020-01-31 13:02:41 DEBUG MainController:118 - Возвращается ответ
-2020-01-31 13:02:41 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-01-31 13:02:41 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-01-31 13:02:41 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-01-31 13:02:41 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-01-31 13:02:41 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-01-31 13:02:41 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-01-31 13:07:13 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:07:14 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:07:22 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-01-31 13:12:17 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-01-31 13:14:01 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-01-31 13:23:26 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-01-31 13:24:55 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-01-31 13:25:12 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-01-31 13:28:44 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-01-31 13:33:45 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-01-31 13:34:30 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:34:30 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-01-31 13:34:35 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 22.01.2020
-2020-01-31 13:34:35 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-01-31 13:34:35 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-01-31 13:34:35 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-01-31 13:34:35 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-01-31 13:34:35 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-01-31 13:34:35 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-01-31 13:34:35 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-01-31 13:34:35 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-01-31 13:34:35 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-01-31 13:34:35 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-01-31 13:34:35 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-01-31 13:34:35 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-01-31 13:34:35 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-01-31 13:34:35 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-01-31 13:34:35 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-01-31 13:34:35 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-01-31 13:34:35 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-01-31 13:34:35 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-01-31 13:34:35 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-01-31 13:34:35 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-01-31 13:34:35 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-01-31 13:34:35 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-01-31 13:34:35 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-01-31 13:34:35 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-01-31 13:34:35 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-01-31 13:34:35 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-01-31 13:34:35 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-01-31 13:34:35 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-01-31 13:34:35 INFO  MainController:111 - Лучшая валюта найдена
-2020-01-31 13:34:35 DEBUG MainController:115 - Создается docx
-2020-01-31 13:34:35 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-01-31 13:34:35 INFO  MainController:117 - Документ создан
-2020-01-31 13:34:35 DEBUG MainController:118 - Возвращается ответ
-2020-01-31 13:34:41 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 21.01.2020
-2020-01-31 13:34:41 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-01-31 13:34:41 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-01-31 13:34:41 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-01-31 13:34:41 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-01-31 13:34:41 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-01-31 13:34:41 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-01-31 13:34:41 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-01-31 13:34:41 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-01-31 13:34:41 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-01-31 13:34:41 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-01-31 13:34:41 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-01-31 13:34:41 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-01-31 13:34:41 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-01-31 13:34:41 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-01-31 13:34:41 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-01-31 13:34:41 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-01-31 13:34:41 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-01-31 13:34:41 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-01-31 13:34:41 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-01-31 13:34:41 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-01-31 13:34:41 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-01-31 13:34:41 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-01-31 13:34:45 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-01-31 13:34:45 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-01-31 13:34:45 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-01-31 13:34:45 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-01-31 13:34:45 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-01-31 13:34:45 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-01-31 13:34:45 INFO  MainController:111 - Лучшая валюта найдена
-2020-01-31 13:34:45 DEBUG MainController:115 - Создается docx
-2020-01-31 13:34:45 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-01-31 13:34:45 INFO  MainController:117 - Документ создан
-2020-01-31 13:34:45 DEBUG MainController:118 - Возвращается ответ
-2020-01-31 13:38:15 DEBUG SpringBootAsyncApplication:20 - ������ ����������
-2020-02-05 13:13:19 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-05 13:13:19 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-05 13:13:42 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 21.01.2020
-2020-02-05 13:13:42 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-02-05 13:13:42 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-02-05 13:13:42 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-05 13:13:42 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-02-05 13:13:42 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-02-05 13:13:42 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-02-05 13:13:42 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-02-05 13:13:42 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-02-05 13:13:42 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-02-05 13:13:42 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-02-05 13:13:42 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-02-05 13:13:42 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:13:42 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:13:42 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-02-05 13:13:42 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-02-05 13:13:42 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-05 13:13:42 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-02-05 13:13:42 ERROR NationalBankParser:104 - IOException
-2020-02-05 13:13:42 ERROR MainController:107 - ExecutionException
-2020-02-05 13:13:42 INFO  MainController:111 - Лучшая валюта найдена
-2020-02-05 13:13:42 DEBUG MainController:115 - Создается docx
-2020-02-05 13:13:42 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-02-05 13:13:42 INFO  MainController:117 - Документ создан
-2020-02-05 13:13:42 DEBUG MainController:118 - Возвращается ответ
-2020-02-05 13:13:42 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:13:42 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:13:42 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:13:42 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:13:42 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-02-05 13:13:42 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-02-05 13:15:04 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - current
-2020-02-05 13:15:04 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-02-05 13:15:04 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-02-05 13:15:04 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-02-05 13:15:04 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-02-05 13:15:04 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-02-05 13:15:04 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-05 13:15:04 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-02-05 13:15:04 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-02-05 13:15:04 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-02-05 13:15:04 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-02-05 13:15:04 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-02-05 13:15:04 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:04 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:15:04 DEBUG MonoBankParser:25 - Запускается обращение к URL
-2020-02-05 13:15:04 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:04 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-05 13:15:04 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-02-05 13:15:05 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:05 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:05 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:15:05 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-02-05 13:15:05 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-02-05 13:15:05 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:05 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:15:05 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:15:05 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:15:05 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-02-05 13:15:05 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-02-05 13:15:05 DEBUG MonoBankParser:30 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:05 INFO  MonoBankParser:53 - Курс найден, возвращение результата
-2020-02-05 13:15:05 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-02-05 13:15:05 INFO  MainController:111 - Лучшая валюта найдена
-2020-02-05 13:15:05 DEBUG MainController:115 - Создается docx
-2020-02-05 13:15:05 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-02-05 13:15:05 INFO  MainController:117 - Документ создан
-2020-02-05 13:15:05 DEBUG MainController:118 - Возвращается ответ
-2020-02-05 13:15:39 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 04.02.2020
-2020-02-05 13:15:39 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-02-05 13:15:39 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-02-05 13:15:39 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-02-05 13:15:39 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-05 13:15:39 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-02-05 13:15:39 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-02-05 13:15:39 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-02-05 13:15:39 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-02-05 13:15:39 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-02-05 13:15:39 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-02-05 13:15:39 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-02-05 13:15:39 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-02-05 13:15:39 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:15:39 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:39 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:39 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-05 13:15:39 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-02-05 13:15:39 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:39 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:39 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:15:39 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-02-05 13:15:39 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-02-05 13:15:39 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:39 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:15:39 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:15:39 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:15:39 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-02-05 13:15:39 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-02-05 13:15:39 INFO  MainController:111 - Лучшая валюта найдена
-2020-02-05 13:15:39 DEBUG MainController:115 - Создается docx
-2020-02-05 13:15:39 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-02-05 13:15:39 INFO  MainController:117 - Документ создан
-2020-02-05 13:15:39 DEBUG MainController:118 - Возвращается ответ
-2020-02-05 13:15:47 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - week
-2020-02-05 13:15:47 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-02-05 13:15:47 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-02-05 13:15:47 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-02-05 13:15:47 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-02-05 13:15:47 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-02-05 13:15:47 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-02-05 13:15:47 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-05 13:15:47 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-02-05 13:15:47 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-02-05 13:15:47 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-02-05 13:15:47 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-02-05 13:15:47 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:47 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-05 13:15:47 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-02-05 13:15:47 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:47 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:47 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:47 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:47 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:47 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:47 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:47 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:47 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:47 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:47 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:47 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:47 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:15:47 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:47 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:15:47 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:15:47 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-02-05 13:15:47 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-02-05 13:15:49 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:49 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:15:49 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:15:49 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:15:59 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:15:59 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:15:59 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:15:59 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:16:09 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:16:09 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:16:09 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:16:09 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:16:19 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:16:19 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:16:19 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:16:19 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:16:29 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:16:29 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:16:29 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:16:29 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:16:39 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:16:39 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:16:39 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:16:39 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:16:49 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:16:49 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:16:49 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:16:49 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:16:49 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-02-05 13:16:49 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-02-05 13:16:49 INFO  MainController:111 - Лучшая валюта найдена
-2020-02-05 13:16:49 DEBUG MainController:115 - Создается docx
-2020-02-05 13:16:49 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-02-05 13:16:49 INFO  MainController:117 - Документ создан
-2020-02-05 13:16:49 DEBUG MainController:118 - Возвращается ответ
-2020-02-05 13:17:04 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 22.01.2020
-2020-02-05 13:17:04 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-02-05 13:17:04 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-02-05 13:17:04 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-05 13:17:04 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-02-05 13:17:04 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-02-05 13:17:04 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-02-05 13:17:04 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-02-05 13:17:04 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-02-05 13:17:04 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-02-05 13:17:04 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-02-05 13:17:04 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-02-05 13:17:04 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-02-05 13:17:04 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:17:04 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:04 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:04 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-05 13:17:04 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-02-05 13:17:04 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:04 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:04 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:17:04 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-02-05 13:17:04 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-02-05 13:17:05 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:05 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:17:05 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:17:05 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:17:05 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-02-05 13:17:05 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-02-05 13:17:05 INFO  MainController:111 - Лучшая валюта найдена
-2020-02-05 13:17:05 DEBUG MainController:115 - Создается docx
-2020-02-05 13:17:05 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-02-05 13:17:05 INFO  MainController:117 - Документ создан
-2020-02-05 13:17:05 DEBUG MainController:118 - Возвращается ответ
-2020-02-05 13:17:16 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - 20.01.2020
-2020-02-05 13:17:16 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-02-05 13:17:16 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-02-05 13:17:16 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-05 13:17:16 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-02-05 13:17:16 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-02-05 13:17:16 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-02-05 13:17:16 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-02-05 13:17:16 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-02-05 13:17:16 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-02-05 13:17:16 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-02-05 13:17:16 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-02-05 13:17:16 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-02-05 13:17:16 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:17:16 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:16 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:16 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-05 13:17:16 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-02-05 13:17:16 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:16 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:16 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:17:16 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-02-05 13:17:16 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-02-05 13:17:16 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:16 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:17:16 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:17:16 DEBUG PrivatBankParser:94 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:17:16 INFO  PrivatBankParser:101 - Курс найден, возвращение результата
-2020-02-05 13:17:16 INFO  PrivatBankService:35 - -------- Сервис PrivatBank отработал и возвращает данные
-2020-02-05 13:17:16 INFO  MainController:111 - Лучшая валюта найдена
-2020-02-05 13:17:16 DEBUG MainController:115 - Создается docx
-2020-02-05 13:17:16 DEBUG MainController:128 - Запускается процесс создания и заполнения docx файла
-2020-02-05 13:17:16 INFO  MainController:117 - Документ создан
-2020-02-05 13:17:16 DEBUG MainController:118 - Возвращается ответ
-2020-02-05 13:17:27 DEBUG MainController:48 - Получили запрос с следующими параметрами - RUB - month
-2020-02-05 13:17:27 DEBUG MainController:74 - Начинается цикл запросов к сервисам
-2020-02-05 13:17:27 DEBUG MainController:96 - Запускается цикл поиска лучшего курса
-2020-02-05 13:17:27 DEBUG BankUkraineService:34 - -------- Сервис BankUkraine запустился
-2020-02-05 13:17:27 DEBUG PrivatBankService:31 - -------- Сервис PrivatBank запустился
-2020-02-05 13:17:27 DEBUG PrivatBankParser:26 - Запустился парсер NationalBankParser
-2020-02-05 13:17:27 DEBUG NationalBankService:31 - -------- Сервис NationalBank запустился
-2020-02-05 13:17:27 DEBUG NationalBankParser:29 - Запустился парсер NationalBankParser
-2020-02-05 13:17:27 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG MonoBankService:30 - -------- Сервис MonoBank запустился
-2020-02-05 13:17:27 DEBUG MonoBankParser:21 - Запустился парсер MonoBankParser
-2020-02-05 13:17:27 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-05 13:17:27 INFO  MonoBankService:33 - -------- Сервис MonoBank отработал и возвращает данные
-2020-02-05 13:17:27 DEBUG BankUkraineParser:38 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG BankUkraineParser:50 - Начинается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-05 13:17:27 INFO  BankUkraineService:36 - -------- Сервис BankUkraine отработал и возвращает данные
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:17:27 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:27 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:27 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:27 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:72 - Запускается обращение к URL
-2020-02-05 13:17:28 DEBUG NationalBankParser:87 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:28 DEBUG NationalBankParser:98 - Курс найден, добавление в список
-2020-02-05 13:17:28 DEBUG NationalBankParser:109 - Запускается цикл поиска лучшего курса из списка
-2020-02-05 13:17:28 INFO  NationalBankParser:117 - Курс найден, возвращение результата
-2020-02-05 13:17:28 INFO  NationalBankService:34 - -------- Сервис NationalBank отработал и возвращает данные
-2020-02-05 13:17:37 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:37 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:17:37 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:17:37 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:17:47 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:47 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:17:47 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:17:47 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:17:57 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:17:57 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:17:57 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:17:57 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:18:07 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:18:07 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:18:07 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:18:07 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:18:17 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:18:17 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:18:17 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:18:17 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:18:27 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:18:27 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:18:27 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:18:27 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:18:37 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:18:37 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:18:37 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:18:37 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:18:47 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:18:47 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:18:47 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:18:47 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:18:57 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:18:57 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:18:57 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:18:57 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:19:07 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:19:07 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:19:07 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:19:07 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:19:17 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:19:17 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:19:17 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:19:17 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:19:27 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:19:27 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:19:27 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:19:27 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:19:37 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:19:37 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:19:37 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:19:37 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:19:47 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:19:47 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:19:47 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:19:47 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:19:57 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:19:57 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:19:57 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:19:57 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:20:07 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:20:07 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:20:07 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:20:07 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:20:17 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:20:17 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:20:17 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:20:17 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:20:27 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:20:27 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:20:27 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:20:27 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:20:37 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:20:37 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:20:37 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:20:37 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:20:47 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:20:47 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:20:47 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:20:47 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:20:57 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:20:57 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:20:57 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:20:57 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:21:07 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:21:07 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:21:07 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:21:07 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:21:17 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:21:17 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:21:17 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:21:17 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:21:27 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:21:27 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:21:27 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:21:27 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:21:37 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:21:37 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:21:37 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:21:37 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:21:47 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:21:47 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:21:47 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:21:47 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-05 13:21:57 DEBUG PrivatBankParser:76 - Запускается цикл поиска лучшего курса - RUB
-2020-02-05 13:21:57 ERROR PrivatBankParser:88 - NullPointerException -> пропуск безымянной валюты
-2020-02-05 13:21:57 DEBUG PrivatBankParser:84 - Курс найден, добавление в список
-2020-02-05 13:21:57 DEBUG PrivatBankParser:60 - Запускается обращение к URL
-2020-02-13 00:21:45 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 00:21:45 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 00:21:52 DEBUG MainController:48 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 00:21:52 DEBUG MainController:72 - Начинается цикл запросов к сервисам
-2020-02-13 00:21:52 DEBUG BankUkraineService:36 - BankUkraineService start
-2020-02-13 00:21:52 DEBUG BankUkraineService:40 - Идет запрос к юрл
-2020-02-13 00:21:52 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 00:21:52 DEBUG PrivatBankService:53 - Идет запрос к юрл
-2020-02-13 00:21:52 DEBUG NationalBankService:61 - Идет запрос к юрл
-2020-02-13 00:21:52 DEBUG BankUkraineService:42 - Получили ответ юрл
-2020-02-13 00:21:52 DEBUG BankUkraineService:44 - Идет запрос к парсеру
-2020-02-13 00:21:52 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-13 00:21:52 DEBUG BankUkraineParser:41 - Запускается обращение к URL
-2020-02-13 00:21:52 DEBUG BankUkraineParser:51 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 00:21:52 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-13 00:21:52 DEBUG BankUkraineService:46 - Получили ответ парсера
-2020-02-13 00:21:52 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 00:21:52 INFO  MonoBankParser:58 - Курс найден, возвращение результата
-2020-02-13 00:21:52 DEBUG PrivatBankService:55 - Получили ответ юрл
-2020-02-13 00:21:55 DEBUG MainController:93 - Запускается цикл поиска лучшего курса
-2020-02-13 00:21:55 ERROR MainController:108 - ExecutionException
-java.util.concurrent.ExecutionException: javax.net.ssl.SSLException: Couldn't kickstart handshaking
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:99)
-	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
-	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
-	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$ba951df7.getExchangeRate(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: javax.net.ssl.SSLException: Couldn't kickstart handshaking
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:324)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:267)
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:440)
-	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:567)
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:171)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
-	at java.base/java.net.URL.openStream(URL.java:1163)
-	at com.spring.restful.model.jobs.ReaderFromUrl.readContentFromUrl(ReaderFromUrl.java:12)
-	at com.spring.restful.service.NationalBankService.getExchangeRate(NationalBankService.java:62)
-	at com.spring.restful.service.NationalBankService$$FastClassBySpringCGLIB$$78717ed5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
-	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-	Suppressed: java.net.SocketException: Connection reset by peer
-		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
-		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
-		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
-		at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1007)
-		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:82)
-		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:355)
-		... 21 more
-Caused by: java.net.SocketException: Connection reset by peer
-	at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:421)
-	at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:441)
-	at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:825)
-	at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1007)
-	at java.base/sun.security.ssl.SSLSocketOutputRecord.flush(SSLSocketOutputRecord.java:268)
-	at java.base/sun.security.ssl.HandshakeOutStream.flush(HandshakeOutStream.java:89)
-	at java.base/sun.security.ssl.ClientHello$ClientHelloKickstartProducer.produce(ClientHello.java:657)
-	at java.base/sun.security.ssl.SSLHandshake.kickstart(SSLHandshake.java:519)
-	at java.base/sun.security.ssl.ClientHandshakeContext.kickstart(ClientHandshakeContext.java:107)
-	at java.base/sun.security.ssl.TransportContext.kickstart(TransportContext.java:231)
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:430)
-	... 19 more
-2020-02-13 00:21:55 INFO  MainController:110 - Лучшая валюта найдена
-2020-02-13 00:21:55 DEBUG MainController:112 - Создается docx
-2020-02-13 00:21:55 INFO  MainController:114 - Документ создан
-2020-02-13 00:21:55 DEBUG MainController:115 - Возвращается ответ
-2020-02-13 00:27:46 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 00:27:47 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 00:27:51 DEBUG MainController:48 - Получили запрос с следующими параметрами - USD - 10.02.2020
-2020-02-13 00:27:51 DEBUG MainController:72 - Начинается цикл запросов к сервисам
-2020-02-13 00:27:51 DEBUG BankUkraineService:36 - BankUkraineService start
-2020-02-13 00:27:51 DEBUG BankUkraineService:40 - Идет запрос к юрл
-2020-02-13 00:27:51 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 00:27:51 DEBUG PrivatBankService:53 - Идет запрос к юрл
-2020-02-13 00:27:51 DEBUG NationalBankService:61 - Идет запрос к юрл
-2020-02-13 00:27:51 DEBUG BankUkraineService:42 - Получили ответ юрл
-2020-02-13 00:27:51 DEBUG BankUkraineService:44 - Идет запрос к парсеру
-2020-02-13 00:27:51 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-13 00:27:51 DEBUG BankUkraineParser:41 - Запускается обращение к URL
-2020-02-13 00:27:51 DEBUG BankUkraineParser:51 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 00:27:51 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-13 00:27:51 DEBUG BankUkraineService:46 - Получили ответ парсера
-2020-02-13 00:27:51 DEBUG NationalBankService:63 - Получили ответ юрл
-2020-02-13 00:27:51 DEBUG NationalBankParser:23 - Запустился парсер NationalBankParser
-2020-02-13 00:27:51 DEBUG NationalBankParser:29 - Запускается обращение к URL
-2020-02-13 00:27:51 DEBUG NationalBankParser:34 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 00:27:51 DEBUG NationalBankParser:44 - Курс найден, добавление в список
-2020-02-13 00:27:51 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 00:27:51 DEBUG PrivatBankService:55 - Получили ответ юрл
-2020-02-13 00:27:54 DEBUG MainController:93 - Запускается цикл поиска лучшего курса
-2020-02-13 00:27:54 INFO  MainController:110 - Лучшая валюта найдена
-2020-02-13 00:27:54 DEBUG MainController:112 - Создается docx
-2020-02-13 00:27:54 INFO  MainController:114 - Документ создан
-2020-02-13 00:27:54 DEBUG MainController:115 - Возвращается ответ
-2020-02-13 00:28:06 DEBUG MainController:48 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 00:28:06 DEBUG MainController:72 - Начинается цикл запросов к сервисам
-2020-02-13 00:28:06 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 00:28:06 DEBUG PrivatBankService:53 - Идет запрос к юрл
-2020-02-13 00:28:06 DEBUG NationalBankService:61 - Идет запрос к юрл
-2020-02-13 00:28:06 DEBUG BankUkraineService:36 - BankUkraineService start
-2020-02-13 00:28:06 DEBUG BankUkraineService:40 - Идет запрос к юрл
-2020-02-13 00:28:06 DEBUG BankUkraineService:42 - Получили ответ юрл
-2020-02-13 00:28:06 DEBUG BankUkraineService:44 - Идет запрос к парсеру
-2020-02-13 00:28:06 DEBUG BankUkraineParser:26 - Запустился парсер BankUkraineParser
-2020-02-13 00:28:06 DEBUG BankUkraineParser:41 - Запускается обращение к URL
-2020-02-13 00:28:06 DEBUG BankUkraineParser:51 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 00:28:06 DEBUG BankUkraineParser:64 - Валюта нашлась, возвращение результата
-2020-02-13 00:28:06 DEBUG BankUkraineService:46 - Получили ответ парсера
-2020-02-13 00:28:06 DEBUG NationalBankService:63 - Получили ответ юрл
-2020-02-13 00:28:06 DEBUG NationalBankParser:23 - Запустился парсер NationalBankParser
-2020-02-13 00:28:06 DEBUG NationalBankParser:29 - Запускается обращение к URL
-2020-02-13 00:28:06 DEBUG NationalBankParser:34 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 00:28:06 DEBUG NationalBankParser:44 - Курс найден, добавление в список
-2020-02-13 00:28:06 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 00:28:06 INFO  MonoBankParser:58 - Курс найден, возвращение результата
-2020-02-13 00:28:07 DEBUG PrivatBankService:55 - Получили ответ юрл
-2020-02-13 00:28:09 DEBUG MainController:93 - Запускается цикл поиска лучшего курса
-2020-02-13 00:28:09 ERROR MainController:108 - ExecutionException
+﻿2020-02-13 02:39:33 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 02:39:34 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 02:39:42 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 02:39:42 DEBUG MainController:59 - Начинается цикл запросов к сервисам
+2020-02-13 02:39:42 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
+2020-02-13 02:39:42 DEBUG BankUkraineService:35 - BankUkraineService start
+2020-02-13 02:39:42 DEBUG BankUkraineService:39 - Идет запрос к юрл
+2020-02-13 02:39:42 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 02:39:42 DEBUG PrivatBankService:51 - Идет запрос к юрл
+2020-02-13 02:39:42 DEBUG NationalBankService:63 - Идет запрос к юрл
+2020-02-13 02:39:42 DEBUG BankUkraineService:41 - Получили ответ юрл
+2020-02-13 02:39:42 DEBUG BankUkraineService:43 - Идет запрос к парсеру
+2020-02-13 02:39:42 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
+2020-02-13 02:39:42 DEBUG BankUkraineParser:42 - Запускается обращение к URL
+2020-02-13 02:39:42 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 02:39:42 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
+2020-02-13 02:39:42 DEBUG BankUkraineService:45 - Получили ответ парсера
+2020-02-13 02:39:42 DEBUG NationalBankService:65 - Получили ответ юрл
+2020-02-13 02:39:42 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
+2020-02-13 02:39:42 DEBUG NationalBankParser:31 - Запускается обращение к URL
+2020-02-13 02:39:42 DEBUG NationalBankParser:36 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 02:39:42 DEBUG NationalBankParser:46 - Курс найден, добавление в список
+2020-02-13 02:39:42 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 02:39:42 INFO  MonoBankParser:59 - Курс найден, возвращение результата
+2020-02-13 02:39:42 DEBUG PrivatBankService:53 - Получили ответ юрл
+2020-02-13 02:39:42 ERROR MainController:91 - ExecutionException
 java.util.concurrent.ExecutionException: java.lang.NullPointerException
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:99)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
 	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
@@ -824,7 +41,7 @@ java.util.concurrent.ExecutionException: java.lang.NullPointerException
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$7012db5f.getExchangeRate(<generated>)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$9afe558b.getExchangeRate(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -868,7 +85,7 @@ java.util.concurrent.ExecutionException: java.lang.NullPointerException
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:58)
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
 	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
@@ -880,7 +97,595 @@ Caused by: java.lang.NullPointerException
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	... 1 more
-2020-02-13 00:28:09 INFO  MainController:110 - Лучшая валюта найдена
-2020-02-13 00:28:09 DEBUG MainController:112 - Создается docx
-2020-02-13 00:28:09 INFO  MainController:114 - Документ создан
-2020-02-13 00:28:09 DEBUG MainController:115 - Возвращается ответ
+2020-02-13 02:39:42 INFO  MainController:93 - Лучшая валюта найдена
+2020-02-13 02:39:42 DEBUG MainController:95 - Создается docx
+2020-02-13 02:39:42 INFO  MainController:97 - Документ создан
+2020-02-13 02:39:42 DEBUG MainController:98 - Возвращается ответ
+2020-02-13 02:47:21 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 02:47:21 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 02:47:25 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 02:47:25 DEBUG MainController:59 - Начинается цикл запросов к сервисам
+2020-02-13 02:47:25 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
+2020-02-13 02:47:25 DEBUG BankUkraineService:35 - BankUkraineService start
+2020-02-13 02:47:25 DEBUG BankUkraineService:39 - Идет запрос к юрл
+2020-02-13 02:47:25 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 02:47:25 DEBUG PrivatBankService:51 - Идет запрос к юрл
+2020-02-13 02:47:25 DEBUG NationalBankService:63 - Идет запрос к юрл
+2020-02-13 02:47:25 DEBUG BankUkraineService:41 - Получили ответ юрл
+2020-02-13 02:47:25 DEBUG BankUkraineService:43 - Идет запрос к парсеру
+2020-02-13 02:47:25 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
+2020-02-13 02:47:25 DEBUG BankUkraineParser:42 - Запускается обращение к URL
+2020-02-13 02:47:25 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 02:47:25 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
+2020-02-13 02:47:25 DEBUG BankUkraineService:45 - Получили ответ парсера
+2020-02-13 02:47:25 DEBUG NationalBankService:65 - Получили ответ юрл
+2020-02-13 02:47:25 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
+2020-02-13 02:47:25 DEBUG NationalBankParser:30 - Запускается обращение к URL
+2020-02-13 02:47:25 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 02:47:25 DEBUG NationalBankParser:43 - Курс найден, добавление в список
+2020-02-13 02:47:26 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 02:47:26 INFO  MonoBankParser:54 - Курс найден, возвращение результата
+2020-02-13 02:47:26 DEBUG PrivatBankService:53 - Получили ответ юрл
+2020-02-13 02:47:26 ERROR MainController:90 - ExecutionException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
+	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$48f7da2d.getExchangeRate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.lang.NullPointerException
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
+	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+2020-02-13 02:47:26 INFO  MainController:92 - Лучшая валюта найдена
+2020-02-13 02:47:26 DEBUG MainController:94 - Создается docx
+2020-02-13 02:47:26 INFO  MainController:96 - Документ создан
+2020-02-13 02:47:26 DEBUG MainController:97 - Возвращается ответ
+2020-02-13 02:48:08 DEBUG SpringBootAsyncApplication:19 - Запуск приложения
+2020-02-13 02:48:08 DEBUG SpringBootAsyncApplication:19 - Запуск приложения
+2020-02-13 02:48:12 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 02:48:12 DEBUG MainController:59 - Начинается цикл запросов к сервисам
+2020-02-13 02:48:12 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
+2020-02-13 02:48:12 DEBUG BankUkraineService:35 - BankUkraineService start
+2020-02-13 02:48:12 DEBUG BankUkraineService:39 - Идет запрос к юрл
+2020-02-13 02:48:12 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 02:48:12 DEBUG PrivatBankService:51 - Идет запрос к юрл
+2020-02-13 02:48:12 DEBUG NationalBankService:63 - Идет запрос к юрл
+2020-02-13 02:48:12 DEBUG BankUkraineService:41 - Получили ответ юрл
+2020-02-13 02:48:12 DEBUG BankUkraineService:43 - Идет запрос к парсеру
+2020-02-13 02:48:12 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
+2020-02-13 02:48:12 DEBUG BankUkraineParser:42 - Запускается обращение к URL
+2020-02-13 02:48:12 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 02:48:12 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
+2020-02-13 02:48:12 DEBUG BankUkraineService:45 - Получили ответ парсера
+2020-02-13 02:48:12 DEBUG NationalBankService:65 - Получили ответ юрл
+2020-02-13 02:48:12 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
+2020-02-13 02:48:12 DEBUG NationalBankParser:30 - Запускается обращение к URL
+2020-02-13 02:48:12 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 02:48:12 DEBUG NationalBankParser:43 - Курс найден, добавление в список
+2020-02-13 02:48:12 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 02:48:12 DEBUG PrivatBankService:53 - Получили ответ юрл
+2020-02-13 02:48:12 INFO  MonoBankParser:54 - Курс найден, возвращение результата
+2020-02-13 02:48:12 ERROR MainController:90 - ExecutionException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.lang.NullPointerException
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
+	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+2020-02-13 02:48:12 INFO  MainController:92 - Лучшая валюта найдена
+2020-02-13 02:48:12 DEBUG MainController:94 - Создается docx
+2020-02-13 02:48:13 INFO  MainController:96 - Документ создан
+2020-02-13 02:48:13 DEBUG MainController:97 - Возвращается ответ
+2020-02-13 02:48:14 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 02:48:14 DEBUG MainController:59 - Начинается цикл запросов к сервисам
+2020-02-13 02:48:14 DEBUG BankUkraineService:35 - BankUkraineService start
+2020-02-13 02:48:14 DEBUG NationalBankService:63 - Идет запрос к юрл
+2020-02-13 02:48:14 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
+2020-02-13 02:48:14 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 02:48:14 DEBUG PrivatBankService:51 - Идет запрос к юрл
+2020-02-13 02:48:14 DEBUG BankUkraineService:39 - Идет запрос к юрл
+2020-02-13 02:48:14 DEBUG BankUkraineService:41 - Получили ответ юрл
+2020-02-13 02:48:14 DEBUG BankUkraineService:43 - Идет запрос к парсеру
+2020-02-13 02:48:14 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
+2020-02-13 02:48:14 DEBUG BankUkraineParser:42 - Запускается обращение к URL
+2020-02-13 02:48:14 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 02:48:14 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
+2020-02-13 02:48:14 DEBUG BankUkraineService:45 - Получили ответ парсера
+2020-02-13 02:48:14 DEBUG NationalBankService:65 - Получили ответ юрл
+2020-02-13 02:48:14 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
+2020-02-13 02:48:14 DEBUG NationalBankParser:30 - Запускается обращение к URL
+2020-02-13 02:48:14 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 02:48:14 DEBUG NationalBankParser:43 - Курс найден, добавление в список
+2020-02-13 02:48:14 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 02:48:14 INFO  MonoBankParser:54 - Курс найден, возвращение результата
+2020-02-13 02:48:22 DEBUG PrivatBankService:53 - Получили ответ юрл
+2020-02-13 02:48:22 ERROR MainController:90 - ExecutionException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.lang.NullPointerException
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
+	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+2020-02-13 02:48:22 INFO  MainController:92 - Лучшая валюта найдена
+2020-02-13 02:48:22 DEBUG MainController:94 - Создается docx
+2020-02-13 02:48:22 INFO  MainController:96 - Документ создан
+2020-02-13 02:48:22 DEBUG MainController:97 - Возвращается ответ
+2020-02-13 02:48:32 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 02:48:32 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
+2020-02-13 02:48:36 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 02:48:36 DEBUG MainController:59 - Начинается цикл запросов к сервисам
+2020-02-13 02:48:36 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
+2020-02-13 02:48:36 DEBUG BankUkraineService:35 - BankUkraineService start
+2020-02-13 02:48:36 DEBUG BankUkraineService:39 - Идет запрос к юрл
+2020-02-13 02:48:36 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 02:48:36 DEBUG PrivatBankService:51 - Идет запрос к юрл
+2020-02-13 02:48:36 DEBUG NationalBankService:63 - Идет запрос к юрл
+2020-02-13 02:48:36 DEBUG BankUkraineService:41 - Получили ответ юрл
+2020-02-13 02:48:36 DEBUG BankUkraineService:43 - Идет запрос к парсеру
+2020-02-13 02:48:36 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
+2020-02-13 02:48:36 DEBUG BankUkraineParser:42 - Запускается обращение к URL
+2020-02-13 02:48:36 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 02:48:36 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
+2020-02-13 02:48:36 DEBUG BankUkraineService:45 - Получили ответ парсера
+2020-02-13 02:48:36 DEBUG NationalBankService:65 - Получили ответ юрл
+2020-02-13 02:48:36 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
+2020-02-13 02:48:36 DEBUG NationalBankParser:30 - Запускается обращение к URL
+2020-02-13 02:48:36 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 02:48:36 DEBUG NationalBankParser:43 - Курс найден, добавление в список
+2020-02-13 02:48:36 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 02:48:36 INFO  MonoBankParser:54 - Курс найден, возвращение результата
+2020-02-13 02:48:36 DEBUG PrivatBankService:53 - Получили ответ юрл
+2020-02-13 02:48:36 ERROR MainController:90 - ExecutionException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
+	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$519d627.getExchangeRate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.lang.NullPointerException
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
+	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+2020-02-13 02:48:36 INFO  MainController:92 - Лучшая валюта найдена
+2020-02-13 02:48:36 DEBUG MainController:94 - Создается docx
+2020-02-13 02:48:36 INFO  MainController:96 - Документ создан
+2020-02-13 02:48:36 DEBUG MainController:97 - Возвращается ответ
+2020-02-13 02:49:10 DEBUG SpringBootAsyncApplication:19 - Запуск приложения
+2020-02-13 02:49:10 DEBUG SpringBootAsyncApplication:19 - Запуск приложения
+2020-02-13 02:49:14 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 02:49:14 DEBUG MainController:59 - Начинается цикл запросов к сервисам
+2020-02-13 02:49:14 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
+2020-02-13 02:49:14 DEBUG BankUkraineService:35 - BankUkraineService start
+2020-02-13 02:49:14 DEBUG BankUkraineService:39 - Идет запрос к юрл
+2020-02-13 02:49:14 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 02:49:14 DEBUG PrivatBankService:51 - Идет запрос к юрл
+2020-02-13 02:49:14 DEBUG NationalBankService:63 - Идет запрос к юрл
+2020-02-13 02:49:14 DEBUG BankUkraineService:41 - Получили ответ юрл
+2020-02-13 02:49:14 DEBUG BankUkraineService:43 - Идет запрос к парсеру
+2020-02-13 02:49:14 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
+2020-02-13 02:49:14 DEBUG BankUkraineParser:42 - Запускается обращение к URL
+2020-02-13 02:49:14 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 02:49:14 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
+2020-02-13 02:49:14 DEBUG BankUkraineService:45 - Получили ответ парсера
+2020-02-13 02:49:14 DEBUG NationalBankService:65 - Получили ответ юрл
+2020-02-13 02:49:14 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
+2020-02-13 02:49:14 DEBUG NationalBankParser:30 - Запускается обращение к URL
+2020-02-13 02:49:14 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 02:49:14 DEBUG NationalBankParser:43 - Курс найден, добавление в список
+2020-02-13 02:49:15 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 02:49:15 DEBUG PrivatBankService:53 - Получили ответ юрл
+2020-02-13 02:49:15 INFO  MonoBankParser:54 - Курс найден, возвращение результата
+2020-02-13 02:49:15 ERROR MainController:90 - ExecutionException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
+	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$44bda56d.getExchangeRate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.lang.NullPointerException
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
+	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+2020-02-13 02:49:15 INFO  MainController:92 - Лучшая валюта найдена
+2020-02-13 02:49:15 DEBUG MainController:94 - Создается docx
+2020-02-13 02:49:15 INFO  MainController:96 - Документ создан
+2020-02-13 02:49:15 DEBUG MainController:97 - Возвращается ответ
+2020-02-13 02:49:30 DEBUG SpringBootAsyncApplication:18 - Запуск приложения
+2020-02-13 02:49:30 DEBUG SpringBootAsyncApplication:18 - Запуск приложения
+2020-02-13 02:49:34 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
+2020-02-13 02:49:34 DEBUG MainController:59 - Начинается цикл запросов к сервисам
+2020-02-13 02:49:34 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
+2020-02-13 02:49:34 DEBUG MonoBankService:31 - Идет запрос к юрл
+2020-02-13 02:49:34 DEBUG BankUkraineService:35 - BankUkraineService start
+2020-02-13 02:49:34 DEBUG BankUkraineService:39 - Идет запрос к юрл
+2020-02-13 02:49:34 DEBUG PrivatBankService:51 - Идет запрос к юрл
+2020-02-13 02:49:34 DEBUG NationalBankService:63 - Идет запрос к юрл
+2020-02-13 02:49:34 DEBUG BankUkraineService:41 - Получили ответ юрл
+2020-02-13 02:49:34 DEBUG BankUkraineService:43 - Идет запрос к парсеру
+2020-02-13 02:49:34 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
+2020-02-13 02:49:34 DEBUG BankUkraineParser:42 - Запускается обращение к URL
+2020-02-13 02:49:34 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
+2020-02-13 02:49:34 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
+2020-02-13 02:49:34 DEBUG BankUkraineService:45 - Получили ответ парсера
+2020-02-13 02:49:34 DEBUG NationalBankService:65 - Получили ответ юрл
+2020-02-13 02:49:34 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
+2020-02-13 02:49:34 DEBUG NationalBankParser:30 - Запускается обращение к URL
+2020-02-13 02:49:34 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
+2020-02-13 02:49:34 DEBUG NationalBankParser:43 - Курс найден, добавление в список
+2020-02-13 02:49:34 DEBUG MonoBankService:34 - Получили ответ юрл
+2020-02-13 02:49:34 INFO  MonoBankParser:54 - Курс найден, возвращение результата
+2020-02-13 02:49:34 DEBUG PrivatBankService:53 - Получили ответ юрл
+2020-02-13 02:49:34 ERROR MainController:90 - ExecutionException
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
+	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$25172b72.getExchangeRate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.lang.NullPointerException
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
+	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+2020-02-13 02:49:34 INFO  MainController:92 - Лучшая валюта найдена
+2020-02-13 02:49:34 DEBUG MainController:94 - Создается docx
+2020-02-13 02:49:34 INFO  MainController:96 - Документ создан
+2020-02-13 02:49:34 DEBUG MainController:97 - Возвращается ответ

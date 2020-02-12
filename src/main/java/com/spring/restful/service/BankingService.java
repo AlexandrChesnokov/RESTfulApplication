@@ -14,7 +14,7 @@ import java.util.concurrent.CompletableFuture;
 
 public abstract class BankingService {
 
-       public abstract CompletableFuture<Currency> getExchangeRate(String name, String date) throws IOException;
+       public abstract CompletableFuture<Currency> getExchangeRate(String name, String period) throws IOException;
 
 
        int getCount(String period) {

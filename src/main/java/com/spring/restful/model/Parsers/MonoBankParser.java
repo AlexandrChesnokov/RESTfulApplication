@@ -20,20 +20,15 @@ public class MonoBankParser implements BankingParser {
     private static final Logger logger = Logger.getLogger(MonoBankParser.class);
 
     @Override
-    public MonoBankCurrency getParse(String name, String date, String response) throws JsonProcessingException {
+    public MonoBankCurrency getParse(String name, String period, String response) throws JsonProcessingException {
 
 
         MonoBankCurrency monoBankPOJO = new MonoBankCurrency();
 
-        if (date.equals("current")) {
+        if (period.equals("current")) {
+
             ObjectMapper mapper = new ObjectMapper();
-
-
-
             MonoBankCurrency[] rates = mapper.readValue(response, MonoBankCurrency[].class);
-
-
-
 
             for (MonoBankCurrency rate : rates) {
                 String currencyName = "";

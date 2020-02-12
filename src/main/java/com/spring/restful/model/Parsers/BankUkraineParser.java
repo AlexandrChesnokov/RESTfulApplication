@@ -26,7 +26,7 @@ public class BankUkraineParser implements BankingParser {
 
         logger.debug("Запустился парсер BankUkraineParser");
 
-        String date1 = period;
+        String date = period;
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuiler = null;
 

@@ -32,18 +32,18 @@ public class PrivatBankService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String date) throws IOException {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period) throws IOException {
 
         ArrayList<MainCurrency> list = new ArrayList<>();
         LocalDate now = LocalDate.now();
-        int count = getCount(date);
+        int count = getCount(period);
 
         for (int i = 0; i < count; i++) {
-            Date date1 = java.sql.Date.valueOf(now.minusDays(i));
-            String strDate = simpleDateFormat.format(date1);
+            Date date = java.sql.Date.valueOf(now.minusDays(i));
+            String strDate = simpleDateFormat.format(date);
 
             if (count == 100) {
-                strDate = date;
+                strDate = period;
                 count = 1;
             }
 
@@ -51,7 +51,7 @@ public class PrivatBankService extends BankingService {
             logger.debug("Идет запрос к юрл");
             String response = ReaderFromUrl.readContentFromUrl(url);
             logger.debug("Получили ответ юрл");
-            PrivatBankCurrency currency = (PrivatBankCurrency) parser.getParse(name, date, response);
+            PrivatBankCurrency currency = (PrivatBankCurrency) parser.getParse(name, period, response);
 
             MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(),
                     currency.getCurrency(), currency.getSaleRate(), currency.getPurchaseRate());

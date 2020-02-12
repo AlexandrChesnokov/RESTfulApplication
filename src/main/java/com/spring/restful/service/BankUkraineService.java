@@ -30,7 +30,7 @@ public class BankUkraineService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String date) throws  IOException {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period) throws  IOException {
 
         logger.debug("BankUkraineService start");
 
@@ -41,7 +41,7 @@ public class BankUkraineService extends BankingService {
         logger.debug("Получили ответ юрл");
 
         logger.debug("Идет запрос к парсеру");
-        BankUkraineCurrency currency = (BankUkraineCurrency) parser.getParse(name, date, response);
+        BankUkraineCurrency currency = (BankUkraineCurrency) parser.getParse(name, period, response);
         logger.debug("Получили ответ парсера");
 
         MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(), currency.getChar3(),

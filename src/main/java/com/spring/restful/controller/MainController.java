@@ -36,30 +36,21 @@ public class MainController {
         this.bankingServices = bankingServices;
     }
 
+    private final SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
-    @RequestMapping(value = "/get-rate/{name}/{date}",  produces = { "application/json", "application/xml" }, method = RequestMethod.GET)
+
+    @RequestMapping(value = "/get-rate/{name}/{period}",  produces = { "application/json", "application/xml" }, method = RequestMethod.GET)
     @Cacheable("currencies")
-    public  ResponseEntity<Currency> getExchangeRate(@PathVariable String name, @PathVariable String date ) {
+    public  ResponseEntity<Currency> getExchangeRate(@PathVariable String name, @PathVariable String period ) {
 
-        logger.debug("Получили запрос с следующими параметрами - " + name + " - " + date);
+        logger.debug("Получили запрос с следующими параметрами - " + name + " - " + period);
         boolean isDate = false;
-        Date docDate = null;
-        String formatData = "";
-        if (!date.equals("current") & !date.equals("week") & !date.equals("month")) {
-            SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
-            try {
-                docDate = format.parse(date);
-                isDate = true;
-                formatData = format.format(docDate);
-            } catch (ParseException e) {
-                logger.error("Ошибка парсинга, вероятно введен неверный формат даты");
-                throw new NotFoundException();
-            }
-            if (docDate.after(new Date())) {
-                logger.error("Ошибка даты, введена дата в будущем времени");
-                throw new NotFoundException();
-            }
+        String formatDate = "";
+
+        if (!period.equals("current") & !period.equals("week") & !period.equals("month")) {
+           formatDate = checkValidity(period);
+           isDate = true;
         }
 
         List<CompletableFuture<Currency>> pojos = new ArrayList<>();
@@ -67,11 +58,10 @@ public class MainController {
         try {
             logger.debug("Начинается цикл запросов к сервисам");
             for (BankingService service : bankingServices) {
-                if (isDate) {
-                    pojos.add(service.getExchangeRate(name, formatData));
-                } else {
-                    pojos.add(service.getExchangeRate(name, date));
-                }
+
+            Boolean isDated = isDate ? pojos.add(service.getExchangeRate(name, formatDate)) :
+                        pojos.add(service.getExchangeRate(name, period));
+
             }
         } catch (IOException e) {
             logger.error("InterruptedException" + e);
@@ -80,24 +70,20 @@ public class MainController {
 
         Currency minRate = null;
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
 
         logger.debug("Запускается цикл поиска лучшего курса");
         try {
-
+            System.out.println(pojos.size());
             minRate = pojos.get(0).get();
 
             for (CompletableFuture<Currency> pojo : pojos) {
                 System.out.println(pojo.get());
             }
             for (CompletableFuture<Currency> pojo : pojos) {
-
                 if (Double.parseDouble(pojo.get().getSale()) < Double.parseDouble(minRate.getSale())) {
                     minRate = pojo.get();
+
                 }
             }
         } catch (ExecutionException | InterruptedException e) {
@@ -113,6 +99,26 @@ public class MainController {
 
     }
 
+
+    private String checkValidity(String period) {
+
+        Date docDate = null;
+        String dateFormat = "";
+
+        try {
+            docDate = format.parse(period);
+            dateFormat = format.format(docDate);
+            } catch (ParseException e) {
+                logger.error("Ошибка парсинга, вероятно введен неверный формат даты");
+                throw new NotFoundException();
+            }
+            if (docDate.after(new Date())) {
+                logger.error("Ошибка даты, введена дата в будущем времени");
+                throw new NotFoundException();
+            }
+
+            return dateFormat;
+    }
 
 
 }

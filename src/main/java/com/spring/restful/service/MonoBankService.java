@@ -25,14 +25,14 @@ public class MonoBankService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String date) throws  IOException {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period) throws  IOException {
 
         String url = "https://api.monobank.ua/bank/currency";
         logger.debug("Идет запрос к юрл");
         String response = ReaderFromUrl.readContentFromUrl(url);
 
         logger.debug("Получили ответ юрл");
-        MonoBankCurrency currency = (MonoBankCurrency) parser.getParse(name, date, response);
+        MonoBankCurrency currency = (MonoBankCurrency) parser.getParse(name, period, response);
 
         MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(),
                 currency.getCurrencyCodeA(), currency.getRateSell(), currency.getRateBuy());

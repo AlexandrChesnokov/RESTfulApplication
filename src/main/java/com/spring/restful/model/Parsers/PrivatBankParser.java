@@ -15,7 +15,7 @@ public class PrivatBankParser implements BankingParser {
 
 
     @Override
-    public PrivatBankCurrency getParse(String name, String date, String response) {
+    public PrivatBankCurrency getParse(String name, String period, String response) {
 
 
         ObjectMapper mapper = new ObjectMapper();

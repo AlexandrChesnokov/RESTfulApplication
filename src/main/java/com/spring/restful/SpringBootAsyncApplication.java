@@ -10,8 +10,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
-@EnableAsync
-@EnableCaching
 public class SpringBootAsyncApplication {
 
 	private static final Logger logger = Logger.getLogger(SpringBootAsyncApplication.class);
@@ -21,8 +19,5 @@ public class SpringBootAsyncApplication {
 		SpringApplication.run(SpringBootAsyncApplication.class, args);
 	}
 
-	@Bean
-	public CacheManager cacheManager() {
-		return new ConcurrentMapCacheManager("currencies");
-	}
+
 }
