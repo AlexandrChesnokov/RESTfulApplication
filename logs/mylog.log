@@ -1,33 +1,87 @@
-﻿2020-02-13 02:39:33 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 02:39:34 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 02:39:42 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 02:39:42 DEBUG MainController:59 - Начинается цикл запросов к сервисам
-2020-02-13 02:39:42 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
-2020-02-13 02:39:42 DEBUG BankUkraineService:35 - BankUkraineService start
-2020-02-13 02:39:42 DEBUG BankUkraineService:39 - Идет запрос к юрл
-2020-02-13 02:39:42 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 02:39:42 DEBUG PrivatBankService:51 - Идет запрос к юрл
-2020-02-13 02:39:42 DEBUG NationalBankService:63 - Идет запрос к юрл
-2020-02-13 02:39:42 DEBUG BankUkraineService:41 - Получили ответ юрл
-2020-02-13 02:39:42 DEBUG BankUkraineService:43 - Идет запрос к парсеру
-2020-02-13 02:39:42 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
-2020-02-13 02:39:42 DEBUG BankUkraineParser:42 - Запускается обращение к URL
-2020-02-13 02:39:42 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 02:39:42 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
-2020-02-13 02:39:42 DEBUG BankUkraineService:45 - Получили ответ парсера
-2020-02-13 02:39:42 DEBUG NationalBankService:65 - Получили ответ юрл
-2020-02-13 02:39:42 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
-2020-02-13 02:39:42 DEBUG NationalBankParser:31 - Запускается обращение к URL
-2020-02-13 02:39:42 DEBUG NationalBankParser:36 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 02:39:42 DEBUG NationalBankParser:46 - Курс найден, добавление в список
-2020-02-13 02:39:42 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 02:39:42 INFO  MonoBankParser:59 - Курс найден, возвращение результата
-2020-02-13 02:39:42 DEBUG PrivatBankService:53 - Получили ответ юрл
-2020-02-13 02:39:42 ERROR MainController:91 - ExecutionException
+﻿2020-02-13 03:54:45 DEBUG SpringBootAsyncApplication:18 - Запуск приложения
+2020-02-13 03:54:45 DEBUG SpringBootAsyncApplication:18 - Запуск приложения
+2020-02-13 03:54:52 DEBUG MainController:46 - Received a request with the following parameters - USD - week
+2020-02-13 03:54:52 DEBUG MainController:51 - Validation of the entered period starts
+2020-02-13 03:54:52 DEBUG MainController:61 - The service request cycle starts
+2020-02-13 03:54:52 DEBUG MainController:76 - The best exchange rate search cycle starts
+2020-02-13 03:54:52 DEBUG BankUkraineService:35 - BankUkraineService started
+2020-02-13 03:54:52 DEBUG PrivatBankService:37 - PrivatBankService started
+2020-02-13 03:54:52 DEBUG MonoBankService:30 - MonoBankService started
+2020-02-13 03:54:52 DEBUG MonoBankService:36 - URL request
+2020-02-13 03:54:52 DEBUG BankUkraineService:42 - URL request
+2020-02-13 03:54:52 DEBUG NationalBankService:40 - NationalBankService started
+2020-02-13 03:54:52 DEBUG PrivatBankService:56 - URL request
+2020-02-13 03:54:52 DEBUG NationalBankService:68 - URL request
+2020-02-13 03:54:52 DEBUG BankUkraineService:44 - Response received
+2020-02-13 03:54:52 DEBUG BankUkraineService:52 - Parser is being called
+2020-02-13 03:54:52 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-13 03:54:52 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-13 03:54:52 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-13 03:54:52 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-13 03:54:52 DEBUG BankUkraineService:57 - The parser has completed work
+2020-02-13 03:54:52 DEBUG NationalBankService:70 - Response received
+2020-02-13 03:54:52 DEBUG NationalBankService:77 - Parser is being called
+2020-02-13 03:54:52 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
+2020-02-13 03:54:52 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
+2020-02-13 03:54:52 DEBUG NationalBankParser:43 - Currency found, returning result
+2020-02-13 03:54:52 DEBUG NationalBankService:82 - The parser has completed work
+2020-02-13 03:54:52 DEBUG NationalBankService:68 - URL request
+2020-02-13 03:54:52 DEBUG NationalBankService:70 - Response received
+2020-02-13 03:54:52 DEBUG NationalBankService:77 - Parser is being called
+2020-02-13 03:54:52 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
+2020-02-13 03:54:52 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
+2020-02-13 03:54:52 DEBUG NationalBankParser:43 - Currency found, returning result
+2020-02-13 03:54:52 DEBUG NationalBankService:82 - The parser has completed work
+2020-02-13 03:54:52 DEBUG NationalBankService:68 - URL request
+2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
+2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
+2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
+2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
+2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
+2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
+2020-02-13 03:54:53 DEBUG NationalBankService:68 - URL request
+2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
+2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
+2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
+2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
+2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
+2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
+2020-02-13 03:54:53 DEBUG NationalBankService:68 - URL request
+2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
+2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
+2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
+2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
+2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
+2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
+2020-02-13 03:54:53 DEBUG NationalBankService:68 - URL request
+2020-02-13 03:54:53 DEBUG MonoBankService:38 - Response received
+2020-02-13 03:54:53 DEBUG MonoBankService:46 - Parser is being called
+2020-02-13 03:54:53 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-13 03:54:53 DEBUG MonoBankService:51 - The parser has completed work
+2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
+2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
+2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
+2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
+2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
+2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
+2020-02-13 03:54:53 DEBUG NationalBankService:68 - URL request
+2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
+2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
+2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
+2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
+2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
+2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
+2020-02-13 03:54:53 DEBUG PrivatBankService:58 - Response received
+2020-02-13 03:54:53 DEBUG PrivatBankService:65 - Parser is being called
+2020-02-13 03:54:53 DEBUG PrivatBankParser:20 - Parser started - BankUkraineParser
+2020-02-13 03:54:53 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-13 03:54:53 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-13 03:54:53 DEBUG PrivatBankService:70 - The parser has completed work
+2020-02-13 03:54:53 ERROR MainController:91 - Error due to attempt to start method CompletableFuture.get()
 java.util.concurrent.ExecutionException: java.lang.NullPointerException
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
+	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:82)
 	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
@@ -41,7 +95,7 @@ java.util.concurrent.ExecutionException: java.lang.NullPointerException
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$9afe558b.getExchangeRate(<generated>)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$cc982641.getExchangeRate(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,7 +139,7 @@ java.util.concurrent.ExecutionException: java.lang.NullPointerException
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
+	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:72)
 	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
@@ -97,595 +151,7 @@ Caused by: java.lang.NullPointerException
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	... 1 more
-2020-02-13 02:39:42 INFO  MainController:93 - Лучшая валюта найдена
-2020-02-13 02:39:42 DEBUG MainController:95 - Создается docx
-2020-02-13 02:39:42 INFO  MainController:97 - Документ создан
-2020-02-13 02:39:42 DEBUG MainController:98 - Возвращается ответ
-2020-02-13 02:47:21 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 02:47:21 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 02:47:25 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 02:47:25 DEBUG MainController:59 - Начинается цикл запросов к сервисам
-2020-02-13 02:47:25 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
-2020-02-13 02:47:25 DEBUG BankUkraineService:35 - BankUkraineService start
-2020-02-13 02:47:25 DEBUG BankUkraineService:39 - Идет запрос к юрл
-2020-02-13 02:47:25 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 02:47:25 DEBUG PrivatBankService:51 - Идет запрос к юрл
-2020-02-13 02:47:25 DEBUG NationalBankService:63 - Идет запрос к юрл
-2020-02-13 02:47:25 DEBUG BankUkraineService:41 - Получили ответ юрл
-2020-02-13 02:47:25 DEBUG BankUkraineService:43 - Идет запрос к парсеру
-2020-02-13 02:47:25 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
-2020-02-13 02:47:25 DEBUG BankUkraineParser:42 - Запускается обращение к URL
-2020-02-13 02:47:25 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 02:47:25 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
-2020-02-13 02:47:25 DEBUG BankUkraineService:45 - Получили ответ парсера
-2020-02-13 02:47:25 DEBUG NationalBankService:65 - Получили ответ юрл
-2020-02-13 02:47:25 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
-2020-02-13 02:47:25 DEBUG NationalBankParser:30 - Запускается обращение к URL
-2020-02-13 02:47:25 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 02:47:25 DEBUG NationalBankParser:43 - Курс найден, добавление в список
-2020-02-13 02:47:26 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 02:47:26 INFO  MonoBankParser:54 - Курс найден, возвращение результата
-2020-02-13 02:47:26 DEBUG PrivatBankService:53 - Получили ответ юрл
-2020-02-13 02:47:26 ERROR MainController:90 - ExecutionException
-java.util.concurrent.ExecutionException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
-	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
-	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
-	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$48f7da2d.getExchangeRate(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
-	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
-	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-2020-02-13 02:47:26 INFO  MainController:92 - Лучшая валюта найдена
-2020-02-13 02:47:26 DEBUG MainController:94 - Создается docx
-2020-02-13 02:47:26 INFO  MainController:96 - Документ создан
-2020-02-13 02:47:26 DEBUG MainController:97 - Возвращается ответ
-2020-02-13 02:48:08 DEBUG SpringBootAsyncApplication:19 - Запуск приложения
-2020-02-13 02:48:08 DEBUG SpringBootAsyncApplication:19 - Запуск приложения
-2020-02-13 02:48:12 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 02:48:12 DEBUG MainController:59 - Начинается цикл запросов к сервисам
-2020-02-13 02:48:12 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
-2020-02-13 02:48:12 DEBUG BankUkraineService:35 - BankUkraineService start
-2020-02-13 02:48:12 DEBUG BankUkraineService:39 - Идет запрос к юрл
-2020-02-13 02:48:12 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 02:48:12 DEBUG PrivatBankService:51 - Идет запрос к юрл
-2020-02-13 02:48:12 DEBUG NationalBankService:63 - Идет запрос к юрл
-2020-02-13 02:48:12 DEBUG BankUkraineService:41 - Получили ответ юрл
-2020-02-13 02:48:12 DEBUG BankUkraineService:43 - Идет запрос к парсеру
-2020-02-13 02:48:12 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
-2020-02-13 02:48:12 DEBUG BankUkraineParser:42 - Запускается обращение к URL
-2020-02-13 02:48:12 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 02:48:12 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
-2020-02-13 02:48:12 DEBUG BankUkraineService:45 - Получили ответ парсера
-2020-02-13 02:48:12 DEBUG NationalBankService:65 - Получили ответ юрл
-2020-02-13 02:48:12 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
-2020-02-13 02:48:12 DEBUG NationalBankParser:30 - Запускается обращение к URL
-2020-02-13 02:48:12 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 02:48:12 DEBUG NationalBankParser:43 - Курс найден, добавление в список
-2020-02-13 02:48:12 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 02:48:12 DEBUG PrivatBankService:53 - Получили ответ юрл
-2020-02-13 02:48:12 INFO  MonoBankParser:54 - Курс найден, возвращение результата
-2020-02-13 02:48:12 ERROR MainController:90 - ExecutionException
-java.util.concurrent.ExecutionException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
-	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
-	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-2020-02-13 02:48:12 INFO  MainController:92 - Лучшая валюта найдена
-2020-02-13 02:48:12 DEBUG MainController:94 - Создается docx
-2020-02-13 02:48:13 INFO  MainController:96 - Документ создан
-2020-02-13 02:48:13 DEBUG MainController:97 - Возвращается ответ
-2020-02-13 02:48:14 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 02:48:14 DEBUG MainController:59 - Начинается цикл запросов к сервисам
-2020-02-13 02:48:14 DEBUG BankUkraineService:35 - BankUkraineService start
-2020-02-13 02:48:14 DEBUG NationalBankService:63 - Идет запрос к юрл
-2020-02-13 02:48:14 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
-2020-02-13 02:48:14 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 02:48:14 DEBUG PrivatBankService:51 - Идет запрос к юрл
-2020-02-13 02:48:14 DEBUG BankUkraineService:39 - Идет запрос к юрл
-2020-02-13 02:48:14 DEBUG BankUkraineService:41 - Получили ответ юрл
-2020-02-13 02:48:14 DEBUG BankUkraineService:43 - Идет запрос к парсеру
-2020-02-13 02:48:14 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
-2020-02-13 02:48:14 DEBUG BankUkraineParser:42 - Запускается обращение к URL
-2020-02-13 02:48:14 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 02:48:14 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
-2020-02-13 02:48:14 DEBUG BankUkraineService:45 - Получили ответ парсера
-2020-02-13 02:48:14 DEBUG NationalBankService:65 - Получили ответ юрл
-2020-02-13 02:48:14 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
-2020-02-13 02:48:14 DEBUG NationalBankParser:30 - Запускается обращение к URL
-2020-02-13 02:48:14 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 02:48:14 DEBUG NationalBankParser:43 - Курс найден, добавление в список
-2020-02-13 02:48:14 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 02:48:14 INFO  MonoBankParser:54 - Курс найден, возвращение результата
-2020-02-13 02:48:22 DEBUG PrivatBankService:53 - Получили ответ юрл
-2020-02-13 02:48:22 ERROR MainController:90 - ExecutionException
-java.util.concurrent.ExecutionException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
-	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
-	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-2020-02-13 02:48:22 INFO  MainController:92 - Лучшая валюта найдена
-2020-02-13 02:48:22 DEBUG MainController:94 - Создается docx
-2020-02-13 02:48:22 INFO  MainController:96 - Документ создан
-2020-02-13 02:48:22 DEBUG MainController:97 - Возвращается ответ
-2020-02-13 02:48:32 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 02:48:32 DEBUG SpringBootAsyncApplication:20 - Запуск приложения
-2020-02-13 02:48:36 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 02:48:36 DEBUG MainController:59 - Начинается цикл запросов к сервисам
-2020-02-13 02:48:36 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
-2020-02-13 02:48:36 DEBUG BankUkraineService:35 - BankUkraineService start
-2020-02-13 02:48:36 DEBUG BankUkraineService:39 - Идет запрос к юрл
-2020-02-13 02:48:36 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 02:48:36 DEBUG PrivatBankService:51 - Идет запрос к юрл
-2020-02-13 02:48:36 DEBUG NationalBankService:63 - Идет запрос к юрл
-2020-02-13 02:48:36 DEBUG BankUkraineService:41 - Получили ответ юрл
-2020-02-13 02:48:36 DEBUG BankUkraineService:43 - Идет запрос к парсеру
-2020-02-13 02:48:36 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
-2020-02-13 02:48:36 DEBUG BankUkraineParser:42 - Запускается обращение к URL
-2020-02-13 02:48:36 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 02:48:36 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
-2020-02-13 02:48:36 DEBUG BankUkraineService:45 - Получили ответ парсера
-2020-02-13 02:48:36 DEBUG NationalBankService:65 - Получили ответ юрл
-2020-02-13 02:48:36 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
-2020-02-13 02:48:36 DEBUG NationalBankParser:30 - Запускается обращение к URL
-2020-02-13 02:48:36 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 02:48:36 DEBUG NationalBankParser:43 - Курс найден, добавление в список
-2020-02-13 02:48:36 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 02:48:36 INFO  MonoBankParser:54 - Курс найден, возвращение результата
-2020-02-13 02:48:36 DEBUG PrivatBankService:53 - Получили ответ юрл
-2020-02-13 02:48:36 ERROR MainController:90 - ExecutionException
-java.util.concurrent.ExecutionException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
-	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
-	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
-	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$519d627.getExchangeRate(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
-	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
-	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-2020-02-13 02:48:36 INFO  MainController:92 - Лучшая валюта найдена
-2020-02-13 02:48:36 DEBUG MainController:94 - Создается docx
-2020-02-13 02:48:36 INFO  MainController:96 - Документ создан
-2020-02-13 02:48:36 DEBUG MainController:97 - Возвращается ответ
-2020-02-13 02:49:10 DEBUG SpringBootAsyncApplication:19 - Запуск приложения
-2020-02-13 02:49:10 DEBUG SpringBootAsyncApplication:19 - Запуск приложения
-2020-02-13 02:49:14 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 02:49:14 DEBUG MainController:59 - Начинается цикл запросов к сервисам
-2020-02-13 02:49:14 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
-2020-02-13 02:49:14 DEBUG BankUkraineService:35 - BankUkraineService start
-2020-02-13 02:49:14 DEBUG BankUkraineService:39 - Идет запрос к юрл
-2020-02-13 02:49:14 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 02:49:14 DEBUG PrivatBankService:51 - Идет запрос к юрл
-2020-02-13 02:49:14 DEBUG NationalBankService:63 - Идет запрос к юрл
-2020-02-13 02:49:14 DEBUG BankUkraineService:41 - Получили ответ юрл
-2020-02-13 02:49:14 DEBUG BankUkraineService:43 - Идет запрос к парсеру
-2020-02-13 02:49:14 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
-2020-02-13 02:49:14 DEBUG BankUkraineParser:42 - Запускается обращение к URL
-2020-02-13 02:49:14 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 02:49:14 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
-2020-02-13 02:49:14 DEBUG BankUkraineService:45 - Получили ответ парсера
-2020-02-13 02:49:14 DEBUG NationalBankService:65 - Получили ответ юрл
-2020-02-13 02:49:14 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
-2020-02-13 02:49:14 DEBUG NationalBankParser:30 - Запускается обращение к URL
-2020-02-13 02:49:14 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 02:49:14 DEBUG NationalBankParser:43 - Курс найден, добавление в список
-2020-02-13 02:49:15 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 02:49:15 DEBUG PrivatBankService:53 - Получили ответ юрл
-2020-02-13 02:49:15 INFO  MonoBankParser:54 - Курс найден, возвращение результата
-2020-02-13 02:49:15 ERROR MainController:90 - ExecutionException
-java.util.concurrent.ExecutionException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
-	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
-	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
-	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$44bda56d.getExchangeRate(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
-	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
-	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-2020-02-13 02:49:15 INFO  MainController:92 - Лучшая валюта найдена
-2020-02-13 02:49:15 DEBUG MainController:94 - Создается docx
-2020-02-13 02:49:15 INFO  MainController:96 - Документ создан
-2020-02-13 02:49:15 DEBUG MainController:97 - Возвращается ответ
-2020-02-13 02:49:30 DEBUG SpringBootAsyncApplication:18 - Запуск приложения
-2020-02-13 02:49:30 DEBUG SpringBootAsyncApplication:18 - Запуск приложения
-2020-02-13 02:49:34 DEBUG MainController:46 - Получили запрос с следующими параметрами - USD - current
-2020-02-13 02:49:34 DEBUG MainController:59 - Начинается цикл запросов к сервисам
-2020-02-13 02:49:34 DEBUG MainController:75 - Запускается цикл поиска лучшего курса
-2020-02-13 02:49:34 DEBUG MonoBankService:31 - Идет запрос к юрл
-2020-02-13 02:49:34 DEBUG BankUkraineService:35 - BankUkraineService start
-2020-02-13 02:49:34 DEBUG BankUkraineService:39 - Идет запрос к юрл
-2020-02-13 02:49:34 DEBUG PrivatBankService:51 - Идет запрос к юрл
-2020-02-13 02:49:34 DEBUG NationalBankService:63 - Идет запрос к юрл
-2020-02-13 02:49:34 DEBUG BankUkraineService:41 - Получили ответ юрл
-2020-02-13 02:49:34 DEBUG BankUkraineService:43 - Идет запрос к парсеру
-2020-02-13 02:49:34 DEBUG BankUkraineParser:27 - Запустился парсер BankUkraineParser
-2020-02-13 02:49:34 DEBUG BankUkraineParser:42 - Запускается обращение к URL
-2020-02-13 02:49:34 DEBUG BankUkraineParser:52 - Начинается цикл поиска лучшего курса - USD
-2020-02-13 02:49:34 DEBUG BankUkraineParser:65 - Валюта нашлась, возвращение результата
-2020-02-13 02:49:34 DEBUG BankUkraineService:45 - Получили ответ парсера
-2020-02-13 02:49:34 DEBUG NationalBankService:65 - Получили ответ юрл
-2020-02-13 02:49:34 DEBUG NationalBankParser:25 - Запустился парсер NationalBankParser
-2020-02-13 02:49:34 DEBUG NationalBankParser:30 - Запускается обращение к URL
-2020-02-13 02:49:34 DEBUG NationalBankParser:33 - Запускается цикл поиска лучшего курса - USD
-2020-02-13 02:49:34 DEBUG NationalBankParser:43 - Курс найден, добавление в список
-2020-02-13 02:49:34 DEBUG MonoBankService:34 - Получили ответ юрл
-2020-02-13 02:49:34 INFO  MonoBankParser:54 - Курс найден, возвращение результата
-2020-02-13 02:49:34 DEBUG PrivatBankService:53 - Получили ответ юрл
-2020-02-13 02:49:34 ERROR MainController:90 - ExecutionException
-java.util.concurrent.ExecutionException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:81)
-	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
-	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
-	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$25172b72.getExchangeRate(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:56)
-	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
-	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
-	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.lambda$doSubmit$3(AsyncExecutionAspectSupport.java:276)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-2020-02-13 02:49:34 INFO  MainController:92 - Лучшая валюта найдена
-2020-02-13 02:49:34 DEBUG MainController:94 - Создается docx
-2020-02-13 02:49:34 INFO  MainController:96 - Документ создан
-2020-02-13 02:49:34 DEBUG MainController:97 - Возвращается ответ
+2020-02-13 03:54:53 INFO  MainController:93 - The best exchange rate found
+2020-02-13 03:54:53 DEBUG MainController:95 - Docx is being created
+2020-02-13 03:54:53 INFO  MainController:97 - Docx created
+2020-02-13 03:54:53 DEBUG MainController:99 - Returning response

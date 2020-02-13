@@ -43,36 +43,37 @@ public class MainController {
     @Cacheable("currencies")
     public  ResponseEntity<Currency> getExchangeRate(@PathVariable String name, @PathVariable String period ) {
 
-        logger.debug("Получили запрос с следующими параметрами - " + name + " - " + period);
-        boolean isDate = false;
+        logger.debug("Received a request with the following parameters - " + name + " - " + period);
 
+        boolean isDate = false;
         String formatDate = "";
 
+        logger.debug("Validation of the entered period starts");
         if (!period.equals("current") & !period.equals("week") & !period.equals("month")) {
            formatDate = checkValidity(period);
            isDate = true;
+           logger.debug("Validation was successful");
         }
 
         List<CompletableFuture<Currency>> pojos = new ArrayList<>();
 
         try {
-            logger.debug("Начинается цикл запросов к сервисам");
+            logger.debug("The service request cycle starts");
             for (BankingService service : bankingServices) {
 
             Boolean isDated = isDate ? pojos.add(service.getExchangeRate(name, formatDate)) :
                         pojos.add(service.getExchangeRate(name, period));
-
             }
+
         } catch (IOException e) {
-            logger.error("InterruptedException" + e);
+            logger.error("Error due to attempt to start method getExchangeRate", e);
         }
 
 
         Currency minRate = null;
 
 
-
-        logger.debug("Запускается цикл поиска лучшего курса");
+        logger.debug("The best exchange rate search cycle starts");
         try {
             System.out.println(pojos.size());
             minRate = pojos.get(0).get();
@@ -87,14 +88,15 @@ public class MainController {
                 }
             }
         } catch (ExecutionException | InterruptedException e) {
-            logger.error("ExecutionException", e);
+            logger.error("Error due to attempt to start method CompletableFuture.get()", e);
         }
-        logger.info("Лучшая валюта найдена");
+        logger.info("The best exchange rate found");
 
-        logger.debug("Создается docx");
+        logger.debug("Docx is being created");
         DocxCreator.createDocx(minRate);
-        logger.info("Документ создан");
-        logger.debug("Возвращается ответ");
+        logger.info("Docx created");
+
+        logger.debug("Returning response");
         return new ResponseEntity<>(minRate, HttpStatus.OK);
 
     }
@@ -109,11 +111,11 @@ public class MainController {
             docDate = format.parse(period);
             dateFormat = format.format(docDate);
             } catch (ParseException e) {
-                logger.error("Ошибка парсинга, вероятно введен неверный формат даты");
+                logger.error("Parsing error, probably entered wrong date format", e);
                 throw new NotFoundException();
             }
             if (docDate.after(new Date())) {
-                logger.error("Ошибка даты, введена дата в будущем времени");
+                logger.error("Date error, date entered in future time");
                 throw new NotFoundException();
             }
 

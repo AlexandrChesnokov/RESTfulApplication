@@ -17,24 +17,26 @@ public class PrivatBankParser implements BankingParser {
     @Override
     public PrivatBankCurrency getParse(String name, String period, String response) {
 
-
+        logger.debug("Parser started - BankUkraineParser");
         ObjectMapper mapper = new ObjectMapper();
 
 
         PrivatBankCurrency privatBankCurrency = null;
         try {
+            logger.debug("Parsing response in progress");
             privatBankCurrency = mapper.readValue
                     (response, PrivatBankCurrency.class);
         } catch (IOException e) {
-
+            logger.error("Error parsing response", e);
         }
 
         PrivatBankCurrency[] currencies = privatBankCurrency.getExchangeRate();
-
+        logger.debug("Currency search cycle starts - " + name );
         for (PrivatBankCurrency currency : currencies) {
             if (currency.getCurrency() != null) {
                 if (currency.getCurrency().equals(name)) {
                     currency.setDate(privatBankCurrency.getDate());
+                    logger.debug("Currency found, returning result");
                     return currency;
 
                 }

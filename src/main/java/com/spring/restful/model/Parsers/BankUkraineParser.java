@@ -24,7 +24,7 @@ public class BankUkraineParser implements BankingParser {
     @Override
     public BankUkraineCurrency getParse(String name, String period, String response) throws IOException {
 
-        logger.debug("Запустился парсер BankUkraineParser");
+        logger.debug("Parser started - BankUkraineParser");
 
         String date = period;
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -33,23 +33,23 @@ public class BankUkraineParser implements BankingParser {
         try {
             dBuiler = dbFactory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            logger.error("ParserConfigurationException");
+            logger.error("Error creating DocumentBuilder", e);
         }
 
-
-
         Document doc = null;
-        logger.debug("Запускается обращение к URL");
         try {
+            logger.debug("Parsing response in progress");
             doc = dBuiler.parse(new StringBufferInputStream(response));
         } catch (SAXException e) {
-            logger.error("SAXException");
+            logger.error("Error parsing response", e);
         }
         doc.getDocumentElement().normalize();
 
         BankUkraineCurrency bankUkrainePOJO = new BankUkraineCurrency();
         NodeList nList = doc.getElementsByTagName("item");
-        logger.debug("Начинается цикл поиска лучшего курса - " + name );
+
+
+        logger.debug("Currency search cycle starts - " + name );
         for (int i = 0; i < nList.getLength(); i++) {
             Node nNode = nList.item(i);
 
@@ -62,7 +62,7 @@ public class BankUkraineParser implements BankingParser {
                     String rate = String.valueOf(Double.parseDouble(element.getElementsByTagName("rate").item(0).getTextContent()) / 100);
                     bankUkrainePOJO.setRate(rate);
                     bankUkrainePOJO.setRate("999999.999");    // заглушка
-                    logger.debug("Валюта нашлась, возвращение результата");
+                    logger.debug("Currency found, returning result");
                     return bankUkrainePOJO;
                 }
             }

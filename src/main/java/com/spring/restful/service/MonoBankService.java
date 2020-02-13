@@ -25,14 +25,30 @@ public class MonoBankService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String period) throws  IOException {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period)  {
+
+        logger.debug("MonoBankService started");
 
         String url = "https://api.monobank.ua/bank/currency";
-        logger.debug("Идет запрос к юрл");
-        String response = ReaderFromUrl.readContentFromUrl(url);
 
-        logger.debug("Получили ответ юрл");
-        MonoBankCurrency currency = (MonoBankCurrency) parser.getParse(name, period, response);
+        String response = null;
+        try {
+            logger.debug("URL request");
+            response = ReaderFromUrl.readContentFromUrl(url);
+            logger.debug("Response received");
+        } catch (IOException e) {
+            logger.error("Failed to get response from URL", e);
+        }
+
+
+        MonoBankCurrency currency = null;
+        try {
+            logger.debug("Parser is being called");
+            currency = (MonoBankCurrency) parser.getParse(name, period, response);
+        } catch (IOException e) {
+            logger.error("Parsing error", e);
+        }
+        logger.debug("The parser has completed work");
 
         MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(),
                 currency.getCurrencyCodeA(), currency.getRateSell(), currency.getRateBuy());

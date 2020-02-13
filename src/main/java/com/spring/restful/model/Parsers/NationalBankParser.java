@@ -22,15 +22,15 @@ public class NationalBankParser implements BankingParser {
     @Override
     public NBCurrency getParse(String name, String period, String response) {
 
-        logger.debug("Запустился парсер NationalBankParser");
+        logger.debug("Parser started - BankUkraineParser");
         NBCurrency nationalBankPOJO = new NBCurrency();
 
 
 
-        logger.debug("Запускается обращение к URL");
+
 
         JSONArray array = new JSONArray(response);
-        logger.debug("Запускается цикл поиска лучшего курса - " + name);
+        logger.debug("Currency search cycle starts - " + name );
         for (int k = 0; k < array.length(); k++) {
 
             JSONObject object = (JSONObject) array.get(k);
@@ -40,7 +40,7 @@ public class NationalBankParser implements BankingParser {
                 nationalBankPOJO.setCc(object.get("cc").toString());
                 nationalBankPOJO.setRate(object.get("rate").toString());
                 nationalBankPOJO.setExchangedate(object.get("exchangedate").toString());
-                logger.debug("Курс найден, добавление в список");
+                logger.debug("Currency found, returning result");
                 return nationalBankPOJO;
 
             }

@@ -20,16 +20,24 @@ public class MonoBankParser implements BankingParser {
     private static final Logger logger = Logger.getLogger(MonoBankParser.class);
 
     @Override
-    public MonoBankCurrency getParse(String name, String period, String response) throws JsonProcessingException {
+    public MonoBankCurrency getParse(String name, String period, String response)  {
 
-
+        logger.debug("Parser started - MonoBankParser");
         MonoBankCurrency monoBankPOJO = new MonoBankCurrency();
 
         if (period.equals("current")) {
 
             ObjectMapper mapper = new ObjectMapper();
-            MonoBankCurrency[] rates = mapper.readValue(response, MonoBankCurrency[].class);
+            MonoBankCurrency[] rates = new MonoBankCurrency[0];
+            try {
+                logger.debug("Parsing response in progress");
+                rates = mapper.readValue(response, MonoBankCurrency[].class);
+            } catch (JsonProcessingException e) {
+                logger.error("Error parsing response", e);
+            }
 
+
+            logger.debug("Currency search cycle starts - " + name );
             for (MonoBankCurrency rate : rates) {
                 String currencyName = "";
                 Set<java.util.Currency> currencies = java.util.Currency.getAvailableCurrencies();
@@ -51,7 +59,7 @@ public class MonoBankParser implements BankingParser {
                     monoBankPOJO.setRateBuy(rate.getRateBuy());
 
 
-                    logger.info("Курс найден, возвращение результата");
+                    logger.debug("Currency found, returning result");
                     return monoBankPOJO;
                 }
             }

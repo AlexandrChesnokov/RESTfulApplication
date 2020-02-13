@@ -1,7 +1,9 @@
 package com.spring.restful.model.jobs;
 
+import com.spring.restful.controller.MainController;
 import com.spring.restful.model.Currency;
 import com.spring.restful.model.MainCurrency;
+import org.apache.log4j.Logger;
 import org.apache.poi.xwpf.usermodel.ParagraphAlignment;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
@@ -13,6 +15,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class DocxCreator {
+
+    private static final Logger logger = Logger.getLogger(DocxCreator.class);
+
 
     public static void createDocx(Currency currencyInterface) {
 
@@ -55,12 +60,9 @@ public class DocxCreator {
 
             document.write(out);
 
-        } catch (FileNotFoundException e) {
-
         } catch (IOException e) {
-
+            logger.error("Error creating document", e);
         }
-
 
 
     }

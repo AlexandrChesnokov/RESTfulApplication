@@ -35,7 +35,9 @@ public class NationalBankService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String period) throws IOException {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period)  {
+
+        logger.debug("NationalBankService started");
 
         ArrayList<MainCurrency> list = new ArrayList<>();
         LocalDate now = LocalDate.now();
@@ -60,10 +62,24 @@ public class NationalBankService extends BankingService {
             }
 
             String url = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=" + strDate + "&amp;json";
-            logger.debug("Идет запрос к юрл");
-            String response = ReaderFromUrl.readContentFromUrl(url);
-            logger.debug("Получили ответ юрл");
-            NBCurrency currency = (NBCurrency) parser.getParse(name, period, response);
+
+            String response = null;
+            try {
+                logger.debug("URL request");
+                response = ReaderFromUrl.readContentFromUrl(url);
+                logger.debug("Response received");
+            } catch (IOException e) {
+                logger.error("Failed to get response from URL", e);
+            }
+
+            NBCurrency currency = null;
+            try {
+                logger.debug("Parser is being called");
+                currency = (NBCurrency) parser.getParse(name, period, response);
+            } catch (IOException e) {
+                logger.error("Parsing error", e);
+            }
+            logger.debug("The parser has completed work");
 
             MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getExchangedate(),
                     currency.getCc(), currency.getRate(), currency.getPurchaseRate());
