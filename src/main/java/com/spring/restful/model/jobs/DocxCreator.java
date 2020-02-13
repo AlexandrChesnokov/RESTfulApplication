@@ -1,6 +1,5 @@
 package com.spring.restful.model.jobs;
 
-import com.spring.restful.controller.MainController;
 import com.spring.restful.model.Currency;
 import com.spring.restful.model.MainCurrency;
 import org.apache.log4j.Logger;
@@ -10,7 +9,6 @@ import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 

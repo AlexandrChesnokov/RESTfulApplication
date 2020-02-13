@@ -1,15 +1,10 @@
 package com.spring.restful.model.Parsers;
 
-import com.spring.restful.model.MainCurrency;
 import com.spring.restful.model.NBCurrency;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
-
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Component

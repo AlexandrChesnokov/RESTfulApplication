@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944e468e-b68c-48fa-8c5f-20e0d9fdf053" name="Default Changelist" comment="fixed logic of services and parsers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency.docx" beforeDir="false" afterPath="$PROJECT_DIR$/currency.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/BankUkraineParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/BankUkraineParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/MonoBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/MonoBankParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/AsyncConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/AsyncConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/SpringBootAsyncApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/SpringBootAsyncApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/NationalBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/NationalBankParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/PrivatBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/PrivatBankParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/CacheEvict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/CacheEvict.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/DocxCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/DocxCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/ReaderFromUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/ReaderFromUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankUkraineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankUkraineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/MonoBankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/MonoBankService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/NationalBankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/NationalBankService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/PrivatBankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/PrivatBankService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/PrivatBankParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/PrivatBankParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/BankUkraineService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/BankUkraineService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/MonoBankService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/MonoBankService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/NationalBankService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/NationalBankService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/PrivatBankService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/PrivatBankService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581539866754</updated>
-      <workItem from="1581539868077" duration="13447000" />
+      <workItem from="1581539868077" duration="13786000" />
     </task>
     <task id="LOCAL-00001" summary="fixed logic of services and parsers">
       <created>1581543152375</created>

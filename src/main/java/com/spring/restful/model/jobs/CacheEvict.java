@@ -1,6 +1,5 @@
 package com.spring.restful.model.jobs;
 
-import com.spring.restful.controller.MainController;
 import org.apache.log4j.Logger;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.concurrent.ConcurrentMapCacheManager;

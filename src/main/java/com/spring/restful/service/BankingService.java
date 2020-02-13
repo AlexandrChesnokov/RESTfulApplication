@@ -3,9 +3,7 @@ package com.spring.restful.service;
 
 import com.spring.restful.model.Currency;
 import com.spring.restful.model.MainCurrency;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;

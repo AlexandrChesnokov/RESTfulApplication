@@ -1,6 +1,5 @@
 package com.spring.restful.model.jobs;
 
-import com.spring.restful.controller.MainController;
 import org.apache.log4j.Logger;
 
 import java.io.*;
