@@ -35,11 +35,12 @@ public class MonoBankService extends BankingService {
 
         String response = null;
         try {
-            logger.debug("URL request");
+            logger.debug("Submit request URL");
             response = ReaderFromUrl.readContentFromUrl(url);
             logger.debug("Response received");
         } catch (IOException e) {
             logger.error("Failed to get response from URL", e);
+            return null;
         }
 
 

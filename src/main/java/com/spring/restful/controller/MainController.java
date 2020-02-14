@@ -9,6 +9,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -54,26 +55,27 @@ public class MainController {
             logger.debug("The service request cycle starts");
             for (BankingService service : bankingServices) {
 
-                Boolean isDated = isDate ? pojos.add(service.getExchangeRate(name, formatDate)) :
+                boolean isDated = isDate ? pojos.add(service.getExchangeRate(name, formatDate)) :
                         pojos.add(service.getExchangeRate(name, period));
+
             }
 
         } catch (IOException e) {
             logger.error("Error due to attempt to start method getExchangeRate", e);
         }
 
-
         Currency minRate = null;
 
-
         logger.debug("The best exchange rate search cycle starts");
+
         try {
-            minRate = pojos.get(0).get();
+            minRate = getValue(pojos);
 
             for (CompletableFuture<Currency> pojo : pojos) {
-                if (Double.parseDouble(pojo.get().getSale()) < Double.parseDouble(minRate.getSale())) {
-                    minRate = pojo.get();
-
+                if (pojo.get() != null) {
+                    if (Double.parseDouble(pojo.get().getSale()) < Double.parseDouble(minRate.getSale())) {
+                        minRate = pojo.get();
+                    }
                 }
             }
         } catch (ExecutionException | InterruptedException e) {
@@ -82,7 +84,7 @@ public class MainController {
         logger.info("The best exchange rate found");
 
         logger.debug("Docx is being created");
-        DocxCreator.createDocx(minRate);
+        //DocxCreator.createDocx(minRate);
         logger.info("Docx created");
 
         logger.debug("Returning response");
@@ -111,5 +113,21 @@ public class MainController {
         return dateFormat;
     }
 
+    private Currency getValue(List<CompletableFuture<Currency>> pojos) throws InterruptedException, ExecutionException {
 
+        Currency minRate = null;
+
+        for (CompletableFuture<Currency> pojo : pojos) {
+            if (pojo.get() != null) {
+                minRate = pojo.get();
+                break;
+            }
+        }
+
+        if (minRate == null)
+            throw new NotFoundException();
+
+        return minRate;
+
+    }
 }
