@@ -1,4 +1,4 @@
-package com.spring.restful.model.Parsers;
+package com.spring.restful.model.parsers;
 
 
 import com.spring.restful.model.BankUkraineCurrency;

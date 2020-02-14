@@ -3,10 +3,11 @@ package com.spring.restful.service;
 
 
 import com.spring.restful.model.*;
-import com.spring.restful.model.Parsers.BankingParser;
-import com.spring.restful.model.jobs.ReaderFromUrl;
+import com.spring.restful.model.parsers.BankingParser;
+import com.spring.restful.utils.ReaderFromUrl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,9 @@ public class MonoBankService extends BankingService {
     private static final Logger logger = Logger.getLogger(MonoBankService.class);
     public final BankingParser parser;
 
+    @Value("${monoBank.url}")
+    private String url;
+
     public MonoBankService(@Qualifier("monoBankParser")BankingParser parser) {
         this.parser = parser;
     }
@@ -28,8 +32,6 @@ public class MonoBankService extends BankingService {
     public CompletableFuture<Currency> getExchangeRate(String name, String period)  {
 
         logger.debug("MonoBankService started");
-
-        String url = "https://api.monobank.ua/bank/currency";
 
         String response = null;
         try {

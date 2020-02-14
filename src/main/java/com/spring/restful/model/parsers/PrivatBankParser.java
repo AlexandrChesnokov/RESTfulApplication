@@ -1,4 +1,4 @@
-package com.spring.restful.model.Parsers;
+package com.spring.restful.model.parsers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.restful.model.PrivatBankCurrency;
@@ -17,7 +17,7 @@ public class PrivatBankParser implements BankingParser {
     @Override
     public PrivatBankCurrency getParse(String name, String period, String response) {
 
-        logger.debug("Parser started - BankUkraineParser");
+        logger.debug("Parser started - PrivatBankParser");
         ObjectMapper mapper = new ObjectMapper();
 
 

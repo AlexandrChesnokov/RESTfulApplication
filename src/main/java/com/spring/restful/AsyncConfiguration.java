@@ -14,6 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 @EnableScheduling
 @EnableCaching
+
 public class AsyncConfiguration implements WebMvcConfigurer {
 
 

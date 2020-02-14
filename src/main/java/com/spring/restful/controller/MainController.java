@@ -1,22 +1,15 @@
 package com.spring.restful.controller;
 
-
 import com.spring.restful.model.Currency;
-
-import com.spring.restful.model.jobs.DocxCreator;
+import com.spring.restful.utils.DocxCreator;
 import com.spring.restful.service.BankingService;
 import com.spring.restful.exception.NotFoundException;
-
 import org.apache.log4j.Logger;
-
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-
 import java.io.IOException;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -39,20 +32,20 @@ public class MainController {
     private final SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
 
-    @RequestMapping(value = "/get-rate/{name}/{period}",  produces = { "application/json", "application/xml" }, method = RequestMethod.GET)
+    @RequestMapping(value = "/get-rate/{name}/{period}", produces = {"application/json", "application/xml"}, method = RequestMethod.GET)
     @Cacheable("currencies")
-    public  ResponseEntity<Currency> getExchangeRate(@PathVariable String name, @PathVariable String period ) {
+    public ResponseEntity<Currency> getExchangeRate(@PathVariable String name, @PathVariable String period) {
 
         logger.debug("Received a request with the following parameters - " + name + " - " + period);
 
         boolean isDate = false;
         String formatDate = "";
 
-        logger.debug("Validation of the entered period starts");
+        logger.debug("Attempt to format date");
         if (!period.equals("current") & !period.equals("week") & !period.equals("month")) {
-           formatDate = checkValidity(period);
-           isDate = true;
-           logger.debug("Validation was successful");
+            formatDate = formatDate(period);
+            isDate = true;
+            logger.debug("Date formatting was successful");
         }
 
         List<CompletableFuture<Currency>> pojos = new ArrayList<>();
@@ -61,7 +54,7 @@ public class MainController {
             logger.debug("The service request cycle starts");
             for (BankingService service : bankingServices) {
 
-            Boolean isDated = isDate ? pojos.add(service.getExchangeRate(name, formatDate)) :
+                Boolean isDated = isDate ? pojos.add(service.getExchangeRate(name, formatDate)) :
                         pojos.add(service.getExchangeRate(name, period));
             }
 
@@ -75,12 +68,8 @@ public class MainController {
 
         logger.debug("The best exchange rate search cycle starts");
         try {
-            System.out.println(pojos.size());
             minRate = pojos.get(0).get();
 
-            for (CompletableFuture<Currency> pojo : pojos) {
-                System.out.println(pojo.get());
-            }
             for (CompletableFuture<Currency> pojo : pojos) {
                 if (Double.parseDouble(pojo.get().getSale()) < Double.parseDouble(minRate.getSale())) {
                     minRate = pojo.get();
@@ -102,7 +91,7 @@ public class MainController {
     }
 
 
-    private String checkValidity(String period) {
+    private String formatDate(String period) {
 
         Date docDate = null;
         String dateFormat = "";
@@ -110,16 +99,16 @@ public class MainController {
         try {
             docDate = format.parse(period);
             dateFormat = format.format(docDate);
-            } catch (ParseException e) {
-                logger.error("Parsing error, probably entered wrong date format", e);
-                throw new NotFoundException();
-            }
-            if (docDate.after(new Date())) {
-                logger.error("Date error, date entered in future time");
-                throw new NotFoundException();
-            }
+        } catch (ParseException e) {
+            logger.error("Parsing error, probably entered wrong date format", e);
+            throw new NotFoundException();
+        }
+        if (docDate.after(new Date())) {
+            logger.error("Date error, date entered in future time");
+            throw new NotFoundException();
+        }
 
-            return dateFormat;
+        return dateFormat;
     }
 
 

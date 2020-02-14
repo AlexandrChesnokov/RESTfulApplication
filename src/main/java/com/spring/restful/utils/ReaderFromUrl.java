@@ -1,4 +1,4 @@
-package com.spring.restful.model.jobs;
+package com.spring.restful.utils;
 
 import org.apache.log4j.Logger;
 

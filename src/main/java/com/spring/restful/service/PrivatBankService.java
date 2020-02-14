@@ -2,10 +2,11 @@ package com.spring.restful.service;
 
 
 import com.spring.restful.model.*;
-import com.spring.restful.model.Parsers.BankingParser;
-import com.spring.restful.model.jobs.ReaderFromUrl;
+import com.spring.restful.model.parsers.BankingParser;
+import com.spring.restful.utils.ReaderFromUrl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +27,11 @@ public class PrivatBankService extends BankingService {
 
     public final BankingParser parser;
 
+
+    @Value("${privatBank.url}")
+    private String urlValue;
+
+
     public PrivatBankService(@Qualifier("privatBankParser")BankingParser parser) {
         this.parser = parser;
     }
@@ -35,6 +41,8 @@ public class PrivatBankService extends BankingService {
     public CompletableFuture<Currency> getExchangeRate(String name, String period)  {
 
         logger.debug("PrivatBankService started");
+
+
 
         ArrayList<MainCurrency> list = new ArrayList<>();
         LocalDate now = LocalDate.now();
@@ -49,7 +57,7 @@ public class PrivatBankService extends BankingService {
                 count = 1;
             }
 
-            String url = "https://api.privatbank.ua/p24api/exchange_rates?json&date="+strDate;
+            String url = urlValue + strDate;
 
             String response = null;
             try {

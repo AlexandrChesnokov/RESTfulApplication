@@ -2,10 +2,11 @@ package com.spring.restful.service;
 
 
 import com.spring.restful.model.*;
-import com.spring.restful.model.Parsers.BankingParser;
-import com.spring.restful.model.jobs.ReaderFromUrl;
+import com.spring.restful.model.parsers.BankingParser;
+import com.spring.restful.utils.ReaderFromUrl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
@@ -32,6 +33,10 @@ public class NationalBankService extends BankingService {
     public NationalBankService(@Qualifier("nationalBankParser")BankingParser parser) {
         this.parser = parser;
     }
+
+    @Value("${nationalBank.url}")
+    private  String urlValue;
+
 
     @Override
     @Async
@@ -61,7 +66,9 @@ public class NationalBankService extends BankingService {
                 }
             }
 
-            String url = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=" + strDate + "&amp;json";
+            strDate+= "&amp;json";
+
+            String url = urlValue + strDate;
 
             String response = null;
             try {

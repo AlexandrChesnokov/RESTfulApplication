@@ -3,10 +3,11 @@ package com.spring.restful.service;
 
 
 import com.spring.restful.model.*;
-import com.spring.restful.model.Parsers.BankingParser;
-import com.spring.restful.model.jobs.ReaderFromUrl;
+import com.spring.restful.model.parsers.BankingParser;
+import com.spring.restful.utils.ReaderFromUrl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +27,8 @@ public class BankUkraineService extends BankingService {
         this.parser = parser;
     }
 
+    @Value("${bankUkraine.url}")
+    private String url;
 
 
     @Override
@@ -33,9 +36,6 @@ public class BankUkraineService extends BankingService {
     public CompletableFuture<Currency> getExchangeRate(String name, String period) {
 
         logger.debug("BankUkraineService started");
-
-        String url = "http://bank-ua.com/export/currrate.xml";
-
 
         String response = null;
         try {
