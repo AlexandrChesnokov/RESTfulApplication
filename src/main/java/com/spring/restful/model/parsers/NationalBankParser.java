@@ -13,16 +13,11 @@ public class NationalBankParser implements BankingParser {
     private static final Logger logger = Logger.getLogger(NationalBankParser.class);
 
 
-
     @Override
-    public NBCurrency getParse(String name, String period, String response) {
+    public NBCurrency getParse(String name, String response) {
 
         logger.debug("Parser started - BankUkraineParser");
         NBCurrency nationalBankPOJO = new NBCurrency();
-
-
-
-
 
         JSONArray array = new JSONArray(response);
         logger.debug("Currency search cycle starts - " + name );

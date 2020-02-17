@@ -33,7 +33,7 @@ public class BankUkraineService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String period) {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period, boolean isDate) {
 
         logger.debug("BankUkraineService started");
 
@@ -52,7 +52,7 @@ public class BankUkraineService extends BankingService {
         BankUkraineCurrency currency = null;
         try {
             logger.debug("Parser is being called");
-            currency = (BankUkraineCurrency) parser.getParse(name, period, response);
+            currency = (BankUkraineCurrency) parser.getParse(name, response);
         } catch (IOException e) {
             logger.error("Parsing error", e);
         }

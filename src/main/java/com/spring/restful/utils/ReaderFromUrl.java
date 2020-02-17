@@ -17,8 +17,6 @@ public class ReaderFromUrl {
             BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
 
             return readAll(rd);
-
-
     }
 
     private static String readAll(Reader rd)  throws IOException {
@@ -28,7 +26,6 @@ public class ReaderFromUrl {
                 sb.append((char) cp);
             }
             return sb.toString();
-
     }
 
 }

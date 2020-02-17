@@ -40,7 +40,7 @@ public class NationalBankService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String period)  {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period, boolean isDate)  {
 
         logger.debug("NationalBankService started");
 
@@ -49,28 +49,13 @@ public class NationalBankService extends BankingService {
         int count = getCount(period);
 
         for(int i = 0; i < count; i++) {
-            Date date1 = java.sql.Date.valueOf(now.minusDays(i));
-            String strDate = simpleDateFormat.format(date1);
-
-            if (count == 100) {
-                String dateStr = period;
-                SimpleDateFormat newDateFormat = new SimpleDateFormat("yyyy" + "MM" +"dd");
-                SimpleDateFormat oldDateFormat = new SimpleDateFormat("dd.MM.yyyy");
-                Date dateCheck = null;
-                try {
-                    dateCheck = oldDateFormat.parse(dateStr);
-                    strDate = newDateFormat.format(dateCheck);
-                    count = 1;
-                } catch (ParseException e) {
-
-                }
-            }
-
+            Date date = java.sql.Date.valueOf(now.minusDays(i));
+            String strDate = isDate ? formatDate(period) : simpleDateFormat.format(date);
             strDate+= "&amp;json";
-
             String url = urlValue + strDate;
 
             String response = null;
+
             try {
                 logger.debug("Submit request URL");
                 response = ReaderFromUrl.readContentFromUrl(url);
@@ -81,9 +66,10 @@ public class NationalBankService extends BankingService {
             }
 
             NBCurrency currency = null;
+
             try {
                 logger.debug("Parser is being called");
-                currency = (NBCurrency) parser.getParse(name, period, response);
+                currency = (NBCurrency) parser.getParse(name, response);
             } catch (IOException e) {
                 logger.error("Parsing error", e);
             }
@@ -96,5 +82,22 @@ public class NationalBankService extends BankingService {
         }
 
         return CompletableFuture.completedFuture(getBest(list));
+    }
+
+    private String formatDate(String period) {
+        String dateStr = period;
+        SimpleDateFormat newDateFormat = new SimpleDateFormat("yyyy" + "MM" +"dd");
+        SimpleDateFormat oldDateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        Date dateCheck = null;
+        try {
+            dateCheck = oldDateFormat.parse(dateStr);
+           String strDate = newDateFormat.format(dateCheck);
+
+           return strDate;
+
+        } catch (ParseException e) {
+            logger.error("Parsing date error", e);
+            return null;
+        }
     }
 }

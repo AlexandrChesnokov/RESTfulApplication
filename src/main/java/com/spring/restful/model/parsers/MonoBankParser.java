@@ -20,12 +20,10 @@ public class MonoBankParser implements BankingParser {
     private static final Logger logger = Logger.getLogger(MonoBankParser.class);
 
     @Override
-    public MonoBankCurrency getParse(String name, String period, String response)  {
+    public MonoBankCurrency getParse(String name, String response)  {
 
         logger.debug("Parser started - MonoBankParser");
         MonoBankCurrency monoBankPOJO = new MonoBankCurrency();
-
-        if (period.equals("current")) {
 
             ObjectMapper mapper = new ObjectMapper();
             MonoBankCurrency[] rates = new MonoBankCurrency[0];
@@ -64,7 +62,7 @@ public class MonoBankParser implements BankingParser {
                 }
             }
 
-        }
+
         monoBankPOJO.setRateSell("999999.9999");    // заглушка
         return monoBankPOJO;
     }

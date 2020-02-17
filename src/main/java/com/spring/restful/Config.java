@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableScheduling
 @EnableCaching
 
-public class AsyncConfiguration implements WebMvcConfigurer {
+public class Config implements WebMvcConfigurer {
 
 
 	@Override

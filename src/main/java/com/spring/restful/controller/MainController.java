@@ -1,7 +1,6 @@
 package com.spring.restful.controller;
 
 import com.spring.restful.model.Currency;
-import com.spring.restful.utils.DocxCreator;
 import com.spring.restful.service.BankingService;
 import com.spring.restful.exception.NotFoundException;
 import org.apache.log4j.Logger;
@@ -55,8 +54,8 @@ public class MainController {
             logger.debug("The service request cycle starts");
             for (BankingService service : bankingServices) {
 
-                boolean isDated = isDate ? pojos.add(service.getExchangeRate(name, formatDate)) :
-                        pojos.add(service.getExchangeRate(name, period));
+                boolean checkIsDate = isDate ? pojos.add(service.getExchangeRate(name, formatDate, true)) :
+                        pojos.add(service.getExchangeRate(name, period, false));
 
             }
 
@@ -69,7 +68,9 @@ public class MainController {
         logger.debug("The best exchange rate search cycle starts");
 
         try {
+
             minRate = getValue(pojos);
+
 
             for (CompletableFuture<Currency> pojo : pojos) {
                 if (pojo.get() != null) {

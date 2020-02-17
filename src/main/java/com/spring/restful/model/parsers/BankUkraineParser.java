@@ -22,11 +22,11 @@ public class BankUkraineParser implements BankingParser {
     private static final Logger logger = Logger.getLogger(BankUkraineParser.class);
 
     @Override
-    public BankUkraineCurrency getParse(String name, String period, String response) throws IOException {
+    public BankUkraineCurrency getParse(String name, String response) throws IOException {
 
         logger.debug("Parser started - BankUkraineParser");
 
-        String date = period;
+
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuiler = null;
 

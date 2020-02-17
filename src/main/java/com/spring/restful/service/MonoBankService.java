@@ -29,7 +29,7 @@ public class MonoBankService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String period)  {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period, boolean isDate)  {
 
         logger.debug("MonoBankService started");
 
@@ -47,7 +47,7 @@ public class MonoBankService extends BankingService {
         MonoBankCurrency currency = null;
         try {
             logger.debug("Parser is being called");
-            currency = (MonoBankCurrency) parser.getParse(name, period, response);
+            currency = (MonoBankCurrency) parser.getParse(name, response);
         } catch (IOException e) {
             logger.error("Parsing error", e);
         }
