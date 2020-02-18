@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 @Service
 public class BankUkraineService extends BankingService {
@@ -37,32 +38,15 @@ public class BankUkraineService extends BankingService {
 
         logger.debug("BankUkraineService started");
 
-        String response = null;
-        try {
-            logger.debug("Submit request URL");
-            response = ReaderFromUrl.readContentFromUrl(url);
-            logger.debug("Response received");
-        } catch (IOException e) {
-            logger.error("Failed to get response from URL", e);
-            return null;
+        MainCurrency currency = null;
 
+        try {
+            currency = (MainCurrency) getExchangeRateByDate(name, period).get();
+        } catch (InterruptedException | ExecutionException e) {
+            logger.error("Error due to attempt to start method CompletableFuture.get()", e);
         }
 
-
-        BankUkraineCurrency currency = null;
-        try {
-            logger.debug("Parser is being called");
-            currency = (BankUkraineCurrency) parser.getParse(name, response);
-        } catch (IOException e) {
-            logger.error("Parsing error", e);
-        }
-        logger.debug("The parser has completed work");
-
-        MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(), currency.getChar3(),
-                currency.getRate(), currency.getPurchaseRate());
-
-
-        return CompletableFuture.completedFuture(mainCurrency);
+        return CompletableFuture.completedFuture(currency);
 
     }
 

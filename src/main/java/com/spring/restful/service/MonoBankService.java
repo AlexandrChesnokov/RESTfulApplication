@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 @Service
 public class MonoBankService extends BankingService {
@@ -33,28 +34,13 @@ public class MonoBankService extends BankingService {
 
         logger.debug("MonoBankService started");
 
-        String response = null;
+        MainCurrency mainCurrency = null;
+
         try {
-            logger.debug("Submit request URL");
-            response = ReaderFromUrl.readContentFromUrl(url);
-            logger.debug("Response received");
-        } catch (IOException e) {
-            logger.error("Failed to get response from URL", e);
-            return null;
+            mainCurrency = (MainCurrency) getExchangeRateByDate(name, period).get();
+        } catch (InterruptedException | ExecutionException e) {
+            logger.error("Error due to attempt to start method CompletableFuture.get()", e);
         }
-
-
-        MonoBankCurrency currency = null;
-        try {
-            logger.debug("Parser is being called");
-            currency = (MonoBankCurrency) parser.getParse(name, response);
-        } catch (IOException e) {
-            logger.error("Parsing error", e);
-        }
-        logger.debug("The parser has completed work");
-
-        MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(),
-                currency.getCurrencyCodeA(), currency.getRateSell(), currency.getRateBuy());
 
         return CompletableFuture.completedFuture(mainCurrency);
     }
