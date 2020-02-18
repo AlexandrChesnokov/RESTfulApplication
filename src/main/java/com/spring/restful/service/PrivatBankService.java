@@ -16,6 +16,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 
 @Service
@@ -38,47 +39,66 @@ public class PrivatBankService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String period, boolean isDate)  {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period)  {
 
         logger.debug("PrivatBankService started");
 
-        String response;
-
         ArrayList<MainCurrency> list = new ArrayList<>();
         LocalDate now = LocalDate.now();
-
         int count = getCount(period);
 
         for (int i = 0; i < count; i++) {
-
             Date date = java.sql.Date.valueOf(now.minusDays(i));
-            String strDate = isDate ? period : simpleDateFormat.format(date);
-            String url = urlValue + strDate;
+            String strDate = simpleDateFormat.format(date);
 
+
+            MainCurrency mainCurrency = null;
             try {
-                logger.debug("Submit request URL");
-                response = ReaderFromUrl.readContentFromUrl(url);
-                logger.debug("Response received");
-            } catch (IOException e) {
-                logger.error("Failed to get response from URL", e);
-                return null;
+                mainCurrency = (MainCurrency) getExchangeRateByDate(name, strDate).get();
+            } catch (InterruptedException | ExecutionException e) {
+                logger.error("Error due to attempt to start method CompletableFuture.get()", e);
             }
 
-            PrivatBankCurrency currency = null;
-            try {
-                logger.debug("Parser is being called");
-                currency = (PrivatBankCurrency) parser.getParse(name, response);
-            } catch (IOException e) {
-                logger.error("Parsing error", e);
-            }
-            logger.debug("The parser has completed work");
-
-            MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(),
-                    currency.getCurrency(), currency.getSaleRate(), currency.getPurchaseRate());
 
             list.add(mainCurrency);
         }
 
         return CompletableFuture.completedFuture(getBest(list));
+    }
+
+    @Override
+    @Async
+    public CompletableFuture<Currency> getExchangeRateByDate(String name, String date) {
+
+        String response;
+
+
+        String url = urlValue + date;
+
+
+
+        try {
+            logger.debug("Submit request URL");
+            response = ReaderFromUrl.readContentFromUrl(url);
+            logger.debug("Response received");
+        } catch (IOException e) {
+            logger.error("Failed to get response from URL", e);
+            return null;
+        }
+
+        PrivatBankCurrency currency = null;
+        try {
+            logger.debug("Parser is being called");
+            currency = (PrivatBankCurrency) parser.getParse(name, response);
+        } catch (IOException e) {
+            logger.error("Parsing error", e);
+        }
+        logger.debug("The parser has completed work");
+
+        MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(),
+                currency.getCurrency(), currency.getSaleRate(), currency.getPurchaseRate());
+
+        return CompletableFuture.completedFuture(mainCurrency);
+
     }
 }

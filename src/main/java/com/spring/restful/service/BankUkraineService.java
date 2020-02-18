@@ -33,9 +33,42 @@ public class BankUkraineService extends BankingService {
 
     @Override
     @Async
-    public CompletableFuture<Currency> getExchangeRate(String name, String period, boolean isDate) {
+    public CompletableFuture<Currency> getExchangeRate(String name, String period) {
 
         logger.debug("BankUkraineService started");
+
+        String response = null;
+        try {
+            logger.debug("Submit request URL");
+            response = ReaderFromUrl.readContentFromUrl(url);
+            logger.debug("Response received");
+        } catch (IOException e) {
+            logger.error("Failed to get response from URL", e);
+            return null;
+
+        }
+
+
+        BankUkraineCurrency currency = null;
+        try {
+            logger.debug("Parser is being called");
+            currency = (BankUkraineCurrency) parser.getParse(name, response);
+        } catch (IOException e) {
+            logger.error("Parsing error", e);
+        }
+        logger.debug("The parser has completed work");
+
+        MainCurrency mainCurrency = new MainCurrency(currency.getBank(), currency.getDate(), currency.getChar3(),
+                currency.getRate(), currency.getPurchaseRate());
+
+
+        return CompletableFuture.completedFuture(mainCurrency);
+
+    }
+
+    @Override
+    @Async
+    public CompletableFuture<Currency> getExchangeRateByDate(String name, String date) {
 
         String response = null;
         try {

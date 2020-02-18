@@ -38,15 +38,8 @@ public class MainController {
 
         logger.debug("Received a request with the following parameters - " + name + " - " + period);
 
-        boolean isDate = false;
-        String formatDate = "";
 
-        logger.debug("Attempt to format date");
-        if (!period.equals("current") & !period.equals("week") & !period.equals("month")) {
-            formatDate = formatDate(period);
-            isDate = true;
-            logger.debug("Date formatting was successful");
-        }
+        checkForCorrectPeriod(period);
 
         List<CompletableFuture<Currency>> pojos = new ArrayList<>();
 
@@ -54,8 +47,7 @@ public class MainController {
             logger.debug("The service request cycle starts");
             for (BankingService service : bankingServices) {
 
-                boolean checkIsDate = isDate ? pojos.add(service.getExchangeRate(name, formatDate, true)) :
-                        pojos.add(service.getExchangeRate(name, period, false));
+                pojos.add(service.getExchangeRate(name, period));
 
             }
 
@@ -84,13 +76,67 @@ public class MainController {
         }
         logger.info("The best exchange rate found");
 
-        logger.debug("Docx is being created");
-        //DocxCreator.createDocx(minRate);
-        logger.info("Docx created");
 
         logger.debug("Returning response");
         return new ResponseEntity<>(minRate, HttpStatus.OK);
 
+    }
+
+
+    @RequestMapping(value = "/get-rate/{name}/{date}/byDate", produces = {"application/json", "application/xml"}, method = RequestMethod.GET)
+    @Cacheable("currencies")
+    public ResponseEntity<Currency> getExchangeRateByDate(@PathVariable String name, @PathVariable String date) {
+
+        List<CompletableFuture<Currency>> pojos = new ArrayList<>();
+
+
+
+            logger.debug("Attempt to format date");
+            String formatDate = "";
+            formatDate = formatDate(date);
+            logger.debug("Date formatting was successful");
+
+
+
+            logger.debug("The service request cycle starts");
+            for (BankingService service : bankingServices) {
+                pojos.add(service.getExchangeRateByDate(name, formatDate));
+            }
+
+
+
+        Currency minRate = null;
+
+        logger.debug("The best exchange rate search cycle starts");
+
+        try {
+
+            minRate = getValue(pojos);
+
+
+            for (CompletableFuture<Currency> pojo : pojos) {
+                if (pojo.get() != null) {
+                    if (Double.parseDouble(pojo.get().getSale()) < Double.parseDouble(minRate.getSale())) {
+                        minRate = pojo.get();
+                    }
+                }
+            }
+        } catch (ExecutionException | InterruptedException e) {
+            logger.error("Error due to attempt to start method CompletableFuture.get()", e);
+        }
+        logger.info("The best exchange rate found");
+
+
+
+        logger.debug("Returning response");
+
+        return new ResponseEntity<>(minRate, HttpStatus.OK);
+
+    }
+
+    private void checkForCorrectPeriod(String period) {
+        if (!period.equals("current") & !period.equals("week") & !period.equals("month"))
+            throw new NotFoundException();
     }
 
 
