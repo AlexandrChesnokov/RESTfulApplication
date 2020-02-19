@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944e468e-b68c-48fa-8c5f-20e0d9fdf053" name="Default Changelist" comment="fixed logic of services and parsers">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/AsyncConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/AsyncConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/SpringBootAsyncApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/SpringBootAsyncApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/NationalBankParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/Parsers/NationalBankParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/CacheEvict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/CacheEvict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/DocxCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/DocxCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/ReaderFromUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/model/jobs/ReaderFromUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/restful/service/BankingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_2_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.spring.restful.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com.spring.restful.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency.docx" beforeDir="false" afterPath="$PROJECT_DIR$/currency.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/AsyncConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/SpringBootAsyncApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/SpringBootAsyncApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/BankUkraineParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/BankUkraineParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/BankingParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/BankingParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/MonoBankParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/MonoBankParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/NationalBankParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/NationalBankParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/PrivatBankParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/model/Parsers/PrivatBankParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/jobs/CacheEvict.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/model/jobs/CacheEvict.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/jobs/DocxCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/model/jobs/ReaderFromUrl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/BankUkraineService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/BankUkraineService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/BankingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/BankingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/MonoBankService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/MonoBankService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/NationalBankService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/NationalBankService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/restful/service/PrivatBankService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/restful/service/PrivatBankService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +59,10 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ДЗ1-Хекало-ІН92/hekalo" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -71,7 +88,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581539866754</updated>
-      <workItem from="1581539868077" duration="13786000" />
+      <workItem from="1581539868077" duration="17586000" />
+      <workItem from="1581675274857" duration="40887000" />
     </task>
     <task id="LOCAL-00001" summary="fixed logic of services and parsers">
       <created>1581543152375</created>
@@ -80,65 +98,132 @@
       <option name="project" value="LOCAL" />
       <updated>1581543152376</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1) Package &quot;Parsers&quot; renamed to &quot;parsers&quot;&#10;2) ReadFromUrl and DocxCreator moved to new package - utils&#10;3) Method &quot;checkValidity&quot; renamed to &quot;formatDate&quot;&#10;4) URLs are moved to the file &quot;application.properties&quot; and injection in the code via the annotation &quot;@Value&quot;">
+      <created>1581689569317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581689569317</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed a bug where the program worked incorrectly in case of an incorrect response from the URL">
+      <created>1581699746237</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581699746237</updated>
+    </task>
+    <task id="LOCAL-00004" summary="redesigned API request logic by date">
+      <created>1581983230378</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581983230378</updated>
+    </task>
+    <task id="LOCAL-00005" summary="redesigned API request logic by date #2">
+      <created>1582047104031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582047104031</updated>
+    </task>
+    <task id="LOCAL-00006" summary="modified by MonoBankService and BankUkraineService">
+      <created>1582047733540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582047733540</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed logic of services and parsers" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed logic of services and parsers" />
+    <MESSAGE value="1) Package &quot;Parsers&quot; renamed to &quot;parsers&quot;&#10;2) ReadFromUrl and DocxCreator moved to new package - utils&#10;3) Method &quot;checkValidity&quot; renamed to &quot;formatDate&quot;&#10;4) URLs are moved to the file &quot;application.properties&quot; and injection in the code via the annotation &quot;@Value&quot;" />
+    <MESSAGE value="fixed a bug where the program worked incorrectly in case of an incorrect response from the URL" />
+    <MESSAGE value="redesigned API request logic by date" />
+    <MESSAGE value="redesigned API request logic by date #2" />
+    <MESSAGE value="modified by MonoBankService and BankUkraineService" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified by MonoBankService and BankUkraineService" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581551108521">
+    <state x="721" y="167" key="#com.intellij.ide.util.MemberChooser" timestamp="1582043416448">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="721" y="167" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582043416448" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581981730609">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-1280" y="54" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1280.54.1280.770@-1280.54.1280.770" timestamp="1581540212821" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581551108521" />
-    <state x="627" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581542280767">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581981730609" />
+    <state x="627" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582046831199">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="627" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581542280767" />
-    <state x="359" y="54" key="CommitChangelistDialog2" timestamp="1581546512208">
+    <state x="627" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046831199" />
+    <state x="359" y="54" width="1334" height="941" key="CommitChangelistDialog2" timestamp="1582047733023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="359" y="54" key="CommitChangelistDialog2/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581546512208" />
-    <state width="1869" height="273" key="GridCell.Tab.0.bottom" timestamp="1581555285528">
+    <state x="359" y="54" width="1334" height="941" key="CommitChangelistDialog2/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582047733023" />
+    <state x="250" y="92" key="DiffContextDialog" timestamp="1582047044991">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581555285528" />
-    <state width="1869" height="273" key="GridCell.Tab.0.center" timestamp="1581555285527">
+    <state x="250" y="92" key="DiffContextDialog/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582047044991" />
+    <state x="-919" y="137" key="FileChooserDialogImpl" timestamp="1581951095474">
+      <screen x="-1280" y="54" width="1280" height="770" />
+    </state>
+    <state x="-919" y="137" key="FileChooserDialogImpl/0.0.1920.1050/-1280.54.1280.770@-1280.54.1280.770" timestamp="1581951095474" />
+    <state width="1869" height="180" key="GridCell.Tab.0.bottom" timestamp="1582046884821">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.center/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581555285527" />
-    <state width="1869" height="273" key="GridCell.Tab.0.left" timestamp="1581555285527">
+    <state width="1869" height="180" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046884821" />
+    <state width="1869" height="180" key="GridCell.Tab.0.center" timestamp="1582046884821">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.left/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581555285527" />
-    <state width="1869" height="273" key="GridCell.Tab.0.right" timestamp="1581555285528">
+    <state width="1869" height="180" key="GridCell.Tab.0.center/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046884821" />
+    <state width="1869" height="180" key="GridCell.Tab.0.left" timestamp="1582046884821">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.right/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581555285528" />
-    <state width="1869" height="273" key="GridCell.Tab.1.bottom" timestamp="1581555285528">
+    <state width="1869" height="180" key="GridCell.Tab.0.left/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046884821" />
+    <state width="1869" height="180" key="GridCell.Tab.0.right" timestamp="1582046884821">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581555285528" />
-    <state width="1869" height="273" key="GridCell.Tab.1.center" timestamp="1581555285528">
+    <state width="1869" height="180" key="GridCell.Tab.0.right/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046884821" />
+    <state width="1869" height="180" key="GridCell.Tab.1.bottom" timestamp="1582046884821">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.1.center/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581555285528" />
-    <state width="1869" height="273" key="GridCell.Tab.1.left" timestamp="1581555285528">
+    <state width="1869" height="180" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046884821" />
+    <state width="1869" height="180" key="GridCell.Tab.1.center" timestamp="1582046884821">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.1.left/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581555285528" />
-    <state width="1869" height="273" key="GridCell.Tab.1.right" timestamp="1581555285528">
+    <state width="1869" height="180" key="GridCell.Tab.1.center/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046884821" />
+    <state width="1869" height="180" key="GridCell.Tab.1.left" timestamp="1582046884821">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.1.right/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581555285528" />
-    <state x="452" y="193" key="Vcs.Push.Dialog.v2" timestamp="1581543171124">
+    <state width="1869" height="180" key="GridCell.Tab.1.left/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046884821" />
+    <state width="1869" height="180" key="GridCell.Tab.1.right" timestamp="1582046884821">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="452" y="193" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581543171124" />
+    <state width="1869" height="180" key="GridCell.Tab.1.right/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582046884821" />
+    <state x="452" y="193" key="Vcs.Push.Dialog.v2" timestamp="1582047810454">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="452" y="193" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1582047810454" />
+    <state x="548" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1581675326862">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="548" y="308" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581675326862" />
+    <state x="6" y="59" key="new project wizard" timestamp="1581801869397">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="6" y="59" key="new project wizard/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581801869397" />
+    <state x="539" y="15" width="840" height="1034" key="search.everywhere.popup" timestamp="1581678091476">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="539" y="15" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1050/-1280.54.1280.770@0.0.1920.1050" timestamp="1581678091476" />
   </component>
 </project>

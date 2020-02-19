@@ -33,6 +33,7 @@
     <orderEntry type="library" name="Maven: org.apache.poi:poi:3.12" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.13" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-scratchpad:3.12" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-configuration-processor:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" level="project" />

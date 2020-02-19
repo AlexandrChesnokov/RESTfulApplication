@@ -1,87 +1,347 @@
-﻿2020-02-13 03:54:45 DEBUG SpringBootAsyncApplication:18 - Запуск приложения
-2020-02-13 03:54:45 DEBUG SpringBootAsyncApplication:18 - Запуск приложения
-2020-02-13 03:54:52 DEBUG MainController:46 - Received a request with the following parameters - USD - week
-2020-02-13 03:54:52 DEBUG MainController:51 - Validation of the entered period starts
-2020-02-13 03:54:52 DEBUG MainController:61 - The service request cycle starts
-2020-02-13 03:54:52 DEBUG MainController:76 - The best exchange rate search cycle starts
-2020-02-13 03:54:52 DEBUG BankUkraineService:35 - BankUkraineService started
-2020-02-13 03:54:52 DEBUG PrivatBankService:37 - PrivatBankService started
-2020-02-13 03:54:52 DEBUG MonoBankService:30 - MonoBankService started
-2020-02-13 03:54:52 DEBUG MonoBankService:36 - URL request
-2020-02-13 03:54:52 DEBUG BankUkraineService:42 - URL request
-2020-02-13 03:54:52 DEBUG NationalBankService:40 - NationalBankService started
-2020-02-13 03:54:52 DEBUG PrivatBankService:56 - URL request
-2020-02-13 03:54:52 DEBUG NationalBankService:68 - URL request
-2020-02-13 03:54:52 DEBUG BankUkraineService:44 - Response received
-2020-02-13 03:54:52 DEBUG BankUkraineService:52 - Parser is being called
-2020-02-13 03:54:52 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
-2020-02-13 03:54:52 DEBUG BankUkraineParser:41 - Parsing response in progress
-2020-02-13 03:54:52 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
-2020-02-13 03:54:52 DEBUG BankUkraineParser:65 - Currency found, returning result
-2020-02-13 03:54:52 DEBUG BankUkraineService:57 - The parser has completed work
-2020-02-13 03:54:52 DEBUG NationalBankService:70 - Response received
-2020-02-13 03:54:52 DEBUG NationalBankService:77 - Parser is being called
-2020-02-13 03:54:52 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
-2020-02-13 03:54:52 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
-2020-02-13 03:54:52 DEBUG NationalBankParser:43 - Currency found, returning result
-2020-02-13 03:54:52 DEBUG NationalBankService:82 - The parser has completed work
-2020-02-13 03:54:52 DEBUG NationalBankService:68 - URL request
-2020-02-13 03:54:52 DEBUG NationalBankService:70 - Response received
-2020-02-13 03:54:52 DEBUG NationalBankService:77 - Parser is being called
-2020-02-13 03:54:52 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
-2020-02-13 03:54:52 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
-2020-02-13 03:54:52 DEBUG NationalBankParser:43 - Currency found, returning result
-2020-02-13 03:54:52 DEBUG NationalBankService:82 - The parser has completed work
-2020-02-13 03:54:52 DEBUG NationalBankService:68 - URL request
-2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
-2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
-2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
-2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
-2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
-2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
-2020-02-13 03:54:53 DEBUG NationalBankService:68 - URL request
-2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
-2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
-2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
-2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
-2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
-2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
-2020-02-13 03:54:53 DEBUG NationalBankService:68 - URL request
-2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
-2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
-2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
-2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
-2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
-2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
-2020-02-13 03:54:53 DEBUG NationalBankService:68 - URL request
-2020-02-13 03:54:53 DEBUG MonoBankService:38 - Response received
-2020-02-13 03:54:53 DEBUG MonoBankService:46 - Parser is being called
-2020-02-13 03:54:53 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
-2020-02-13 03:54:53 DEBUG MonoBankService:51 - The parser has completed work
-2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
-2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
-2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
-2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
-2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
-2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
-2020-02-13 03:54:53 DEBUG NationalBankService:68 - URL request
-2020-02-13 03:54:53 DEBUG NationalBankService:70 - Response received
-2020-02-13 03:54:53 DEBUG NationalBankService:77 - Parser is being called
-2020-02-13 03:54:53 DEBUG NationalBankParser:25 - Parser started - BankUkraineParser
-2020-02-13 03:54:53 DEBUG NationalBankParser:33 - Currency search cycle starts - USD
-2020-02-13 03:54:53 DEBUG NationalBankParser:43 - Currency found, returning result
-2020-02-13 03:54:53 DEBUG NationalBankService:82 - The parser has completed work
-2020-02-13 03:54:53 DEBUG PrivatBankService:58 - Response received
-2020-02-13 03:54:53 DEBUG PrivatBankService:65 - Parser is being called
-2020-02-13 03:54:53 DEBUG PrivatBankParser:20 - Parser started - BankUkraineParser
-2020-02-13 03:54:53 DEBUG PrivatBankParser:26 - Parsing response in progress
-2020-02-13 03:54:53 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
-2020-02-13 03:54:53 DEBUG PrivatBankService:70 - The parser has completed work
-2020-02-13 03:54:53 ERROR MainController:91 - Error due to attempt to start method CompletableFuture.get()
-java.util.concurrent.ExecutionException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2070)
-	at com.spring.restful.controller.MainController.getExchangeRate(MainController.java:82)
+﻿2020-02-18 19:53:20 DEBUG MainController:94 - Attempt to format date
+2020-02-18 19:53:20 DEBUG MainController:97 - Date formatting was successful
+2020-02-18 19:53:20 DEBUG MainController:100 - The service request cycle starts
+2020-02-18 19:53:20 DEBUG MainController:111 - The best exchange rate search cycle starts
+2020-02-18 19:53:20 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 19:53:20 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 19:53:20 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 19:53:20 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 19:53:20 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 19:53:20 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 19:53:20 DEBUG PrivatBankService:80 - Submit request URL
+2020-02-18 19:53:20 DEBUG NationalBankService:80 - Submit request URL
+2020-02-18 19:53:20 DEBUG BankUkraineService:44 - Response received
+2020-02-18 19:53:20 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 19:53:20 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 19:53:20 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 19:53:20 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 19:53:20 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 19:53:20 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 19:53:20 DEBUG NationalBankService:82 - Response received
+2020-02-18 19:53:20 DEBUG NationalBankService:90 - Parser is being called
+2020-02-18 19:53:20 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 19:53:20 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 19:53:20 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 19:53:20 DEBUG NationalBankService:95 - The parser has completed work
+2020-02-18 19:53:20 DEBUG MonoBankService:40 - Response received
+2020-02-18 19:53:20 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 19:53:20 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 19:53:20 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 19:53:20 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 19:53:20 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 19:53:20 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 19:53:20 DEBUG PrivatBankService:82 - Response received
+2020-02-18 19:53:20 DEBUG PrivatBankService:90 - Parser is being called
+2020-02-18 19:53:20 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 19:53:20 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 19:53:20 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 19:53:20 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 19:53:20 DEBUG PrivatBankService:95 - The parser has completed work
+2020-02-18 19:53:20 INFO  MainController:128 - The best exchange rate found
+2020-02-18 19:53:20 DEBUG MainController:130 - Docx is being created
+2020-02-18 19:53:20 INFO  MainController:132 - Docx created
+2020-02-18 19:53:20 DEBUG MainController:134 - Returning response
+2020-02-18 19:54:22 DEBUG MainController:94 - Attempt to format date
+2020-02-18 19:54:22 DEBUG MainController:97 - Date formatting was successful
+2020-02-18 19:54:22 DEBUG MainController:100 - The service request cycle starts
+2020-02-18 19:54:22 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 19:54:22 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 19:54:22 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 19:54:22 DEBUG MainController:111 - The best exchange rate search cycle starts
+2020-02-18 19:54:22 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 19:54:22 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 19:54:22 DEBUG PrivatBankService:80 - Submit request URL
+2020-02-18 19:54:22 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 19:54:22 DEBUG NationalBankService:80 - Submit request URL
+2020-02-18 19:54:22 DEBUG BankUkraineService:44 - Response received
+2020-02-18 19:54:22 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 19:54:22 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 19:54:22 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 19:54:22 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 19:54:22 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 19:54:22 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 19:54:22 DEBUG NationalBankService:82 - Response received
+2020-02-18 19:54:22 DEBUG NationalBankService:90 - Parser is being called
+2020-02-18 19:54:22 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 19:54:22 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 19:54:22 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 19:54:22 DEBUG NationalBankService:95 - The parser has completed work
+2020-02-18 19:54:22 DEBUG MonoBankService:40 - Response received
+2020-02-18 19:54:22 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 19:54:22 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 19:54:22 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 19:54:22 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 19:54:22 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 19:54:22 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 19:54:23 DEBUG PrivatBankService:82 - Response received
+2020-02-18 19:54:23 DEBUG PrivatBankService:90 - Parser is being called
+2020-02-18 19:54:23 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 19:54:23 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 19:54:23 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 19:54:23 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 19:54:23 DEBUG PrivatBankService:95 - The parser has completed work
+2020-02-18 19:54:23 INFO  MainController:128 - The best exchange rate found
+2020-02-18 19:54:23 DEBUG MainController:130 - Docx is being created
+2020-02-18 19:54:23 INFO  MainController:132 - Docx created
+2020-02-18 19:54:23 DEBUG MainController:134 - Returning response
+2020-02-18 19:56:17 DEBUG MainController:94 - Attempt to format date
+2020-02-18 19:56:17 DEBUG MainController:97 - Date formatting was successful
+2020-02-18 19:56:17 DEBUG MainController:100 - The service request cycle starts
+2020-02-18 19:56:17 DEBUG MainController:111 - The best exchange rate search cycle starts
+2020-02-18 19:56:17 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 19:56:17 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 19:56:17 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 19:56:17 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 19:56:17 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 19:56:17 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 19:56:17 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 19:56:17 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 19:56:17 DEBUG BankUkraineService:44 - Response received
+2020-02-18 19:56:17 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 19:56:17 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 19:56:17 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 19:56:17 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 19:56:17 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 19:56:17 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 19:56:17 DEBUG NationalBankService:84 - Response received
+2020-02-18 19:56:17 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 19:56:17 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 19:56:17 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 19:56:17 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 19:56:17 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 19:56:17 DEBUG PrivatBankService:84 - Response received
+2020-02-18 19:56:17 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 19:56:17 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 19:56:17 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 19:56:17 DEBUG MonoBankService:40 - Response received
+2020-02-18 19:56:17 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 19:56:17 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 19:56:17 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 19:56:17 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 19:56:17 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 19:56:17 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 19:56:17 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 19:56:17 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 19:56:17 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 19:56:17 INFO  MainController:128 - The best exchange rate found
+2020-02-18 19:56:17 DEBUG MainController:130 - Docx is being created
+2020-02-18 19:56:17 INFO  MainController:132 - Docx created
+2020-02-18 19:56:17 DEBUG MainController:134 - Returning response
+2020-02-18 19:58:57 DEBUG MainController:96 - Attempt to format date
+2020-02-18 19:58:57 DEBUG MainController:99 - Date formatting was successful
+2020-02-18 19:58:57 DEBUG MainController:102 - The service request cycle starts
+2020-02-18 19:58:57 DEBUG MainController:113 - The best exchange rate search cycle starts
+2020-02-18 19:58:57 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 19:58:57 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 19:58:57 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 19:58:57 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 19:58:57 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 19:58:57 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 19:58:57 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 19:58:57 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 19:58:57 DEBUG BankUkraineService:44 - Response received
+2020-02-18 19:58:57 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 19:58:57 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 19:58:57 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 19:58:57 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 19:58:57 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 19:58:57 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 19:58:57 DEBUG NationalBankService:84 - Response received
+2020-02-18 19:58:57 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 19:58:57 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 19:58:57 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 19:58:57 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 19:58:57 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 19:58:57 DEBUG MonoBankService:40 - Response received
+2020-02-18 19:58:57 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 19:58:57 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 19:58:57 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 19:58:57 DEBUG PrivatBankService:84 - Response received
+2020-02-18 19:58:57 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 19:58:57 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 19:58:57 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 19:58:57 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 19:58:57 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 19:58:57 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 19:58:57 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 19:58:57 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 19:58:57 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 19:58:57 INFO  MainController:130 - The best exchange rate found
+2020-02-18 19:58:57 DEBUG MainController:132 - Docx is being created
+2020-02-18 19:58:57 INFO  MainController:134 - Docx created
+2020-02-18 19:58:57 DEBUG MainController:136 - Returning response
+2020-02-18 19:59:31 DEBUG MainController:96 - Attempt to format date
+2020-02-18 19:59:31 DEBUG MainController:99 - Date formatting was successful
+2020-02-18 19:59:31 DEBUG MainController:103 - The service request cycle starts
+2020-02-18 19:59:31 DEBUG MainController:114 - The best exchange rate search cycle starts
+2020-02-18 19:59:31 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 19:59:31 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 19:59:31 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 19:59:31 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 19:59:31 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 19:59:31 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 19:59:31 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 19:59:31 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 19:59:31 DEBUG BankUkraineService:44 - Response received
+2020-02-18 19:59:31 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 19:59:31 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 19:59:31 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 19:59:31 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 19:59:31 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 19:59:31 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 19:59:31 DEBUG NationalBankService:84 - Response received
+2020-02-18 19:59:31 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 19:59:31 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 19:59:31 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 19:59:31 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 19:59:31 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 19:59:32 DEBUG MonoBankService:40 - Response received
+2020-02-18 19:59:32 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 19:59:32 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 19:59:32 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 19:59:32 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 19:59:32 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 19:59:32 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 19:59:32 DEBUG PrivatBankService:84 - Response received
+2020-02-18 19:59:32 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 19:59:32 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 19:59:32 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 19:59:32 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 19:59:32 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 19:59:32 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 19:59:32 INFO  MainController:131 - The best exchange rate found
+2020-02-18 19:59:32 DEBUG MainController:133 - Docx is being created
+2020-02-18 19:59:32 INFO  MainController:135 - Docx created
+2020-02-18 19:59:32 DEBUG MainController:137 - Returning response
+2020-02-18 20:00:57 DEBUG MainController:96 - Attempt to format date
+2020-02-18 20:00:57 DEBUG MainController:99 - Date formatting was successful
+2020-02-18 20:00:57 DEBUG MainController:103 - The service request cycle starts
+2020-02-18 20:00:57 DEBUG MainController:112 - The best exchange rate search cycle starts
+2020-02-18 20:00:57 DEBUG MonoBankService:68 - Submit request URL
+2020-02-18 20:00:57 DEBUG BankUkraineService:75 - Submit request URL
+2020-02-18 20:00:57 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:00:57 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:00:57 DEBUG BankUkraineService:77 - Response received
+2020-02-18 20:00:57 DEBUG BankUkraineService:87 - Parser is being called
+2020-02-18 20:00:57 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:00:57 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:00:57 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:00:57 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:00:57 DEBUG BankUkraineService:92 - The parser has completed work
+2020-02-18 20:00:57 DEBUG NationalBankService:84 - Response received
+2020-02-18 20:00:57 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 20:00:57 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 20:00:57 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 20:00:57 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 20:00:57 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 20:00:57 DEBUG MonoBankService:70 - Response received
+2020-02-18 20:00:57 DEBUG MonoBankService:79 - Parser is being called
+2020-02-18 20:00:57 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:00:57 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:00:57 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:00:57 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:00:57 DEBUG MonoBankService:84 - The parser has completed work
+2020-02-18 20:00:57 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:00:57 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:00:57 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:00:57 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:00:57 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:00:57 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:00:57 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:00:57 INFO  MainController:129 - The best exchange rate found
+2020-02-18 20:00:57 DEBUG MainController:131 - Docx is being created
+2020-02-18 20:00:57 INFO  MainController:133 - Docx created
+2020-02-18 20:00:57 DEBUG MainController:135 - Returning response
+2020-02-18 20:01:40 DEBUG MainController:39 - Received a request with the following parameters - USD - current
+2020-02-18 20:01:40 DEBUG MainController:46 - The service request cycle starts
+2020-02-18 20:01:40 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 20:01:40 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 20:01:40 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 20:01:40 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 20:01:40 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 20:01:40 DEBUG MainController:59 - The best exchange rate search cycle starts
+2020-02-18 20:01:40 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 20:01:40 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:01:40 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:01:40 DEBUG BankUkraineService:44 - Response received
+2020-02-18 20:01:40 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 20:01:40 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:01:40 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:01:40 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:01:40 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:01:40 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 20:01:40 DEBUG NationalBankService:84 - Response received
+2020-02-18 20:01:40 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 20:01:40 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 20:01:40 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 20:01:40 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 20:01:40 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 20:01:40 DEBUG MonoBankService:40 - Response received
+2020-02-18 20:01:40 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 20:01:40 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:01:40 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:01:40 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:01:40 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:01:40 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 20:01:41 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:01:41 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:01:41 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:01:41 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:01:41 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:01:41 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:01:41 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:01:41 INFO  MainController:76 - The best exchange rate found
+2020-02-18 20:01:41 DEBUG MainController:78 - Docx is being created
+2020-02-18 20:01:41 INFO  MainController:80 - Docx created
+2020-02-18 20:01:41 DEBUG MainController:82 - Returning response
+2020-02-18 20:02:57 DEBUG MainController:39 - Received a request with the following parameters - USD - dsadasd
+2020-02-18 20:02:57 DEBUG MainController:46 - The service request cycle starts
+2020-02-18 20:02:57 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 20:02:57 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 20:02:57 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 20:02:57 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 20:02:57 DEBUG MainController:59 - The best exchange rate search cycle starts
+2020-02-18 20:02:57 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 20:02:57 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 20:02:57 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:02:57 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:02:57 DEBUG BankUkraineService:44 - Response received
+2020-02-18 20:02:57 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 20:02:57 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:02:57 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:02:57 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:02:57 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:02:57 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 20:02:57 DEBUG NationalBankService:84 - Response received
+2020-02-18 20:02:57 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 20:02:57 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 20:02:57 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 20:02:57 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 20:02:57 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 20:02:57 DEBUG MonoBankService:40 - Response received
+2020-02-18 20:02:57 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 20:02:57 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:02:57 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:02:57 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:02:57 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:02:57 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 20:02:57 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:02:57 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:02:57 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:02:57 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:02:57 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:02:57 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:02:57 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:02:57 INFO  MainController:76 - The best exchange rate found
+2020-02-18 20:02:57 DEBUG MainController:78 - Docx is being created
+2020-02-18 20:02:57 INFO  MainController:80 - Docx created
+2020-02-18 20:02:57 DEBUG MainController:82 - Returning response
+2020-02-18 20:05:55 DEBUG MainController:96 - Attempt to format date
+2020-02-18 20:05:55 ERROR MainController:151 - Parsing error, probably entered wrong date format
+java.text.ParseException: Unparseable date: "dsadasd"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at com.spring.restful.controller.MainController.formatDate(MainController.java:148)
+	at com.spring.restful.controller.MainController.getExchangeRateByDate(MainController.java:98)
 	at com.spring.restful.controller.MainController$$FastClassBySpringCGLIB$$ed73308e.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
@@ -95,7 +355,7 @@ java.util.concurrent.ExecutionException: java.lang.NullPointerException
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$cc982641.getExchangeRate(<generated>)
+	at com.spring.restful.controller.MainController$$EnhancerBySpringCGLIB$$e299f33c.getExchangeRateByDate(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,9 +398,222 @@ java.util.concurrent.ExecutionException: java.lang.NullPointerException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.lang.NullPointerException
-	at com.spring.restful.service.PrivatBankService.getExchangeRate(PrivatBankService.java:72)
-	at com.spring.restful.service.PrivatBankService$$FastClassBySpringCGLIB$$f4c68ae5.invoke(<generated>)
+2020-02-18 20:06:14 DEBUG MainController:39 - Received a request with the following parameters - USD - dsadasdas
+2020-02-18 20:06:14 DEBUG MainController:46 - The service request cycle starts
+2020-02-18 20:06:14 DEBUG MainController:59 - The best exchange rate search cycle starts
+2020-02-18 20:06:14 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 20:06:14 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 20:06:14 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 20:06:14 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 20:06:14 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 20:06:14 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 20:06:14 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:06:14 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:06:14 DEBUG BankUkraineService:44 - Response received
+2020-02-18 20:06:14 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 20:06:14 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:06:14 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:06:14 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:06:14 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:06:14 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 20:06:15 DEBUG NationalBankService:84 - Response received
+2020-02-18 20:06:15 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 20:06:15 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 20:06:15 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 20:06:15 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 20:06:15 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 20:06:15 DEBUG MonoBankService:40 - Response received
+2020-02-18 20:06:15 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 20:06:15 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:06:15 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:06:15 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:06:15 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:06:15 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:06:15 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:06:15 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:06:15 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:06:15 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:06:15 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:06:15 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:06:15 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 20:06:15 INFO  MainController:76 - The best exchange rate found
+2020-02-18 20:06:15 DEBUG MainController:78 - Docx is being created
+2020-02-18 20:06:15 INFO  MainController:80 - Docx created
+2020-02-18 20:06:15 DEBUG MainController:82 - Returning response
+2020-02-18 20:23:17 DEBUG MainController:39 - Received a request with the following parameters - USD - dsadasdas
+2020-02-18 20:23:23 DEBUG MainController:39 - Received a request with the following parameters - USD - current
+2020-02-18 20:23:23 DEBUG MainController:47 - The service request cycle starts
+2020-02-18 20:23:23 DEBUG MainController:60 - The best exchange rate search cycle starts
+2020-02-18 20:23:23 DEBUG BankUkraineService:38 - BankUkraineService started
+2020-02-18 20:23:23 DEBUG NationalBankService:47 - NationalBankService started
+2020-02-18 20:23:23 DEBUG MonoBankService:34 - MonoBankService started
+2020-02-18 20:23:23 DEBUG BankUkraineService:42 - Submit request URL
+2020-02-18 20:23:23 DEBUG PrivatBankService:44 - PrivatBankService started
+2020-02-18 20:23:23 DEBUG MonoBankService:38 - Submit request URL
+2020-02-18 20:23:23 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:23:23 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:23:23 DEBUG BankUkraineService:44 - Response received
+2020-02-18 20:23:23 DEBUG BankUkraineService:54 - Parser is being called
+2020-02-18 20:23:23 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:23:23 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:23:23 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:23:23 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:23:23 DEBUG BankUkraineService:59 - The parser has completed work
+2020-02-18 20:23:23 DEBUG NationalBankService:84 - Response received
+2020-02-18 20:23:23 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 20:23:23 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 20:23:23 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 20:23:23 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 20:23:23 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 20:23:23 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:23:23 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:23:23 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:23:23 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:23:24 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:23:24 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:23:24 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:23:24 DEBUG MonoBankService:40 - Response received
+2020-02-18 20:23:24 DEBUG MonoBankService:49 - Parser is being called
+2020-02-18 20:23:24 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:23:24 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:23:24 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:23:24 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:23:24 DEBUG MonoBankService:54 - The parser has completed work
+2020-02-18 20:23:24 INFO  MainController:77 - The best exchange rate found
+2020-02-18 20:23:24 DEBUG MainController:79 - Docx is being created
+2020-02-18 20:23:24 INFO  MainController:81 - Docx created
+2020-02-18 20:23:24 DEBUG MainController:83 - Returning response
+2020-02-18 20:23:34 DEBUG MainController:97 - Attempt to format date
+2020-02-18 20:23:34 DEBUG MainController:100 - Date formatting was successful
+2020-02-18 20:23:34 DEBUG MainController:104 - The service request cycle starts
+2020-02-18 20:23:34 DEBUG BankUkraineService:75 - Submit request URL
+2020-02-18 20:23:34 DEBUG MainController:113 - The best exchange rate search cycle starts
+2020-02-18 20:23:34 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:23:34 DEBUG MonoBankService:68 - Submit request URL
+2020-02-18 20:23:34 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:23:34 DEBUG BankUkraineService:77 - Response received
+2020-02-18 20:23:34 DEBUG BankUkraineService:87 - Parser is being called
+2020-02-18 20:23:34 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:23:34 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:23:34 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:23:34 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:23:34 DEBUG BankUkraineService:92 - The parser has completed work
+2020-02-18 20:23:35 DEBUG NationalBankService:84 - Response received
+2020-02-18 20:23:35 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 20:23:35 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 20:23:35 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 20:23:35 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 20:23:35 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 20:23:35 DEBUG MonoBankService:70 - Response received
+2020-02-18 20:23:35 DEBUG MonoBankService:79 - Parser is being called
+2020-02-18 20:23:35 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:23:35 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:23:35 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:23:35 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:23:35 DEBUG MonoBankService:84 - The parser has completed work
+2020-02-18 20:23:35 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:23:35 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:23:35 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:23:35 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:23:35 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:23:35 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:23:35 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:23:35 INFO  MainController:130 - The best exchange rate found
+2020-02-18 20:23:35 DEBUG MainController:132 - Docx is being created
+2020-02-18 20:23:35 INFO  MainController:134 - Docx created
+2020-02-18 20:23:35 DEBUG MainController:136 - Returning response
+2020-02-18 20:26:09 DEBUG MainController:98 - Attempt to format date
+2020-02-18 20:26:09 DEBUG MainController:101 - Date formatting was successful
+2020-02-18 20:26:09 DEBUG MainController:105 - The service request cycle starts
+2020-02-18 20:26:09 DEBUG MainController:114 - The best exchange rate search cycle starts
+2020-02-18 20:26:09 DEBUG BankUkraineService:75 - Submit request URL
+2020-02-18 20:26:09 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:26:09 DEBUG MonoBankService:68 - Submit request URL
+2020-02-18 20:26:09 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:26:09 DEBUG BankUkraineService:77 - Response received
+2020-02-18 20:26:09 DEBUG BankUkraineService:87 - Parser is being called
+2020-02-18 20:26:09 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:26:09 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:26:09 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:26:09 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:26:09 DEBUG BankUkraineService:92 - The parser has completed work
+2020-02-18 20:26:09 DEBUG NationalBankService:84 - Response received
+2020-02-18 20:26:09 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 20:26:09 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 20:26:09 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 20:26:09 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 20:26:09 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 20:26:09 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:26:09 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:26:09 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:26:09 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:26:09 DEBUG MonoBankService:70 - Response received
+2020-02-18 20:26:09 DEBUG MonoBankService:79 - Parser is being called
+2020-02-18 20:26:09 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:26:09 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:26:09 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:26:09 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:26:09 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:26:09 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:26:09 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:26:09 DEBUG MonoBankService:84 - The parser has completed work
+2020-02-18 20:26:09 INFO  MainController:131 - The best exchange rate found
+2020-02-18 20:26:09 DEBUG MainController:133 - Docx is being created
+2020-02-18 20:26:10 INFO  MainController:135 - Docx created
+2020-02-18 20:26:10 DEBUG MainController:137 - Returning response
+2020-02-18 20:27:47 DEBUG MainController:94 - Attempt to format date
+2020-02-18 20:27:47 DEBUG MainController:97 - Date formatting was successful
+2020-02-18 20:27:47 DEBUG MainController:101 - The service request cycle starts
+2020-02-18 20:27:47 DEBUG MainController:110 - The best exchange rate search cycle starts
+2020-02-18 20:27:47 DEBUG BankUkraineService:75 - Submit request URL
+2020-02-18 20:27:47 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:27:47 DEBUG MonoBankService:68 - Submit request URL
+2020-02-18 20:27:47 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:27:47 DEBUG BankUkraineService:77 - Response received
+2020-02-18 20:27:47 DEBUG BankUkraineService:87 - Parser is being called
+2020-02-18 20:27:47 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:27:47 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:27:47 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:27:47 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:27:47 DEBUG BankUkraineService:92 - The parser has completed work
+2020-02-18 20:27:47 DEBUG NationalBankService:84 - Response received
+2020-02-18 20:27:47 DEBUG NationalBankService:92 - Parser is being called
+2020-02-18 20:27:47 DEBUG NationalBankParser:19 - Parser started - BankUkraineParser
+2020-02-18 20:27:47 DEBUG NationalBankParser:23 - Currency search cycle starts - USD
+2020-02-18 20:27:47 DEBUG NationalBankParser:33 - Currency found, returning result
+2020-02-18 20:27:47 DEBUG NationalBankService:97 - The parser has completed work
+2020-02-18 20:27:48 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:27:48 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:27:48 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:27:48 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:27:48 DEBUG MonoBankService:70 - Response received
+2020-02-18 20:27:48 DEBUG MonoBankService:79 - Parser is being called
+2020-02-18 20:27:48 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:27:48 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:27:48 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:27:48 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:27:48 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:27:48 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:27:48 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:27:48 DEBUG MonoBankService:84 - The parser has completed work
+2020-02-18 20:27:48 INFO  MainController:127 - The best exchange rate found
+2020-02-18 20:27:48 DEBUG MainController:131 - Returning response
+2020-02-18 20:28:09 DEBUG MainController:94 - Attempt to format date
+2020-02-18 20:28:09 DEBUG MainController:97 - Date formatting was successful
+2020-02-18 20:28:09 DEBUG MainController:101 - The service request cycle starts
+2020-02-18 20:28:09 DEBUG MainController:110 - The best exchange rate search cycle starts
+2020-02-18 20:28:09 DEBUG PrivatBankService:82 - Submit request URL
+2020-02-18 20:28:09 DEBUG NationalBankService:82 - Submit request URL
+2020-02-18 20:28:09 DEBUG MonoBankService:68 - Submit request URL
+2020-02-18 20:28:09 DEBUG BankUkraineService:75 - Submit request URL
+2020-02-18 20:28:09 ERROR NationalBankService:86 - Failed to get response from URL
+java.net.MalformedURLException: no protocol: 20200120&amp;json
+	at java.base/java.net.URL.<init>(URL.java:668)
+	at java.base/java.net.URL.<init>(URL.java:564)
+	at java.base/java.net.URL.<init>(URL.java:511)
+	at com.spring.restful.utils.ReaderFromUrl.readContentFromUrl(ReaderFromUrl.java:16)
+	at com.spring.restful.service.NationalBankService.getExchangeRateByDate(NationalBankService.java:83)
+	at com.spring.restful.service.NationalBankService$$FastClassBySpringCGLIB$$78717ed5.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -150,8 +623,27 @@ Caused by: java.lang.NullPointerException
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-2020-02-13 03:54:53 INFO  MainController:93 - The best exchange rate found
-2020-02-13 03:54:53 DEBUG MainController:95 - Docx is being created
-2020-02-13 03:54:53 INFO  MainController:97 - Docx created
-2020-02-13 03:54:53 DEBUG MainController:99 - Returning response
+	at java.base/java.lang.Thread.run(Thread.java:830)
+2020-02-18 20:28:09 DEBUG BankUkraineService:77 - Response received
+2020-02-18 20:28:09 DEBUG BankUkraineService:87 - Parser is being called
+2020-02-18 20:28:09 DEBUG BankUkraineParser:27 - Parser started - BankUkraineParser
+2020-02-18 20:28:09 DEBUG BankUkraineParser:41 - Parsing response in progress
+2020-02-18 20:28:09 DEBUG BankUkraineParser:52 - Currency search cycle starts - USD
+2020-02-18 20:28:09 DEBUG BankUkraineParser:65 - Currency found, returning result
+2020-02-18 20:28:09 DEBUG BankUkraineService:92 - The parser has completed work
+2020-02-18 20:28:10 DEBUG MonoBankService:70 - Response received
+2020-02-18 20:28:10 DEBUG MonoBankService:79 - Parser is being called
+2020-02-18 20:28:10 DEBUG MonoBankParser:25 - Parser started - MonoBankParser
+2020-02-18 20:28:10 DEBUG MonoBankParser:31 - Parsing response in progress
+2020-02-18 20:28:10 DEBUG MonoBankParser:38 - Currency search cycle starts - USD
+2020-02-18 20:28:10 DEBUG MonoBankParser:60 - Currency found, returning result
+2020-02-18 20:28:10 DEBUG MonoBankService:84 - The parser has completed work
+2020-02-18 20:28:10 DEBUG PrivatBankService:84 - Response received
+2020-02-18 20:28:10 DEBUG PrivatBankService:92 - Parser is being called
+2020-02-18 20:28:10 DEBUG PrivatBankParser:20 - Parser started - PrivatBankParser
+2020-02-18 20:28:10 DEBUG PrivatBankParser:26 - Parsing response in progress
+2020-02-18 20:28:10 DEBUG PrivatBankParser:34 - Currency search cycle starts - USD
+2020-02-18 20:28:10 DEBUG PrivatBankParser:39 - Currency found, returning result
+2020-02-18 20:28:10 DEBUG PrivatBankService:97 - The parser has completed work
+2020-02-18 20:28:10 INFO  MainController:127 - The best exchange rate found
+2020-02-18 20:28:10 DEBUG MainController:131 - Returning response
